@@ -1,0 +1,75 @@
+1
+00:00:00,000 --> 00:00:05,000
+And the answer is, 0.0079.
+
+2
+00:00:05,000 --> 00:00:09,000
+In other words, there is only a 0.79 percent chance,
+
+3
+00:00:09,000 --> 00:00:12,000
+0.79 out of 100,
+
+4
+00:00:12,000 --> 00:00:16,000
+that despite the positive test result, that you have cancer.
+
+5
+00:00:16,000 --> 00:00:20,000
+And we're going to apply the exact same mechanics as we did before.
+
+6
+00:00:20,000 --> 00:00:25,000
+The result of Bayes Rule, non-normalized, of c given pos,
+
+7
+00:00:25,000 --> 00:00:30,000
+is simply the product of my prior probability, 0.01,
+
+8
+00:00:30,000 --> 00:00:33,000
+times 0.8, which is the probability of
+
+9
+00:00:33,000 --> 00:00:36,000
+a positive result in the cancer state.
+
+10
+00:00:36,000 --> 00:00:40,000
+And that ends up to be 0.0008.
+
+11
+00:00:40,000 --> 00:00:44,000
+The non-normalized probability for the opposite event,
+
+12
+00:00:44,000 --> 00:00:48,000
+the non-cancerous event, given a positive test, is 0.999
+
+13
+00:00:48,000 --> 00:00:54,000
+times 0.1, and that is obviously 0.0999.
+
+14
+00:00:54,000 --> 00:00:58,000
+Our normalizer, and so the sum of both of those,
+
+15
+00:00:58,000 --> 00:01:04,000
+which is 0.1007, just add these 2 values up over here.
+
+16
+00:01:04,000 --> 00:01:08,000
+So dividing 0.0008, the non-normalized probability,
+
+17
+00:01:08,000 --> 00:01:14,000
+by 0.1007, gives us 0.079.
+
+18
+00:01:14,000 --> 00:01:19,000
+We just applied Bayes Rule to compute a really involved probability
+
+18
+00:01:19,000 --> 00:01:23,000
+of having cancer after seeing a test result.
