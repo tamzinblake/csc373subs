@@ -1,0 +1,3 @@
+Let's see if we can modify this to make a vector of length n where I can vary the value of n and get a resulting vector with n elements.
+
+So for n equals 5, we'd get the same result as before, but for n equals 10, I should get a vector of length 10, each of which would have a value of 0.1.

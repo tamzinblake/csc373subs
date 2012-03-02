@@ -1,0 +1,1 @@
+So now in our Python interface, I'd like to take this code over here, which assigns to p an empty list and modify it into code where p becomes a uniform distribution over 5 grid cells as expressed in a vector of 5 probabilities.

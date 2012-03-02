@@ -1,0 +1,5 @@
+Let's pick a different place.
+
+Let's assume the robot saw red twice. So it senses red, it moves, it senses red, it moves again.
+
+What is the most likely cell?

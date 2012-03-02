@@ -1,0 +1,8 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+My next question: can you print out the sum of those to normalize them?
+
+2
+00:00:06,000 --> 00:00:10,000
+Modify the program so you get the sum of all the p's.
+

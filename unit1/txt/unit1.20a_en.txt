@@ -1,0 +1,13 @@
+The answer as it turns out will be just 0.2 everywhere, and the reason is with every grid cell being equally likely, applying this motion model will still made each grid cell equally likely.
+
+So let's pick one of them, say this one over here. We could have arrived here in 3 different ways. Perhaps we started in x2 and our motion went well. This gives us a 0.2 times a 0.8.
+
+Perhaps we started in x1 and we overshot, which gives us a 0.2, for the cell x1, times a 0.1 for overshooting. Or perhaps we started in x3 and we undershot, which gives us 0.2 times 0.1. And we add those up, and we find it is the same as 0.2 times 1, because the factors over here add up exactly to 1, which makes 0.2, and the result is 0.2.
+
+You can apply this same logic to all the other cells.
+
+This guy over here could have come from this guy, this guy, this guy, where this one is weighted with 0.8 and the other two with 0.1.
+
+That's called a convolution, and as we will see later, there's a very nice way to write this mathematically as something called Theorem of Total Probability.
+
+But for the time being, I'd like to program this in.

@@ -1,0 +1,9 @@
+So here's my solution.
+
+I start with an empty list over here, and I build it up using the append command over time. I do so by iterating over all the elements in my input probability p, and I set a binary flag whether my measurement that I received is the same
+
+I would expect at the ith grid cell over here from this list over there.
+
+And if that's the case, hit is positive, it's True, so we're going to multiply p with pHit. And if it's false, then the flag hit will evaluate to zero, 1 - hit will be 1. So you're going to multiply pi with pMiss.
+
+I build up the list, return it, and run it, and out comes 0.04, 0.12, 0.12, 0.04, and 0.04 as expected.

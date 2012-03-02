@@ -1,0 +1,3 @@
+And the answer is for our intended field over here it's 0.8, the 2 neighbors 0.1, and it's 0 and 0 over here.
+
+Well done. Let's do this again for a different initial distribution.

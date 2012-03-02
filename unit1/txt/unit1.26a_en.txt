@@ -1,0 +1,17 @@
+Let's run the program, and we'll find that the most likely cell is the 4th cell.
+
+And that makes sense, because the best match of red, red to the world is red over here, red over here. And after seeing the 2nd red, the robot still moved 1 to the right and finds itself in the 4th cell as shown over here.
+
+Now I want to celebrate with you the code that you just wrote, which is a piece of software that implements the essence of Google's self-driving car's localization approach.
+
+As I said in the beginning, it's absolutely crucial that the car knows exactly where it is relative to the map of its road. And while the road isn't painted green and red, the road has lane markers. And instead of those green and red cells over here, we plug in the color of the lane markings relative to the color of the pavement.
+
+It isn't just one observation per time step, it's an entire field of observations, an entire camera image, but you can do the same with a camera image as long as you can correspond a camera image in your model with a camera image in your measurements. And then a piece of code not much more difficult than what you coded yourself is responsible for localizing the Google self-driving car.
+
+So you just implemented a major, major function that makes Google's car drive itself. So I think you should be really happy and proud of yourself.
+
+And you should say to yourself, I just implemented localization. Now why on earth did it take Google that long to build a product that drives itself?
+
+Well, the truth is the situation is a little more difficult. Sometimes roads get paved over and changed, and we're working on this. But what you've implemented is the core of Google's self-driving car localization idea.
+
+Let me just summarize the essential things we've learned.

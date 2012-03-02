@@ -1,0 +1,3 @@
+Let's move 1,000 times.
+
+Write a piece of code that moves 1,000 steps and gives me the final distribution.

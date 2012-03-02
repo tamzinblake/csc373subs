@@ -1,0 +1,20 @@
+﻿1
+00:00:00,000 --> 00:00:05,000
+Let's see if we can modify this to make a vector of length n
+
+2
+00:00:05,000 --> 00:00:11,000
+where I can vary the value of n and get a resulting vector with n elements.
+
+3
+00:00:11,000 --> 00:00:14,000
+So for n equals 5, we'd get the same result as before,
+
+4
+00:00:14,000 --> 00:00:18,000
+but for n equals 10, I should get a vector of length 10,
+
+5
+00:00:18,000 --> 00:00:22,000
+each of which would have a value of 0.1.
+

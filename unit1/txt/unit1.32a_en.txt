@@ -1,0 +1,9 @@
+And the answer is, 0.0079.
+
+In other words, there is only a 0.79 percent chance, 0.79 out of 100, that despite the positive test result, that you have cancer. And we're going to apply the exact same mechanics as we did before.
+
+The result of Bayes Rule, non-normalized, of c given pos, is simply the product of my prior probability, 0.01, times 0.8, which is the probability of a positive result in the cancer state.  And that ends up to be 0.0008.
+
+The non-normalized probability for the opposite event, the non-cancerous event, given a positive test, is 0.999 times 0.1, and that is obviously 0.0999.  Our normalizer, and so the sum of both of those, which is 0.1007, just add these 2 values up over here. So dividing 0.0008, the non-normalized probability, by 0.1007, gives us 0.079.
+
+We just applied Bayes Rule to compute a really involved probability of having cancer after seeing a test result.

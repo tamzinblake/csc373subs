@@ -1,0 +1,44 @@
+﻿1
+00:00:00,000 --> 00:00:02,000
+And here's one way to implement this.
+
+2
+00:00:02,000 --> 00:00:05,000
+We're going to introduce the auxiliary variable "s",
+
+3
+00:00:05,000 --> 00:00:07,000
+which we build up in three different steps.
+
+4
+00:00:07,000 --> 00:00:15,000
+We multiply the p value as before for the exact, set off by pExact.
+
+5
+00:00:15,000 --> 00:00:21,000
+Then we add to it two more multiplied by pOvershot or pUndershot
+
+6
+00:00:21,000 --> 00:00:25,000
+where we are overshooting by going yet 1 step further than U
+
+7
+00:00:25,000 --> 00:00:28,000
+or undershooting by cutting it short by 1.
+
+8
+00:00:28,000 --> 00:00:32,000
+And then we add these things up and finally append the sum of those
+
+9
+00:00:32,000 --> 00:00:35,000
+to our probability q.
+
+10
+00:00:35,000 --> 00:00:42,000
+When we run this, we get for our example prior of 0, 1, 0, 0, 0,
+
+11
+00:00:42,000 --> 00:00:47,000
+the answer 0, 0.1, 0.8, 0.1, and 0.
+

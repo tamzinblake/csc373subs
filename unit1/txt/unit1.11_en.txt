@@ -1,0 +1,3 @@
+My next question: can you print out the sum of those to normalize them?
+
+Modify the program so you get the sum of all the p's.

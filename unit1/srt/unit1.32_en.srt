@@ -1,0 +1,72 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+So let me ask you Bayes Rule in the context of a completely different example
+
+2
+00:00:06,000 --> 00:00:09,000
+to see if you understand how to apply Bayes Rule.
+
+3
+00:00:09,000 --> 00:00:12,000
+This time it's about cancer testing.
+
+4
+00:00:12,000 --> 00:00:15,000
+And it's an example that is commonly studied in statistics classes.
+
+5
+00:00:15,000 --> 00:00:18,000
+Suppose there exists a certain type of cancer,
+
+6
+00:00:18,000 --> 00:00:22,000
+but the cancer is rare; only 1 in a 1000 people has the cancer,
+
+7
+00:00:22,000 --> 00:00:26,000
+whereas 999 in 1000 people don't have it,
+
+8
+00:00:26,000 --> 00:00:29,000
+illustrated by the probability of cancer and the probability of not cancer.
+
+9
+00:00:29,000 --> 00:00:33,000
+Suppose we have a test, and the test can come out positive or negative.
+
+10
+00:00:33,000 --> 00:00:38,000
+The probability that the test triggers positive if I have cancer is 0.8,
+
+11
+00:00:38,000 --> 00:00:44,000
+and the probability that the test comes out positive given that I'm cancer free is only 0.1.
+
+12
+00:00:44,000 --> 00:00:47,000
+So clearly the test has a strong correlation to whether I have cancer.
+
+13
+00:00:47,000 --> 00:00:50,000
+Here's a really difficult question.
+
+14
+00:00:50,000 --> 00:00:56,000
+Can you compute for me the probability of cancer given that I just received a positive test.
+
+15
+00:00:56,000 --> 00:01:00,000
+Let me emphasize this is not an easy question, but you should be able,
+
+16
+00:01:00,000 --> 00:01:03,000
+based on what I've taught you, to calculate this result.
+
+17
+00:01:03,000 --> 00:01:07,000
+Think of the cancer/non cancer as the robot position
+
+18
+00:01:07,000 --> 00:01:13,000
+and think of the positive as whether the colored door observed is the correct one.
+

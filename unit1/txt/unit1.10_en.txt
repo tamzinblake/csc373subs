@@ -1,0 +1,5 @@
+So here's our initial distribution again.
+
+Here's our factor for getting the color right or for getting it wrong, and let's first start with the non-normalized version.
+
+Write a piece of code that outputs p after multiplying in pHit and pMiss at the corresponding places.

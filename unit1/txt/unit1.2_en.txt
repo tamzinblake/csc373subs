@@ -1,0 +1,19 @@
+The very first problem I'm trying to solve is called localization. And it involves a robot that's lost in space; it could be a car, it could be a mobile robot.
+
+So here is the environment, and the poor robot has no clue where it is.
+
+Similarly, we might have a car driving on a highway, and this car would like to know where it is. It is inside the lane or is it crossing lane markers?
+
+Now the traditional way to solve this problem uses satellites, and these satellites emit signals that the car can perceive. That's known as GPS, short for "global positioning system", and it's what you have in your dashboard if you have a car with GPS that shows you the maps and shows you where you are.
+
+Now unfortunately, the problem with GPS is it's really not very accurate. It's really common for a car to believe to be here but it has 2, all the way up to 10 meters of error. So if you try to stay in the lane with 10 meters of error, you're far off, and you're driving right over here, and you crash.
+
+So for our self-driving cars, to be able to stay in lanes using localization, we need something like 2 to 10 centimeters of error. Then we can drive with GPS in lanes. The question is, how can we know where were are with 10 cm accuracy? That's the localization question.
+
+In the Google self-driving car, localization plays a key role. We record images of the road surface and then use the techniques
+
+I'm just about to teach you to find out exactly where the robot is. And it does so with a few centimeter accuracy, and that makes it possible to stay inside the lane even if the lane markers are missing.
+
+So localization has a lot of math, but before I dive into mathematical detail, I want to give you an intuition for the basic principles. I want to tell you the story of how we will localize this, and then we can go through the math together so you can understand it.
+
+I also want to let you program your own localizer so you can program a self-driving car.

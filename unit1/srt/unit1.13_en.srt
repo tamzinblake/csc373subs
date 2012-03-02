@@ -1,0 +1,16 @@
+﻿1
+00:00:00,000 --> 00:00:02,000
+So let's take that same piece of code
+
+2
+00:00:02,000 --> 00:00:05,000
+and modify it to give me a valid probability distribution.
+
+3
+00:00:05,000 --> 00:00:11,000
+Please modify this code so it normalizes the output of the function sense
+
+4
+00:00:11,000 --> 00:00:14,000
+so it add up to 1.
+

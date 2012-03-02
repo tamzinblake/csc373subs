@@ -1,0 +1,44 @@
+﻿1
+00:00:00,000 --> 00:00:02,000
+So here's my solution.
+
+2
+00:00:02,000 --> 00:00:04,000
+I start with an empty list over here, and I build it up
+
+3
+00:00:04,000 --> 00:00:06,000
+using the append command over time.
+
+4
+00:00:06,000 --> 00:00:11,000
+I do so by iterating over all the elements in my input probability p,
+
+5
+00:00:11,000 --> 00:00:16,000
+and I set a binary flag whether my measurement that I received is the same
+
+6
+00:00:16,000 --> 00:00:21,000
+I would expect at the ith grid cell over here from this list over there.
+
+7
+00:00:21,000 --> 00:00:28,000
+And if that's the case, hit is positive, it's True, so we're going to multiply p with pHit.
+
+8
+00:00:28,000 --> 00:00:35,000
+And if it's false, then the flag hit will evaluate to zero, 1 - hit will be 1.
+
+9
+00:00:35,000 --> 00:00:38,000
+So you're going to multiply pi with pMiss.
+
+10
+00:00:38,000 --> 00:00:42,000
+I build up the list, return it, and run it, and out comes
+
+11
+00:00:42,000 --> 00:00:47,000
+0.04, 0.12, 0.12, 0.04, and 0.04 as expected.
+

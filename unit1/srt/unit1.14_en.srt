@@ -1,0 +1,52 @@
+﻿1
+00:00:00,000 --> 00:00:04,000
+Let's just go back to our example and see what an amazing thing you've just programmed.
+
+2
+00:00:04,000 --> 00:00:07,000
+We had a uniform distribution over places.
+
+3
+00:00:07,000 --> 00:00:10,000
+Each place had a probability of 0.2.
+
+4
+00:00:10,000 --> 00:00:14,000
+And then you wrote a piece of code that used the measurement to turn this prior
+
+5
+00:00:14,000 --> 00:00:20,000
+into a posterior, in which the probability of the 2 red cells was
+
+6
+00:00:20,000 --> 00:00:25,000
+a factor of 3 larger than the posterior of the green cells.
+
+7
+00:00:25,000 --> 00:00:29,000
+You've done exactly what I gave you intuitively in the beginning as the secret of localization.
+
+8
+00:00:29,000 --> 00:00:33,000
+You manipulated a probability distribution over places into a new one
+
+9
+00:00:33,000 --> 00:00:36,000
+by incorporating the measurement.
+
+10
+00:00:36,000 --> 00:00:41,000
+In fact, let's go back to our code and test in your code whether we get a good result
+
+11
+00:00:41,000 --> 00:00:45,000
+when we replace our measurement red by green.
+
+12
+00:00:45,000 --> 00:00:49,000
+So please type green into your measurement variable and rerun your code
+
+13
+00:00:49,000 --> 00:00:52,000
+to see if you get the correct result.
+

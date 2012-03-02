@@ -1,0 +1,20 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+To turn this back into a probability distribution,
+
+2
+00:00:03,000 --> 00:00:06,000
+we will now divide each of these numbers by 0.36.
+
+3
+00:00:06,000 --> 00:00:09,000
+Put differently, we normalize.
+
+4
+00:00:09,000 --> 00:00:17,000
+So please, in these 5 fields enter your result for dividing 0.04 or 0.12 by 0.36,
+
+5
+00:00:17,000 --> 00:00:21,000
+and please check that the sum of those truly adds up to 1.
+

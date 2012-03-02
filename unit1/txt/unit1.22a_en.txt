@@ -1,0 +1,16 @@
+And you might have guess it correctly. It's the uniform distribution. And there is an intuitive reasoning behind this.
+
+Every time we move, we lose information. That is, in the initial distribution we know exactly where we are.
+
+One step in we have a 0.8 chance, but the 0.8 will fall to something smaller
+as we move on - 0.64 and so on. The distribution of the absolute least information is the uniform distribution. It has no preference whatsoever. And that's really the result of moving many, many times.
+
+There is a way to derive this mathematically, and I can prove a property that's highly related, which is a balance property.
+
+Say we take x4, and we'd like to understand how x4 at some time sub t corresponds to the previous time distribution over all these variables. For this to be stationary, it has to be the same. Put differently, the probability of x4 must be the same as 0.8p(x2) + 0.1p(x1) + 0.1p(x3). This is exactly the same calculation we did before where we asked what's the chance of being x4.
+
+Well, you might be coming from x2, x1, or x3, and as these probabilities, 0.8, 0.1, and 0.1, they govern the likelihood you might have been coming from there. Those together must hold true in the limit when things don't move anymore.
+
+Now, you might think there's many different ways to solve this and the 0.2 is just one solution, but it turns out 0.2 is the only solution. So if you plug in 0.2 over here, 0.2 over here, 0.2 over here, you get 1 times 0.2, and that's 0.2 on the right side.
+
+So clearly, those '0.2's over here meet the balance that is necessary to define a valid solution in the limit.

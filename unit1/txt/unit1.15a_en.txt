@@ -1,0 +1,9 @@
+And the modification is simple.
+
+We will call the procedure sense multiple times, in fact, as often as we have measurements, which is the for loop over here, we grab the kth measurement element and apply it to the current belief. Then recursively update that belief into itself.
+
+In this case, we run it twice. We print the output. And for this specific example, we get back the uniform distribution. These are all '0.2's approximately.
+
+The reason is we up multiplied each field once for the 0.6 and down multiplied for the 0.2. These are effects were in total the same for each cell.
+
+And as a result, we get the same output over here. It's quite remarkable.

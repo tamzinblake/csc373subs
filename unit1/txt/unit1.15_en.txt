@@ -1,0 +1,7 @@
+In fact, I'd like you to modify this code a little bit more in a way that we have multiple measurements.
+
+So instead of Z, we're going to make a measurement vector called "measurements". And we're going to assume that we're going to first sense red and then green.
+
+Can you modify the code that so it updates the probability twice and gives me the posterior after both of these measurements are incorporated?
+
+In fact, can you modify it in a way that any sequence of measurements can be processed, of any length?

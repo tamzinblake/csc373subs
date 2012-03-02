@@ -1,0 +1,1 @@
+Let me give you a final example in which I assume a uniform distribution, and I want you to fill in for me the distribution after motion.

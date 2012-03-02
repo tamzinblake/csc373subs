@@ -1,0 +1,36 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+Let me test total probability in a quiz.
+
+2
+00:00:03,000 --> 00:00:07,000
+Suppose I flip a coin, and the coin comes up tails or heads.
+
+3
+00:00:07,000 --> 00:00:09,000
+And suppose it's a fair coin.
+
+4
+00:00:09,000 --> 00:00:13,000
+So the probability of tails or of heads is both 1/2.
+
+5
+00:00:13,000 --> 00:00:19,000
+Now let's say that the coin comes up tails, and I just accept and don't do anything.
+
+6
+00:00:19,000 --> 00:00:22,000
+But suppose it comes up heads, and I flip it again,
+
+7
+00:00:22,000 --> 00:00:25,000
+and after 1 flip, I accept the result.
+
+8
+00:00:25,000 --> 00:00:29,000
+So my quiz for you is: what is the probability that the final result is heads?
+
+9
+00:00:29,000 --> 00:00:32,000
+And that's an example of total probability.
+

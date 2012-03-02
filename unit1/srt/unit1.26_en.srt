@@ -1,0 +1,16 @@
+﻿1
+00:00:00,000 --> 00:00:02,000
+Let's pick a different place.
+
+2
+00:00:02,000 --> 00:00:06,000
+Let's assume the robot saw red twice.
+
+3
+00:00:06,000 --> 00:00:10,000
+So it senses red, it moves, it senses red, it moves again.
+
+4
+00:00:10,000 --> 00:00:13,000
+What is the most likely cell?
+

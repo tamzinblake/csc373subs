@@ -1,0 +1,11 @@
+And here is the solution.
+
+We start with the empty list. We go through all the elements in p. And this is the tricky line.
+
+We will construct Q element-by-element by accessing the corresponding p, and p is shifted by U and if this shift exceeds the range of p on the left, we apply the modal operator with the number of states as an argument. In this case, it'll be 5.
+
+Now, the reason why there is a minus sign is tricky. To shift the distribution to the right, U = 1, we need to find in p the element 1 place to the left. So rather than shifting p to the right directly, what I've done is I've constructed q by searching for where the robot might have come from.
+
+And that's of course, in hindsight, from the left. Therefore, there is a minus sign over here.
+
+So think about this; this is a little bit nontrivial, but it's going to be important as we go forward and define probabilistic convolution and generalize this to the noisy case.

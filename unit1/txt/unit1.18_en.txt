@@ -1,0 +1,25 @@
+So let's talk about inaccurate robot motion.
+
+We are again given 5 grid cells.
+
+And let's assume a robot executes its action with high probability correctly, say 0.8, but with 0.1 chance, it finds itself short of the intended action, and yet another 0.1 probability it finds itself overshooting its target.
+
+You can define the same for other U values. Say U = 1.
+
+Then with 0.8 chance it would end up over here, 0.1 it stays in the same element, and 0.1 it hops 2 elements ahead.
+
+Now this is a model of inaccurate robot motion.
+
+This robot attempts to go U grid cells, but occasionally falls short of its goal or overshoots.
+
+And it's a more common case robots as they move accrue uncertainty, and it's really important to model this, because this is the primary reason why localization is hard, because robots are not very accurate
+
+So we're now going to look into this first from the mathematical side.
+
+I will be giving you a prior distribution, and we're going to be using the value of U = 2, and for the motion model that shifts the robot exactly 2 steps, we believe there is a 0.8 chance.
+
+And we assign a 0.1 to the cases where the robot over or under shoots by exactly 1.
+
+That's kind of written by this formula over here where the 2 gets a 0.8 probability, the 1 and the 3 end up with a 0.1 probability.
+
+So I'm going to ask you now for the initial distribution that I'm writing up here, can you give me the distribution after the motion?

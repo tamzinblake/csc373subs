@@ -1,0 +1,9 @@
+Let's just go back to our example and see what an amazing thing you've just programmed.
+
+We had a uniform distribution over places. Each place had a probability of 0.2. And then you wrote a piece of code that used the measurement to turn this prior into a posterior, in which the probability of the 2 red cells was a factor of 3 larger than the posterior of the green cells.
+
+You've done exactly what I gave you intuitively in the beginning as the secret of localization. You manipulated a probability distribution over places into a new one by incorporating the measurement.
+
+In fact, let's go back to our code and test in your code whether we get a good result when we replace our measurement red by green.
+
+So please type green into your measurement variable and rerun your code to see if you get the correct result.

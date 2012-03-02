@@ -1,0 +1,23 @@
+So wow, you've basically programmed the Google self-driving car localization even though you might not quite known it yet.
+
+So let me tell you where we are.
+
+We talked about measurement updates, and we talked about motion. And we called these two routines "sense" and "move".
+
+Now, localization is nothing else but the iteration of "sense" and "move". There is an initial belief that is tossed into this loop. If you sense first, it comes to the left side.
+
+And then localization cycles through this move, sense, move, sense, move, sense, move, sense, move, sense cycle. And every time the robot moves, it loses information as to where it is. That's because robot motion is inaccurate. And every time it senses it gains information.
+
+That is manifest by the fact that after motion, the probability distribution is a little bit flatter and a bit more spread out. and after sensing, it's focused a little bit more.
+
+In fact, as a foot note, there is a measure of information called "entropy". And here is one of the many ways you can write it, as the expected local likelihood of the probability of each grid cell. And without going into detail, this is a measure of information that the distribution has, and it can be shown that the update step, the motion step, makes the entropy go down, and the measurement step makes it go up.
+
+So you are really losing and gaining information.
+
+I would now love to implement this in our code.
+
+So in addition to the 2 measurements we had before, red and green, I'm going to give you 2 motions, 1 and 1, which means the robot moves right and right again.
+
+Can you compute the posterior distribution if the robot first senses red, then moves right by 1, then senses green, then moves right again?
+
+And let's start with a uniform prior distribution.

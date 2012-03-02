@@ -1,0 +1,5 @@
+And the answer is simple. You use a for loop as shown here, and you append to the list n elements, each the size of 1/n.
+
+The dot over here is really important. It gives you the floating-point version. Unfortunately, if we leave it out, the result will just be zeros, which is not what you want.
+
+Now we are able to initialize the initial belief of the robot in the world over here.

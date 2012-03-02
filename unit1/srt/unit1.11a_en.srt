@@ -1,0 +1,8 @@
+﻿1
+00:00:00,000 --> 00:00:05,000
+Well, it turns out Python gives you a function called "sum",
+
+2
+00:00:05,000 --> 00:00:09,000
+and if you now hit the run button, you get the correct answer.
+

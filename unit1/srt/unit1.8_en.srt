@@ -1,0 +1,24 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+And this is in principle our next belief.
+
+2
+00:00:03,000 --> 00:00:07,000
+It only has one problem, which is it isn't a valid probability distribution.
+
+3
+00:00:07,000 --> 00:00:14,000
+And the reason why is: probability distributions always have to add up to 1.
+
+4
+00:00:14,000 --> 00:00:17,000
+So if I ask you what's the sum of all these values,
+
+5
+00:00:17,000 --> 00:00:19,000
+then we find out it doesn't add up to 1.
+
+6
+00:00:19,000 --> 00:00:23,000
+So please type in the sum of all these values.
+

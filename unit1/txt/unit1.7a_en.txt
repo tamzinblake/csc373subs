@@ -1,0 +1,1 @@
+And the answer is obviously for the red cells we get a 0.12 whereas for the green cells we get a 0.04, which is the product of 0.2 times 0.6, versus 0.2 times 0.2.

@@ -1,0 +1,7 @@
+I define a function "move" with an input distribution p and a motion number "U", where U is the number of grid cells that the robot is moving to the right or to the left.
+
+And I want you to program a function that returns the new distribution Q after the move where if U equals zero, Q is the same as p. If U equals 1, all the values are cyclically shifted to the right by 1. If U equals 3, they are cyclically shifted to the right by 3. If U equals -1, they're cyclically shifted to the left.
+
+So please call the function with argument p and a shift to the right by 1.
+
+I've commented out my measurement part because for now I don't want to do measurement updates. In addition to this, I will use a very simple p, that has a 1 at the second position and zeros elsewhere. Otherwise, if we were to use the uniform p, we couldn't even see the effect of the motion whether that's programmed correctly or not.

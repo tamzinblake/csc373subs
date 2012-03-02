@@ -1,0 +1,16 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+Let's assume we have a 0.5 in this cell and a 0.5 in this cell.
+
+2
+00:00:07,000 --> 00:00:10,000
+And remember that this is a cyclic-motion model,
+
+3
+00:00:10,000 --> 00:00:14,000
+so whatever falls off on the right side, you'll find on the left side.
+
+4
+00:00:14,000 --> 00:00:18,000
+Can you again for U = 2 fill in the posterior distribution?
+

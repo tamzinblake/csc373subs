@@ -1,0 +1,24 @@
+﻿1
+00:00:00,000 --> 00:00:04,000
+And the answer is all of these are shifted to the right.
+
+2
+00:00:04,000 --> 00:00:09,000
+So the 1/9 in the left-most cell comes over here, the 1/3 over here,
+
+3
+00:00:09,000 --> 00:00:13,000
+and finally the right-most 1/9 finds itself on the left side.
+
+4
+00:00:13,000 --> 00:00:17,000
+In the case of exact motion, we have a perfect robot.
+
+5
+00:00:17,000 --> 00:00:21,000
+We just shift the probabilities by the actual robot motion.
+
+6
+00:00:21,000 --> 00:00:25,000
+Now, that's a degenerate case. But it's a good one to program first, so let's program this one.
+

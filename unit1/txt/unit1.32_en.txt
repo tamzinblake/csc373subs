@@ -1,0 +1,11 @@
+So let me ask you Bayes Rule in the context of a completely different example to see if you understand how to apply Bayes Rule. This time it's about cancer testing. And it's an example that is commonly studied in statistics classes.
+
+Suppose there exists a certain type of cancer, but the cancer is rare; only 1 in a 1000 people has the cancer, whereas 999 in 1000 people don't have it, illustrated by the probability of cancer and the probability of not cancer.
+
+Suppose we have a test, and the test can come out positive or negative. The probability that the test triggers positive if I have cancer is 0.8, and the probability that the test comes out positive given that I'm cancer free is only 0.1. So clearly the test has a strong correlation to whether I have cancer.
+
+Here's a really difficult question.
+
+Can you compute for me the probability of cancer given that I just received a positive test?
+
+Let me emphasize this is not an easy question, but you should be able, based on what I've taught you, to calculate this result. Think of the cancer/non cancer as the robot position and think of the positive as whether the colored door observed is the correct one.

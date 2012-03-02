@@ -1,0 +1,116 @@
+﻿1
+00:00:00,000 --> 00:00:05,000
+So let's look at motion, which will turn out to be something we will call total probability.
+
+2
+00:00:05,000 --> 00:00:08,000
+You remember that we cared about a grid cell "xi",
+
+3
+00:00:08,000 --> 00:00:13,000
+and we asked what is the chance of being xi after robot motion?
+
+4
+00:00:13,000 --> 00:00:17,000
+Now, to indicate the after and before, let me add a time index.
+
+5
+00:00:17,000 --> 00:00:20,000
+So t, up here, is an index for time.
+
+6
+00:00:20,000 --> 00:00:25,000
+I write it superscript so there is no confusion with the index i, which is the grid cell.
+
+7
+00:00:25,000 --> 00:00:28,000
+You might remember the way we computed this
+
+8
+00:00:28,000 --> 00:00:33,000
+was by looking at all the grid cells the robot could have come from 1 time step earlier,
+
+9
+00:00:33,000 --> 00:00:35,000
+indexed here by j,
+
+10
+00:00:35,000 --> 00:00:39,000
+we looked at the prior probability of those grid cells at time t - 1,
+
+11
+00:00:39,000 --> 00:00:47,000
+and we multiplied with the probability that our motion command would carry us from xj to xi.
+
+12
+00:00:47,000 --> 00:00:50,000
+That's written as a conditional distribution as follows.
+
+13
+00:00:50,000 --> 00:00:53,000
+So this was exactly what we implemented.
+
+14
+00:00:53,000 --> 00:00:56,000
+If there was our grid cells over here
+
+15
+00:00:56,000 --> 00:00:59,000
+and we asked one time step later about a specific grid cell over here,
+
+16
+00:00:59,000 --> 00:01:05,000
+we would combine 0.8 from over here, 0.1 from over here, and 0.1 from over here
+
+17
+00:01:05,000 --> 00:01:07,000
+into the probability of this grid cell.
+
+18
+00:01:07,000 --> 00:01:09,000
+It's the same formula as here.
+
+19
+00:01:09,000 --> 00:01:14,000
+This is now xi, and the way we find the posterior probability for xi is to go through
+
+20
+00:01:14,000 --> 00:01:18,000
+all possible places from which we could have come, all the different j's.
+
+21
+00:01:18,000 --> 00:01:25,000
+Look at the prior probabilities, multiply it by the probability that I transition from j to i
+
+22
+00:01:25,000 --> 00:01:29,000
+given my motion command, which in this case is go 1 to the right side.
+
+23
+00:01:29,000 --> 00:01:32,000
+Now in probability terms, people often write it as follows:
+
+24
+00:01:32,000 --> 00:01:36,000
+P(A) = sum of all B p(A│B) times p(B).
+
+25
+00:01:36,000 --> 00:01:39,000
+This is just the way you'd find it in text books,
+
+26
+00:01:39,000 --> 00:01:45,000
+and you can see directly the correspondence of A as a place i at time t
+
+27
+00:01:45,000 --> 00:01:49,000
+and all the different Bs as the possible prior locations.
+
+28
+00:01:49,000 --> 00:01:53,000
+That is often called the Theorem of Total Probability.
+
+29
+00:01:53,000 --> 00:02:01,000
+And the operation of a weighted sum over other variables is often called a "convolution".
+

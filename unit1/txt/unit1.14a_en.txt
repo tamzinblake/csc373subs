@@ -1,0 +1,5 @@
+So I'm now replacing the red by green over here, and I rerun my code and out come these funny numbers.
+
+Which is, somewhere in there is the division by 44, but you can see that the 1st, the 4th, and the 5th grid cell have a much larger value than the grid cells in the middle.
+
+So let's dive in.

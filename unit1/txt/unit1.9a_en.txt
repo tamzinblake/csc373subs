@@ -1,0 +1,13 @@
+So 0.12 divided by 0.36 is the same as 12 divided by 36 is the same as a third or 0.333.
+
+And 0.04 divided by 36 is the same as 4 divided by 36, that is 1/9.
+
+And if you look at these numbers, 1/3, there's 1/3 plus 3/9 is another 1/3 gives exactly 1.
+
+So this is a probability distribution, which is often written in the following way:
+
+The probability of each cell, i where i could range from 1-5, after we've seen our measurement Z.
+
+The probabilist would also call it posterior distribution of place xi given measurement Z.
+
+So let's implement all this.

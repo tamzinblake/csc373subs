@@ -1,0 +1,4 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+So if you add up all these values, you get 0.36.
+

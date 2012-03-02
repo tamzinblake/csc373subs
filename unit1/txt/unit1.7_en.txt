@@ -1,0 +1,21 @@
+So let's look at the measurement of this robot in its world with 5 different grid cells, x1 through x5.
+
+Let's assume 2 of those cells are colored red whereas the other 3 are green.
+
+As before, we assign uniform probability to each cell of 0.2, and our robot is now allowed to sense. And what it sees is a red color.
+
+How will this affect my belief over different places?
+
+Obviously, the ones for x2 and x3 should go up, and the ones for x1, x4, and x5 should go down.
+
+So I'm going now to tell you how to incorporate this measurement into our belief with a very simple rule - a product.
+
+Any cell where the color is correct, any of the red cells, we'll multiply it with a relatively large number, say 0.6.
+
+That feels small, but as we'll see later, it's actually a large number. Whereas all the green cells will be multiplied with 0.2.
+
+Look at the ratio of those, and it seems about 3 times as likely to be in a red cell than it is to be in a green cell, because 0.6 is 3 times larger than 0.2.
+
+Now let's do the multiplication.
+
+For each of those 5 cells, can you tell me what the result would be multiplying in the measurement in the way I've stated? So please, for these 5 boxes, fill out the number.

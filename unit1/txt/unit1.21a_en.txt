@@ -1,0 +1,9 @@
+And here's one way to implement this.
+
+We're going to introduce the auxiliary variable "s", which we build up in three different steps.
+
+We multiply the p value as before for the exact, set off by pExact. Then we add to it two more multiplied by pOvershot or pUndershot where we are overshooting by going yet 1 step further than U or undershooting by cutting it short by 1.
+
+And then we add these things up and finally append the sum of those to our probability q.
+
+When we run this, we get for our example prior of 0, 1, 0, 0, 0, the answer 0, 0.1, 0.8, 0.1, and 0.

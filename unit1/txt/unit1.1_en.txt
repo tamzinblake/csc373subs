@@ -1,0 +1,34 @@
+So, welcome to Artificial Intelligence for Robotics.
+
+You are entering an exciting 7-week class in which you'll learn how to program self-driving cars. And just to motivate what we're trying to achieve in this class, let me show you some videos.
+
+So, my interest in self-driving cars started with the DARPA Grand Challenge in 2004, in which my team at Stanford developed Stanley, a robot that could drive itself through the Mojave Desert.
+
+The vehicle was based on a Volkswagen Touareg that was equipped with all kinds of sensors like GPS and laser, and it was able to make its own decisions without any human input whatsoever.
+
+The DARPA Grand Challenge was a government-sponsored race that took place in 2005.
+
+Here we see our robot Stanley moving through the desert completely without a human on board.
+
+The task was to drive a desert trail for about 130 miles, and whoever was fastest would win the race.
+
+Here we're passing a different robot by Carnegie Mellon University at about 110 miles into the race.
+
+Our robot was able to navigate really steep mountainous roads and able to avoid collisions with rocks or falling down a cliff all based on its ability to use what I'm going to teach you in this class.
+
+After almost 7 hours and 131 miles our robot returned all the way to the starting base as the first robot to ever finish a DARPA Grand Challenge,
+winning Stanford University 2 million bucks and Stanley a place in the Smithsonian Museum of American History.
+
+This work led to the Urban Challenge, in which we built another robot called Junior that eventually took second place. The Urban Challenge was a followup race by DARPA in which cars were asked to drive in traffic, so whereas the Grand Challenge was kind of a motionless desert floor, this was a mock urban city where the robot was able to interact with other traffic and had to follow traffic rules as in this left turn over here.
+
+It had to be stay on lanes with very high precision, accommodate oncoming traffic and just drive confidently in a situation that really resembled a small city. This led at Google to a sequence of experiments known as the Google self-driving car, and I believe these are the best robotic cars out there today.
+
+Here we see one of our Priuses on University Avenue in Palo Alto kind of undetected driving just like a human driver, but this car is driving by itself.
+
+Our cars have been able to drive hundreds of thousands of miles all across California and some of Nevada, in downtown areas like San Francisco, on busy highways, here in Monterrey, a small coastal city in California with lots and lots of pedestrians.
+
+And these are all completely self-driven moments where the car is able to accommodate things like deer in the headlights in the middle of the night or even crooked Lombard Street in San Francisco as shown in this video.
+
+This is what I'm doing on my day job. I really love, with my team, building self-driving cars. We believe it's going to really change the world, and in this class that's what I hope to enable you to do.
+
+So let's dive in.

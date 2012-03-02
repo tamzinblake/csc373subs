@@ -1,0 +1,120 @@
+﻿1
+00:00:00,000 --> 00:00:05,000
+So wow, you've basically programmed the Google self-driving car localization
+
+2
+00:00:05,000 --> 00:00:08,000
+even though you might not quite known it yet.
+
+3
+00:00:08,000 --> 00:00:10,000
+So let me tell you where we are.
+
+4
+00:00:10,000 --> 00:00:13,000
+We talked about measurement updates, and we talked about motion.
+
+5
+00:00:13,000 --> 00:00:16,000
+And we called these two routines "sense" and "move".
+
+6
+00:00:16,000 --> 00:00:20,000
+Now, localization is nothing else but the iteration of "sense" and "move".
+
+7
+00:00:20,000 --> 00:00:24,000
+There is an initial belief that is tossed into this loop.
+
+8
+00:00:24,000 --> 00:00:27,000
+If you sense first, it comes to the left side.
+
+9
+00:00:27,000 --> 00:00:33,000
+And then localization cycles through this move, sense, move, sense, move, sense,
+
+10
+00:00:33,000 --> 00:00:36,000
+move, sense, move, sense cycle.
+
+11
+00:00:36,000 --> 00:00:40,000
+And every time the robot moves, it loses information as to where it is.
+
+12
+00:00:40,000 --> 00:00:42,000
+That's because robot motion is inaccurate.
+
+13
+00:00:42,000 --> 00:00:45,000
+And every time it senses it gains information.
+
+14
+00:00:45,000 --> 00:00:47,000
+That is manifest by the fact that after motion,
+
+15
+00:00:47,000 --> 00:00:51,000
+the probability distribution is a little bit flatter and a bit more spread out.
+
+16
+00:00:51,000 --> 00:00:55,000
+and after sensing, it's focused a little bit more.
+
+17
+00:00:55,000 --> 00:01:00,000
+In fact, as a foot note, there is a measure of information called "entropy".
+
+18
+00:01:00,000 --> 00:01:04,000
+And here is one of the many ways you can write it,
+
+19
+00:01:04,000 --> 00:01:07,000
+as the expected local likelihood of the probability of each grid cell.
+
+20
+00:01:07,000 --> 00:01:12,000
+And without going into detail, this is a measure of information that the distribution has,
+
+21
+00:01:12,000 --> 00:01:18,000
+and it can be shown that the update step, the motion step, makes the entropy go down,
+
+22
+00:01:18,000 --> 00:01:20,000
+and the measurement step makes it go up.
+
+23
+00:01:20,000 --> 00:01:23,000
+So you are really losing and gaining information.
+
+24
+00:01:23,000 --> 00:01:26,000
+I would now love to implement this in our code.
+
+25
+00:01:26,000 --> 00:01:29,000
+So in addition to the 2 measurements we had before, red and green,
+
+26
+00:01:29,000 --> 00:01:32,000
+I'm going to give you 2 motions, 1 and 1,
+
+27
+00:01:32,000 --> 00:01:34,000
+which means the robot moves right and right again.
+
+28
+00:01:34,000 --> 00:01:40,000
+Can you compute the posterior distribution if the robot first senses red,
+
+29
+00:01:40,000 --> 00:01:45,000
+then moves right by 1, then senses green, then moves right again?
+
+30
+00:01:45,000 --> 00:01:48,000
+And let's start with a uniform prior distribution.
+

@@ -1,0 +1,134 @@
+﻿1
+00:00:00,000 --> 00:00:05,000
+The very first problem I'm trying to solve is called localization.
+
+2
+00:00:05,000 --> 00:00:09,000
+And it involves a robot that's lost in space;
+
+3
+00:00:09,000 --> 00:00:12,000
+it could be a car, it could be a mobile robot.
+
+4
+00:00:12,000 --> 00:00:15,000
+So here is the environment, and the poor robot has no clue where it is.
+
+5
+00:00:15,000 --> 00:00:21,000
+Similarly, we might have a car driving on a highway,
+
+6
+00:00:21,000 --> 00:00:25,000
+and this car would like to know where it is.
+
+7
+00:00:25,000 --> 00:00:28,000
+It is inside the lane or is it crossing lane markers?
+
+8
+00:00:28,000 --> 00:00:31,000
+Now the traditional way to solve this problem uses satellites,
+
+9
+00:00:31,000 --> 00:00:34,000
+and these satellites emit signals that the car can perceive.
+
+10
+00:00:34,000 --> 00:00:39,000
+That's known as GPS, short for "global positioning system,"
+
+11
+00:00:39,000 --> 00:00:43,000
+and it's what you have in your dashboard if you have a car with GPS
+
+12
+00:00:43,000 --> 00:00:47,000
+that shows you the maps and shows you where you are.
+
+13
+00:00:47,000 --> 00:00:49,000
+Now unfortunately, the problem with GPS is it's really not very accurate.
+
+14
+00:00:49,000 --> 00:00:54,000
+It's really common for a car to believe to be here but it has
+
+15
+00:00:54,000 --> 00:00:58,000
+2, all the way up to 10 meters of error.
+
+16
+00:00:58,000 --> 00:01:02,000
+So if you try to stay in the lane with 10 meters of error,
+
+17
+00:01:02,000 --> 00:01:05,000
+you're far off, and you're driving right over here, and you crash.
+
+18
+00:01:05,000 --> 00:01:10,000
+So for our self-driving cars, to be able to stay in lanes using localization,
+
+19
+00:01:10,000 --> 00:01:15,000
+we need something like 2 to 10 centimeters of error.
+
+20
+00:01:15,000 --> 00:01:20,000
+Then we can drive with GPS in lanes.
+
+21
+00:01:20,000 --> 00:01:23,000
+The question is, how can we know where were are with 10 cm accuracy?
+
+22
+00:01:23,000 --> 00:01:29,000
+That's the localization question.
+
+23
+00:01:29,000 --> 00:01:31,000
+In the Google self-driving car, localization plays a key role.
+
+24
+00:01:37,000 --> 00:01:42,000
+We record images of the road surface and then use the techniques
+
+25
+00:01:42,000 --> 00:01:48,000
+I'm just about to teach you to find out exactly where the robot is.
+
+26
+00:01:48,000 --> 00:01:52,000
+And it does so with a few centimeter accuracy,
+
+27
+00:01:52,000 --> 00:01:55,000
+and that makes it possible to stay inside the lane even if the lane markers are missing.
+
+28
+00:01:55,000 --> 00:02:01,000
+So localization has a lot of math, but before I dive into mathematical detail,
+
+29
+00:02:01,000 --> 00:02:06,000
+I want to give you an intuition for the basic principles.
+
+30
+00:02:06,000 --> 00:02:09,000
+I want to tell you the story of how we will localize this,
+
+31
+00:02:09,000 --> 00:02:12,000
+and then we can go through the math together so you can understand it.
+
+32
+00:02:12,000 --> 00:02:15,000
+I also want to let you program your own localizer
+
+33
+00:02:15,000 --> 00:02:18,000
+so you can program a self-driving car.
+
+34
+00:02:18,000 --> 00:02:22,000

@@ -1,0 +1,5 @@
+Let's assume we have a 0.5 in this cell and a 0.5 in this cell.
+
+And remember that this is a cyclic-motion model, so whatever falls off on the right side, you'll find on the left side.
+
+Can you again for U = 2 fill in the posterior distribution?

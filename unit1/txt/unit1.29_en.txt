@@ -1,0 +1,3 @@
+Let me ask a second question, and I know that it's not particularly difficult.
+
+What if P(X1) = 0?

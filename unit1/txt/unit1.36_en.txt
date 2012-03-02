@@ -1,0 +1,19 @@
+All right. With this I'd like to finish this class.
+
+I just want to tell you what you've learned, because you did amazingly well.
+
+You learned about localization.
+
+You wrote an algorithm that implements what's called Markov localization.
+
+You learned about probabilities, Bayes Rule, and total probability.
+
+You implemented all of this, and you solved interesting quiz questions.
+
+This is an enormous amount of work.
+
+You are now able to make a robot localize, but you also have a very intuitive understanding of some very interesting and important probabilistic methods that are commonly called "filters".
+
+So next class, we're going to see new filters, and particularly, we're going to talk about particle filters and Kalman filters. And we will apply both of those to really interesting problems in the Google self-driving car, in particular, to the problem of finding and predicting other cars.
+
+I'll see you in the next class.

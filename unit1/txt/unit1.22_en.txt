@@ -1,0 +1,11 @@
+So here's a question for you that is somewhat involved, and I really want to check your intuition.
+
+Suppose we have 5 grid cells as before with an initial distribution that assigns 1 to the first grid cell and 0 to all of the other ones. Let's assume we do U = 1, which means with 0.8 chance in each action we transition 1 to the right. With 0.1 chance we don't move at all, and with 0.1 chance again we skip and move 2 steps.
+
+And again, let's assume the world is cyclic, so every time I fall off on the right side, I find myself back on the left side.
+
+The question is: suppose I run infinitely many motion steps. Then I actually get a, what's called a "limit distribution".
+
+So what's going to happen to my robot if it never senses but executes the action go 1 to the right on our little cyclic environment forever?
+
+What will be the so-called limit or stationary distribution be in the very end?

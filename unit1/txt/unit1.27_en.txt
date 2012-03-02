@@ -1,0 +1,11 @@
+We learned that localization maintains a function over all possible places where a road might be, where each cell has an associated probability value.
+
+The measurement update function, or "sense", is nothing else but a product in which we take those probability values and multiply them up or down depending on the exact measurement.
+
+Because the product might violate the fact that probabilities add up to 1, there was a product followed by normalization.
+
+Motion was a convolution. And this word itself might sound cryptic, but what it really meant is for each possible location after the motion, we reverse engineered the situation and guessed where in the world it might have come from and then collected, we added, the corresponding probabilities.
+
+So something as simple as multiplication and addition solves all of localization and is the foundation for autonomous driving.
+
+I want to spend a few minutes and go over the formal definition of localization. And I'm going to introduce probability and ask you lots of questions.

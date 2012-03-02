@@ -1,0 +1,45 @@
+Let me begin my story in a world where a robot resides. And let's assume the robot has no clue where it is.
+
+Then we will model this with a function I'm going to draw into this diagram over here where the vertical axis is the probability for any location in this world, and the horizontal axis corresponds to all the places in this 1-dimensional world.
+
+The way I'm going to model the robot's current belief about where it might be, its confusion, is by a uniform function that assigns equal weight to every possible place in this world. That is the state of maximum confusion.
+
+Now, to localize, the world has to have some distinctive features. Let's assume there are 3 different landmarks in the world. There is a door over here, there's a door over here, and a 3rd one way back here.
+
+And for the sake of the argument, let's assume they all look alike, so they're not indistinguishable, but you can distinguish the door from the non-door area, from the wall.
+
+Now let's see how the robot can localize itself by assuming it senses, and it senses that it's standing right next to a door.
+
+So all it knows now is that it is located, likely, next to a door. How will this affect our belief? Here is the critical step for localization. If you understand this step, you understand localization.
+
+The measurement of a door transforms our belief function, defined over possible locations, to a new function that looks pretty much like this.
+
+For the 3 locations adjacent to doors, we now have an increased belief of being there whereas all the other locations have a decreased belief.
+
+This is a probability distribution that assigns higher probability for being next to a door, and it's called the posterior belief where the word "posterior" means it's after a measurement has been taken.
+
+Now, the key aspect of this belief is that we still don't know where we are. There are 3 possible door locations, and in fact, it might be that the sensors were erroneous, and we accidentally saw a door where there is none. So there is still a residual probability of being in these places over here, but these three bumps together really express our current best belief of where we are. This representation is absolutely core to probability and to mobile robot localization.
+
+Now let's assume the robot moves. Say it moves to the right by a certain distance. Then we can shift the belief according to the motion. And the way this might look like is about like this.
+
+So this bump over here made it to here. This guy went over here, and this guy over here. Obviously, this robot knows its heading direction. It's moving to the right in this example, and it knows roughly how far it moved.
+
+Now, robot motion is somewhat uncertain. We can never be certain where the robot moved. So these things are a little bit flatter than these guys over here.
+
+The process of moving those bleeps to the right side is technically called a convolution.
+
+And let's now assume the robot senses again, and for the sake of the argument, let's assume it sees itself right next to a door again, so the measurement is the same as before.
+
+Now the most amazing thing happens.
+
+We end up multiplying our belief, which is now prior to the second measurement, with a function that looks very much like this one over here, which has a peak at each door and out comes a belief that looks like the following.
+
+There's a couple of minor bumps, but the only really big bump is this one over here. This one corresponds to this guy over there in the prior, and it's the only place in this prior that really corresponds to the measurement of a door, whereas all the other places of doors have a low prior belief.
+
+So as a result, this function is really interesting.
+
+It's a distribution that focuses most of its weight onto the correct hypothesis of the world being in the second door, and it provides very little belief to places far away from doors.
+
+At this point, our robot has localized itself. If you understood this, you understand probability, and you understand localization.
+
+So congratulations. You understand probability and localization. You might not know yet, but that's really a core aspect of understanding a whole bunch of things I'm going to teach you in the class today.

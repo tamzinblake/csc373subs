@@ -1,0 +1,5 @@
+And here are the three lines of code I used to program this in.
+
+First I computed the sum of a vector Q using the function sum, which makes it really easy. And then I go through all the elements in Q and just divide it by s, which is the normalization, and when I run it, I get 1/9, 1/3, 1/3, 1/9, and 1/9.
+
+So I've just implemented the absolute key function of localization, which is called the measurement update.

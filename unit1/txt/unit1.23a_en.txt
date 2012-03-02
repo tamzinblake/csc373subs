@@ -1,0 +1,1 @@
+So here's a piece of code that moves twice by the same amount as before, and the output now is a vector that assigns 0.66 as the largest value and not 0.8 anymore.

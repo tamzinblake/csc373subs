@@ -1,0 +1,25 @@
+Let's look into measurements, and they will lead to something called "Bayes Rule".
+
+You might have heard about Bayes Rule before. It's the most fundamental consideration in probabilistic inference, but the basic rule is really, really simple.
+
+Suppose x is my grid cell and Z is my measurement. Then the measurement update seeks to calculate a belief over my location after seeing the measurement.
+
+How is this computed? Well, it was really easy to compute in our localization example. And now I'm going to make it a little bit more formal. It turns out Bayes Rule looks like this.
+
+And that will likely be a little bit confusing, but what it does is it takes my prior distribution, P(X), and multiplies in the chances of seeing a red or green tile for every possible location and out comes, if you just look at the numerator here, the non-normalized posterior distribution we had before.
+
+Recognize this? This was our prior. This was our measurement probability. If we do this for all the grid cells, so we put a little index "i" over here, then just the product of the prior of the grid cell times the measurement probability, which was large if the measurement corresponded to the correct color and small if it corresponded to a false color.
+
+That product gave us the non-normalized posterior distribution for the grid cell. You remember this because that's what you programmed. You programmed a product between the prior probability distribution and a number.
+
+The normalization is now the constant over here, p(Z). Technically, that is the probability of seeing a measurement devoid of any location information.
+
+But let's not confuse ourselves. The easiest way to understand what's going on is to realize that this is a function here that assigns to each grid cell a number, and the p(Z) doesn't have the grid cell as an index. So no matter what grid cell we consider, the p(Z) is the same.
+
+And here's the trick. No matter what p(Z) is, because the final posterior has to be a probability distribution, by normalizing these non-normalized products over here, we will exactly calculate p(Z).
+
+Put differently, p(Z) is the sum over all i of just this product over here. So this makes Bayes Rule really simple. It's a product of our prior distribution with a measurement probability, which we know to be large if the color is correct and small otherwise.
+
+We do this and assign it to a so-called non-normalized probability, which I'll do with a little bar over the p. And then I compute the normalizer, which I'll call "α," is the sum of all these guys over here. Then I just normalize. My resulting probability will be 1/α of the non-normalized probability.
+
+This is exactly what we did, and this is exactly Bayes Rule.

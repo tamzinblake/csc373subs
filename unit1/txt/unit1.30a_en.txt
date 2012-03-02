@@ -1,0 +1,5 @@
+And the answer is 0.6.
+
+They have to add up to 1. We subtract 4 times 0.1, which is 0.4, equals 0.6.
+
+So that's a valid probability.

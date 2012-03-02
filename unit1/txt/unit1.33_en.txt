@@ -1,0 +1,21 @@
+So let's look at motion, which will turn out to be something we will call total probability.
+
+You remember that we cared about a grid cell "xi", and we asked what is the chance of being xi after robot motion?
+
+Now, to indicate the after and before, let me add a time index. So t, up here, is an index for time. I write it superscript so there is no confusion with the index i, which is the grid cell.
+
+You might remember the way we computed this was by looking at all the grid cells the robot could have come from 1 time step earlier, indexed here by j, we looked at the prior probability of those grid cells at time t - 1, and we multiplied with the probability that our motion command would carry us from xj to xi.
+
+That's written as a conditional distribution as follows.
+
+So this was exactly what we implemented. If there was our grid cells over here and we asked one time step later about a specific grid cell over here, we would combine 0.8 from over here, 0.1 from over here, and 0.1 from over here into the probability of this grid cell. It's the same formula as here.
+
+This is now xi, and the way we find the posterior probability for xi is to go through all possible places from which we could have come, all the different j's. Look at the prior probabilities, multiply it by the probability that I transition from j to i given my motion command, which in this case is go 1 to the right side.
+
+Now in probability terms, people often write it as follows: P(A) = sum of all B p(A│B) times p(B).
+
+This is just the way you'd find it in text books, and you can see directly the correspondence of A as a place i at time t and all the different Bs as the possible prior locations.
+
+That is often called the Theorem of Total Probability.
+
+And the operation of a weighted sum over other variables is often called a "convolution".

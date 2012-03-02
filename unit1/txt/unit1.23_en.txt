@@ -1,0 +1,3 @@
+Now let's go back to our code and move many times.
+
+Let's move twice, so please write a piece of code that makes the robot move twice, starting with the initial distribution as shown over here: 0, 1, 0, 0, 0.

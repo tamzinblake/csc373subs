@@ -1,0 +1,8 @@
+Let me test total probability in a quiz.
+
+Suppose I flip a coin, and the coin comes up tails or heads. And suppose it's a fair coin. So the probability of tails or of heads is both 1/2.
+Now let's say that the coin comes up tails, and I just accept and don't do anything.
+
+But suppose it comes up heads, and I flip it again, and after 1 flip, I accept the result.
+
+So my quiz for you is: what is the probability that the final result is heads? And that's an example of total probability.

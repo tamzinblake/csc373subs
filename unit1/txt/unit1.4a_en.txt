@@ -1,0 +1,1 @@
+And the answer is 0.2, which is the 1, the total probability, divided by 5 grid cells.

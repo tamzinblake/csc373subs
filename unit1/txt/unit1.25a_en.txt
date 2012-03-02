@@ -1,0 +1,16 @@
+And here's the routine. It's very short.
+
+It goes through the measurements. It assumes it has as many motions as measurements.
+
+It first applies the measurement as before. Then it applies the motion. When it's done with it, it prints the output, and the output is interesting.
+
+The world has a green, a red, a red, and a green, and a green field. And the robot saw red, followed by a right motion, and then green. And that suggests that it probably started with with the highest likelihood in grid cell number 3, which is the right-most of the two red cells.
+
+It saw red correctly. It then moved to the right by 1, saw green correctly, moved to the right again. It now finds itself most likely in the right-most cell.
+
+This is just looking at these values over here without any probabilistic math
+and any code limitation.
+
+Let's look at the output: 0.2, 0.1, 0.08, 0.16, 0.38.
+
+Very correctly, the robot most likely assigns its position to the right-most cell, as should be, given the sequence of observations over here.

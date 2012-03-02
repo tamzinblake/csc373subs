@@ -1,0 +1,10 @@
+And this is a pretty tricky question, which I'm going to answer in two phases.
+
+Let's just look at the 0.5 over here, 0.8 of that, which is 0.4, ends up over here, and 0.1 of this, which is 0.05 ends up over here.
+And the reason why I write it so small is because this is not the correct answer quite yet.
+
+Let's look at the other 0.5. 0.4 goes two steps - 1, 2, ends up over here on the left side, but 0.1 falls short, makes the 0.5 over here, 0.05 in the second grid cell.
+
+And interestingly enough, for the cell on the right side, there's two possible ways you could've gotten there. Either by overshooting starting in the second cell, or undershooting starting in the right cell. So the total probability over here is the sum of these two things, 0.1.
+
+So this is the final answer: 0.4, 0.05, 0.05, 0.4, and 0.1.

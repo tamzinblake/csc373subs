@@ -1,0 +1,16 @@
+﻿1
+00:00:00,000 --> 00:00:02,000
+And the answer is 0.6.
+
+2
+00:00:02,000 --> 00:00:04,000
+They have to add up to 1.
+
+3
+00:00:04,000 --> 00:00:11,000
+We subtract 4 times 0.1, which is 0.4, equals 0.6.
+
+4
+00:00:11,000 --> 00:00:14,000
+So that's a valid probability.
+
