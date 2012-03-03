@@ -1,0 +1,84 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+So, I'm now going to quiz you on Bayes Rule.
+
+2
+00:00:03,000 --> 00:00:10,000
+Say you own a house, and you know that the house might catch fire in your absence,
+
+3
+00:00:10,000 --> 00:00:16,000
+but the probability of it catching fire, "f" over here, is small.
+
+4
+00:00:16,000 --> 00:00:19,000
+It's a 10th of a percent: 0.001.
+
+5
+00:00:19,000 --> 00:00:22,000
+Let's say every afternoon you talk to your neighbor, and every afternoon
+
+6
+00:00:22,000 --> 00:00:25,000
+you ask your neighbor, "Does my house burn?"
+
+7
+00:00:25,000 --> 00:00:28,000
+Of course, you're a little bit paranoid if you do this, but for the sake of the argument,
+
+8
+00:00:28,000 --> 00:00:30,000
+let's just assume you do this every afternoon.
+
+9
+00:00:30,000 --> 00:00:35,000
+This afternoon he comes back and says, "Yes, it burns," so B.
+
+10
+00:00:35,000 --> 00:00:38,000
+You happen to know that the neighbor is not very truthful.
+
+11
+00:00:38,000 --> 00:00:42,000
+In fact, every time you ask him a question,
+
+12
+00:00:42,000 --> 00:00:48,000
+you know there is a 0.1 chance, a 10% chance, the neighbor will just produce a lie
+
+13
+00:00:48,000 --> 00:00:50,000
+and a 0.9 chance the neighbor actually speaks the truth.
+
+14
+00:00:50,000 --> 00:00:53,000
+So you ask him exactly one question: "Does my house burn?"
+
+15
+00:00:53,000 --> 00:00:59,000
+He says, "Yes, it burns," but you know that the probability of this being a lie is 0.1.
+
+16
+00:00:59,000 --> 00:01:05,000
+So in applying Bayes Rule I'd like to first compute the non-normalized posterior, p bar
+
+17
+00:01:05,000 --> 00:01:11,000
+(bar now stands for non-normalized) of fire given the neighbor just called.
+
+18
+00:01:11,000 --> 00:01:17,000
+And the same for the opposite event of no fire given the neighbor just said, "yes, it burns".
+
+19
+00:01:17,000 --> 00:01:21,000
+After you've done this, I'd like you to compute the normalized values
+
+20
+00:01:21,000 --> 00:01:23,000
+that have to add up to 1.
+
+21
+00:01:23,000 --> 00:01:29,000
+Please enter all 4 values for this homework assignment.
+

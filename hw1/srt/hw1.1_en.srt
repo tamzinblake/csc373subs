@@ -1,0 +1,64 @@
+﻿1
+00:00:00,000 --> 00:00:04,000
+So welcome to our very first homework assignment.
+
+2
+00:00:04,000 --> 00:00:07,000
+This is number 1.
+
+3
+00:00:07,000 --> 00:00:11,000
+Just to recap, in the class we learned about localization.
+
+4
+00:00:11,000 --> 00:00:14,000
+We learned about about histogram filters.
+
+5
+00:00:14,000 --> 00:00:17,000
+And we programmed some in Python.
+
+6
+00:00:17,000 --> 00:00:26,000
+So the homework assignment will cover this plus some very basic probability.
+
+7
+00:00:26,000 --> 00:00:30,000
+In the first question, I'm going to ask you some very basic probability questions.
+
+8
+00:00:30,000 --> 00:00:34,000
+We have a random variable X and probability 0.2.
+
+9
+00:00:34,000 --> 00:00:37,000
+What's the probability of the complement?
+
+10
+00:00:37,000 --> 00:00:42,000
+We have 2 random variables, X and Y, whose probability individually is 0.2.
+
+11
+00:00:42,000 --> 00:00:45,000
+And X and Y are independent.
+
+12
+00:00:45,000 --> 00:00:48,000
+What's the probability of the joint X, Y?
+
+13
+00:00:48,000 --> 00:00:51,000
+And we have the variable P(X) with probability 0.2,
+
+14
+00:00:51,000 --> 00:00:57,000
+and we have 2 conditionals, P(Y|X) and P(Y|¬X), both 0.6.
+
+15
+00:00:57,000 --> 00:00:59,000
+What's the probability of Y?
+
+16
+00:00:59,000 --> 00:01:03,000
+Here you have to apply total probability.
+

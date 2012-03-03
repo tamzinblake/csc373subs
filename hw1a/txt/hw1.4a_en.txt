@@ -1,0 +1,27 @@
+So here's my solution to the programming assignment.  And it's quite straightforward given the class, but I'm really  proud if you got it correct because it enabled you to program your own localization algorithm very similar to the way we do it at the Google self-driving car.
+
+First I did 2 simple bookkeeping assignments.  I assigned a value to sensor_wrong as 1 minus probability of sensor_right.  And a probability of staying, that is a motion failure, as 1 minus the probability p_move.
+
+Let me scroll down very slowly.  Let me first go to my main routine.  I actually put in a little check where the length of the measurements vector is the same as the motions vector, and it would give me an error message if not.  Of course, this wasn't necessary for you, I just did it because I want my software to look nice.
+
+Then here is my inilization of my probability table.  I compute my initial uniform distribution by calculating the size of the array, the number of rows times the number of columns, and then dividing 1 over the product of those to be my initial distribution value.
+
+And this thing over here just builds up an array of the size of my colors array but initializes it with the value of p in it.  So these 2 lines over here give me an initial uniform distribution.
+
+And then I iterate.  I go through the number of measurements, which is same as number of motions.  I move first using the move command, of which I provide my current distribution and my motions command, to obtain a new distribution.  And then I do the same with the sensing command.  I take my current distribution, the world itself, and the measurement vector, to obtain a new probabililty distribution.  When I've done this as many times as I have measurements and motions, I output the final distribution. 
+
+So much for the main routine.  I now have to specify what move is, and what sense is.
+
+Let me start with sense.  This is my sense routine, it goes from here to down here.  As an input I have a probability distribution and my world map, they are both of the same size, and a specific measurement which is either red or green.  I construct inside my new posterior distribution.  I initialize this with zeroes, and this is the same size as my vector p.  In the inner loop, I now iterate over all elements in my grid cell.  I compute whether the measurement matches the color in the cell, in which case I call it a hit.  Now my non-normalized posterior is the prior times this big sum over here.  It uses sensor_right if the measurement was correct, and sensor_wrong if the measurement was incorrect.  Finally, I add up all the values in aux.  I do this for the variable s, so down here I can normalize aux to have a total probability of 1.  And then I return it.
+
+The move command takes as an input a distribution and a motion vector.  It constructs the next distribution just like before as aux variable and sets it to 0.  And now I go through each grid cell, and for each cell I collect possible cells that the robot might have come from.  With probablity p_move it actually moved, in which case its prior coordinate would have been i minus the motion command.  That's because we go backwards in time.  And this is the truncation indicating we have a cyclic array.  And we do the same with j; let me scroll very carefully.  It's j minus the motion command, again in a cyclic fashion.  But it might have been, we didn't move, in which case we just use the probability of that specific cell multiplied by the probability of staying.  Now this line together gives me the correct probability for the variable i and j.  I don't have to normalize because it's not Bayes Rule, so I just return the corresponding posterior distribution.
+
+I also have a little routine called show that goes through the entire probability field and computed all these probabilities of p, that makes it slightly better formatted than just printing p in a single command.
+
+So if I run my software with the specific world over here, it initializes p as 1/20, because there's 20 grid cells, and then runs 5 times for the motion command, the measurement command, updates those, and then shows me the final result, which I already explained, which is the array over here.
+
+If you got this correct, then you've done something quite amazing.  You've programmed the core of Google's self-driving car localization methods.
+
+In Google's case, the world isn't as simple as just red and green.  In Google's case these are carefully-assembled 2-D surface models of the road's surface.  But that doesn't affect what we've programmed here.  It makes the measurement function slightly more involved.  The fact is that the thing we programmed here captures the key of the probabilistic inference necessary to localize the Google car.  So if you programmed this, you just have to replace the simple matching of a measurement of green with an image matching of an entire image you'll record with an image in your map.  I leave this as an exercise because I can't do this in this Python environment here.
+
+But I congratulate you that you've really managed to do something quite amazing, which is build an amazing piece of localization software.

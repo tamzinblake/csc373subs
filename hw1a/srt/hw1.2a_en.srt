@@ -1,0 +1,44 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+And the answer is exponential.
+
+2
+00:00:03,000 --> 00:00:09,000
+Suppose we resolve each variable at a granularity of 20 different values,
+
+3
+00:00:09,000 --> 00:00:13,000
+so there's 20 different bins for x, 20 for y, and 20 for θ.
+
+4
+00:00:13,000 --> 00:00:19,000
+Then the joint table over all of those will be 20^N
+
+5
+00:00:19,000 --> 00:00:21,000
+where N is the number of state dimensions.
+
+6
+00:00:21,000 --> 00:00:23,000
+That's an exponential expression.
+
+7
+00:00:23,000 --> 00:00:25,000
+There is unfortunately no easy way around it.
+
+8
+00:00:25,000 --> 00:00:29,000
+That's the biggest disadvantage of the grid-based localization method
+
+9
+00:00:29,000 --> 00:00:33,000
+or the histogram method, that the scale of memory is exponential,
+
+10
+00:00:33,000 --> 00:00:37,000
+which means it's not applicable to even problems with 6 dimensions,
+
+11
+00:00:37,000 --> 00:00:41,000
+because you can't really allocate memory for 6 dimensions.
+

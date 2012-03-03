@@ -1,0 +1,9 @@
+So congratulations. You made it through homework assignment number 1.
+
+You learned about Monte Carlo robot localization with a technique that I often call histogram filters.
+
+You've implemented it successfully and you learned a lot about statistics.
+
+This is all in just a single class. Congratulations - it's really awesome.
+
+Now, next week we talk about Kalman filters and tracking other cars in traffic, and we're going to implement our Kalman filter, so I'll see you in the next class.

@@ -1,0 +1,17 @@
+So, I'm now going to quiz you on Bayes Rule.
+
+Say you own a house, and you know that the house might catch fire in your absence, but the probability of it catching fire, "f" over here, is small. It's a 10th of a percent: 0.001.
+
+Let's say every afternoon you talk to your neighbor, and every afternoon you ask your neighbor, "Does my house burn?" Of course, you're a little bit paranoid if you do this, but for the sake of the argument, let's just assume you do this every afternoon.
+
+This afternoon he comes back and says, "Yes, it burns," so B.
+
+You happen to know that the neighbor is not very truthful. In fact, every time you ask him a question, you know there is a 0.1 chance, a 10% chance, the neighbor will just produce a lie and a 0.9 chance the neighbor actually speaks the truth.
+
+So you ask him exactly one question: "Does my house burn?" He says, "Yes, it burns," but you know that the probability of this being a lie is 0.1.
+
+So in applying Bayes Rule I'd like to first compute the non-normalized posterior, p bar (bar now stands for non-normalized) of fire given the neighbor just called. And the same for the opposite event of no fire given the neighbor just said, "yes, it burns".
+
+After you've done this, I'd like you to compute the normalized values that have to add up to 1.
+
+Please enter all 4 values for this homework assignment.

@@ -1,0 +1,28 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+So congratulations. You made it through homework assignment number 1.
+
+2
+00:00:03,000 --> 00:00:07,000
+You learned about Monte Carlo robot localization
+
+3
+00:00:07,000 --> 00:00:10,000
+with a technique that I often call histogram filters.
+
+4
+00:00:10,000 --> 00:00:14,000
+You've implemented it successfully and you learned a lot about statistics.
+
+5
+00:00:14,000 --> 00:00:18,000
+This is all in just a single class. Congratulations - it's really awesome.
+
+6
+00:00:18,000 --> 00:00:23,000
+Now, next week we talk about Kalman filters and tracking other cars in traffic,
+
+7
+00:00:23,000 --> 00:00:27,000
+and we're going to implement our Kalman filter, so I'll see you in the next class.
+

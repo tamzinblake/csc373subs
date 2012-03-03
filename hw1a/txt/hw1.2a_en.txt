@@ -1,0 +1,7 @@
+And the answer is exponential.
+
+Suppose we resolve each variable at a granularity of 20 different values, so there's 20 different bins for x, 20 for y, and 20 for θ.
+
+Then the joint table over all of those will be 20^N where N is the number of state dimensions. That's an exponential expression.
+
+There is unfortunately no easy way around it. That's the biggest disadvantage of the grid-based localization method or the histogram method, that the scale of memory is exponential, which means it's not applicable to even problems with 6 dimensions, because you can't really allocate memory for 6 dimensions.

@@ -1,0 +1,17 @@
+And here are my answers.
+
+The prior for fire is 0.001 times the probability that the neighbor now correctly says, yes, it burns, which is 0.9.
+
+He lies with a probability of 0.1, so the complement is 0.9. This gives us 0.0009.
+
+For the complement, the prior of no fire, is 0.999, but now the neighbor would have lied, which multiplies with 0.1, which gives us 0.0999.
+
+Now, these two values don't add up to 1.
+
+The normalizer will be 1 over these two things, which is about 9.92. So multiplying these with their normalizer gives us approximately 0.0089 and 0.991.
+
+So the answer your neighbor gave you, "yes, it burns", raised your probability from 0.001 to 0.0089. It's still small, but it's significantly larger.
+
+In fact, it's approximately 0.9 times as large as the initial probability. And the reason why that's the case is it relates to the 0.9 probability of speaking the truth.
+
+It's not exactly 0.9 because of normalization, but it's approximately 0.9.

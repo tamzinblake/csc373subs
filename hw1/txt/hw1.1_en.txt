@@ -1,0 +1,13 @@
+So welcome to our very first homework assignment. This is number 1.
+
+Just to recap, in the class we learned about localization. We learned about about histogram filters. And we programmed some in Python.
+
+So the homework assignment will cover this plus some very basic probability.
+
+In the first question, I'm going to ask you some very basic probability questions. We have a random variable X and probability 0.2. What's the probability of the complement?
+
+We have 2 random variables, X and Y, whose probability individually is 0.2. And X and Y are independent. What's the probability of the joint X, Y?
+
+And we have the variable P(X) with probability 0.2, and we have 2 conditionals, P(Y|X) and P(Y|¬X), both 0.6. What's the probability of Y?
+
+Here you have to apply total probability.

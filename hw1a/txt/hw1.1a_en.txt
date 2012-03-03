@@ -1,0 +1,9 @@
+The correct answer in the first case is 0.8. This is just 1 minus 0.2.
+
+If X and Y are independent, then we just take the product of those 2 things, which is 0.04. And in the last case, it turns out X and Y are independent but just by a coincidence because the probability of Y is independent of what X says, and therefore, the outcome would just be 0.6.
+
+Put differently no what matter value X assumes, whether it's X or not X, Y is always 0.6 probability so it must be that P(Y) is 0.6.
+
+You can actually compute this using total probability where P(Y) equals P(Y|X) times P(X) plus P(Y|¬X) times P(¬X). When you plug in the numbers, you get 0.6 times 0.2 over here; 0.6 times 0.8 over here, the complement of 0.2.
+
+And if you regroup this, or you put the 0.2 and the 0.8 together into one, you end up with 0.6.

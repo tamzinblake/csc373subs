@@ -1,0 +1,11 @@
+So let me ask you a localization question.
+
+You remember a robot operating in a plane environment has usually 3 coordinates. It has an x-coordinate, a y-coordinate, and a heading direction, often called orientation. Now, flying robots have more coordinates. If you can orient the robot fully in free space then you have an x, y, and z, and you also happen to have 3 rotational angles often called roll, pitch, and yaw.
+
+So if you built a localization system for robots with higher dimensional state spaces, I wonder how the memory used will scale for our histogram-based localization method.
+
+Does memory scale linearly, quadratically, exponentially, or none of the above in the number of state variables used in localization?
+
+So again, for a robot operating on a plane, there will be three of them. So the number of state variables will be three. If you were to look at a flying robot where you have x, y, z, roll, pitch, and yaw, you would get six such variables, and I wonder how the memory use of the basic histogram localization scales.
+
+Please check exactly one of those four boxes over here.

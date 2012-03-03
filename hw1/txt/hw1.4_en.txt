@@ -1,0 +1,49 @@
+This is our first programming assignment.
+
+In class, we localized the robot in the 1-D world, with a number of grid cells where each grid cell could have a different color, and the measurement vector was a sequence of observations.  Our world was cyclic; if we fell off one end, we would continue at the other end.
+
+In this assignment, I want you to do the same for 2-D worlds of abitrary dimension.  Just as before, begin with a uniform distribution, as we always do in global localization.  And then we have a number of motion commands: [0,0] is no move, [0,1] means you move to the right, [0,-1] means move left, [1,0] makes you move down (not up), and [-1,0] makes you move up.
+
+Again, the world shall be cyclic: if we fall off one end, like over here, we continue at the other end, like the one over here.  So here's a simple example of the type code I give to you as a specification of the problem.  And then you have to compute what my code computes but that you can't see right now.
+
+The world in this specific instance is a 3 by 3 matrix: 3 rows, 3 columns.  It has only 2 possible colors: green or red.  And this specific world has only a single red at the center location over here.
+
+We have a motion vector and a measurement vector.  We start with the motion.  This one says stay in place, and this one says we're going to observe red.
+
+And additionally I give you 2 more variables called sensor_right and p_move.  sensor_right is the probability that your sensor measurement is correct.  In this specific instance I set it to 1.0 which means the sensor value is always correct.  p_move tells you at what probability the motion is executed correctly.  Right now it's 1.0 it's always correct.  If it's a smaller value then the motion might fail, and when it fails our robot won't move at all.
+
+So let's just execute this.  Here, we didn't move, we observed red, and we had a noise-free sensor, and as a result we get a matrix that said 0 everywhere except it's 1 at the center location that has a red color.
+
+Let's modify the world  Let's make this grid cell over here red as well.  And now let's just re-run the code and what we get is a matrix just like the previous one, but now we have 2 winning grid cells, both of which have a 0.5 probability, so that all the probabilities add up to 1.
+
+Let's now model a noisy sensor, and set sensor_right to 0.8.  Your code should now compute the following: 0.06 for almost all grid cells, except the 2 winning ones, which come in at 0.26 and 0.26 each.  So check that your code does this.
+
+Let's now bring in some motion.  After not moving at all, I assume you're going to move one to the right.  And we always have to have as many measurements as motions, so let me add a second measurement.  Let's say we sense red again.
+
+Intuitively, this lands us at the square over here.  Why?  Well, we didn't move in the beginning.  We saw red.  There's 2 possibilities.  But now we move again to the right side.  We see red again, that makes this cell over here the most likely.
+
+So let's just check.  And as predicted, almost all cells have a probability of 0.03, some of 0.13, but the one over here has a probability of 0.5333.  If we set our sensor probability to 1.0, that is there is no sensor noise, we get back this array over here, which assigns all probability to the right-most cell.
+
+Finally, I want to show you what happens if you modify the move variable.  Say our motion succeeds only with 0.5 probability, and with the remaining 0.5 we remain at the same location.  This doesn't affect the first motion command, because success and failure is the same thing here: we don't move.  But this one over here, there'ss a 50% chance of moving and a 50% chance of staying at the same location.
+
+Let's run the code.  Here's our posterior probability.  The cell on the right still wins, but now with a smaller total probability of just 0.46.  If we now assume perfect sensors by setting sensor_right to 1.0, we get this thing over here, where 0.66 chance is associated with the right cell over here, and a 0.33 with the possibility that we moved this specific red here twice, by just not moving in-between.  Check your code to make sure it gives you the same operative result.
+
+Finally, I want your code to execute input as complex as this one.  This is a 4 by 5 world, 4 rows, 5 columns, all with reds or greens.  There's only 2 colors.
+
+There's a sequence of measurements of 5 elements, and correspondingly a sequence of motions of 5 elements.  All the measurements are green.
+
+The motions are: don't move at all, move right, move down, move down, and move right again.
+
+And then there's certain sensor probabilities and motion probabilities that I can set at will.  I set it to 0.7 and 0.8 over here.
+
+Now if we look at the sequence [green, green, green, green, green], where we first don't move at all, then move right, down, down, right, you find that the most likely match in this world is: you first sense this green over here, we then moved right to this green, we move then down to this green, further down to this green, right to this green over here.
+
+So this would be the cell with the largest posterior probability.  It is the 3rd row and the 4th column.
+
+Let's run it.  And here is the result. It's somewhat illegible, and I apologize for the poor formatting of my Python routine.  But if you look through these probabilities, 0.11, 0.024, and so on, you'll find that indeed, the largest element is the one over here, 0.3535.  And it's (1-2-3) our 3rd row and our 4th column that gives me this large probability.
+
+So I want your code to produce numbers just like those, and we'll check that you got the code correctly.
+
+In summary:  Read your colors.  Build a probability distribution of the same dimensions, in this case 4 by 5.  Initialize them with a uniform distibution.  Execute a motion first, then measurement, motion, measurement, motion, measurement, motion, measurement, and so on.  You can safely assume that the measurement vector is of the same length as the motion vector.  Using those measurement correctness probability and motion success probability.  And then compute and output just the final distribution.
+
+If you've done this, you'll succeed.
