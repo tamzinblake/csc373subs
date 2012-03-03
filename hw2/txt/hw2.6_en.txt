@@ -1,0 +1,54 @@
+Let's now come to our programming exercise.
+
+And I want you to program exactly what we just talked about. We're given a two-dimensional world where we observe in 2D measurements of a moving object with an unknown but fixed velocity. And using a state vector of this type, I'd like you to implement the Kalman filter.
+
+Now, this Kalman filter now has 4 state variables whereas the one we used before has 2 state variables. I will give you the entire code for the Kalman filter, but I want you to set up the state vector x, the motion u, P, F, H, R, and I, which are all those variables that define the Kalman filter.
+
+Start with the assignment that we had in 2D and make it work in 4D. So here is exactly the same matrix class that I wrote you before. Here is the Kalman filter procedure.
+
+We'll go through our measurements and apply the Kalman filter equations.
+
+I should point out there's a slight difference to the code I gave you previously
+where I inserted Z.transpose(). It makes it a little bit easier to work with multidimensional measurements than the way I had it before. But you don't have to pay attention to this. It's just fixed. There was a kind of a bug before.
+
+And as I scroll down, the output of the Kalman filter routine will be an x and a P.
+
+In our example, the measurements will be a sequence of measurements in two-dimensional spaces now, in x and y. Look at the x's 5, 6, 7, 8, 9, 10. The y's go 10, 8, 6, 4, 2. You can imagine what the regularity is and what the velocity is.
+
+We assume a dt of 0.1. That means when it goes from 5 to 6 the velocity is actually 10, not 1. We won't tell the system, but we will tell the system our initial x,y location, which is 4. That goes nicely into 5, 6, 7, and it's 12. That blends nicely into 10, 8, and 6.
+
+Our initial state vector I have already given you, which is the initial x and y. and 0, 0 for the two unknown velocities.
+
+And the motion vector, just for completeness, will just be [0, 0, 0, 0]. We have no external motion. That's a bit confusing, because there is actually motion in the system itself, but this will be more like an external change of the motion as if someone hit the object with an external force. So it's [0, 0, 0, 0]; please don't change it.
+
+P is the initial uncertainty, and I want you to initialize it so that the uncertainty for the x,y coordinates is 0, but the covariance term for the velocities is 1000, indicating that we really don't know the initial velocity. We just know the initial position.
+
+I want you to plug in the F matrix.
+
+I want you to design an H matrix that's a projection matrix from 4-dimensional state space to 2 dimensions, reflecting the fact that we can only observe the first two state variables, x and y, but not the velocities.
+
+I want you to define the measurement uncertainty matrix, which now is a 2 x 2 that has 0.1 as the main diagonal as measurement noise.
+
+And this is an identity matrix over here.
+
+Once you design all those, you should get the following output. So when I run this, I get as an output for my 4-dimensional example the x coordinates 10 and 0. And this makes sense given that these sequences over here had as a final measurement 10 and 0; 5, 6, 7, 8, 9, 10;  10, 8, 6, 4, 2, 0.
+
+The interesting thing that I want your program to produce is the velocities. They are approximately 10, which makes sense given a delta-t of 0.1 gives us per time step a 10 divided by 10 equals 1 increment over here.
+
+And the second velocity is -20 multiplied by 0.1 gives us a -2. And you can see it over here - 10, 8, 6, 4, and 2.
+
+I also want you to output the covariance matrix, which has certain of elements that are still 0, like these guys over here. And we find that along the main diagonal our uncertainty has shrunk substantially. It's 0.03 for the coordinate estimates and 0.1 for the velocity estimates. Remember, this number over here was 1000 before.
+
+Here is a second example where we have an initial coordinate of -4 and 8. We can see the measurements 1, 6, 11, 16. It seems the increments are in x direction 5. In the y direction they are -4; 8, 4, 0, -4, -8.
+
+If I now run this, I get for my x vector approximately 16, the number over here, approximately -8, the number over here. And these are velocities, 50 and -40 in approximation, which multiplied with 0.1 is our plus 5 and our -4.
+
+Here is yet another example. Initial state 1 and 19. You can see the first coordinate doesn't change at all. You should get a velocity of 0. The second coordinate goes 19, 17, 15, 13, and 11.
+
+Running it gives us 1, unchanged, and 11. Velocities are 0 and -20 for the decrements of -2. And going into the covariance, we see values along the main diagonals, 0.05, 0.05, 0.33, and 0.33 for the velocities. There are certain off-diagonal elements. Make sure those all match what your code produces.
+
+I can now change some of these measurements to make a noisy measurement. One way to do this is to set an oscillating measurement between 2 and 0. Remember that this Kalman filter assumes a fixed velocity. There is no way to explain these measurements with a fixed velocity, so there has to be measurement noise.
+
+So we can run the Kalman filter again. Your filter should output the following values: 0.7 for the current state, 11 as before, and here are our two velocity estimates. It actually believes there is a slight velocity of -0.66 in the x direction where we had noisy sensor input. The covariance matrix should look exactly as before, because it's not affected by the measurements themselves.
+
+So your job is to fill in these various matrices. Good luck!

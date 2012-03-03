@@ -1,0 +1,5 @@
+Now comes the tricky question. In the Kalman filter program that we studied, the 2-D Kalman filter, we had a matrix F. And for delta T equals 0.1, our F matrix, the state transition matrix, had a main diagonal of 1, which means in expectation our location stays the same and our velocity stays the same. And we also knew that the velocity affected our state in the following way.
+
+And you could now place 0.1 instead of the delta T to get this specific F matrix.
+
+Now I want to know from you for this new 2-D case with a 4-dimensional state vector what is the new F? It is a 4 by 4 matrix, so I want you to fill in all of those values. Again please assume that delta T equals 0.1, and don't write delta T, write 0.1.

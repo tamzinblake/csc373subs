@@ -1,0 +1,7 @@
+This is homework assignment #2 in CS 373, and it's all about Kalman filters.
+
+So question #1 is measurement update.
+
+Let's start with 2 Gaussians and say they have identical variances. Let's multiply them. We know that the resulting Gaussian mean will be just at the center between those 2 Gaussians. I wonder if the new variance σ² is now smaller, larger, or the same as either of the individual Gaussian.
+
+Please check one of the three.

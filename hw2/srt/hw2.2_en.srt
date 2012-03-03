@@ -1,0 +1,28 @@
+﻿1
+00:00:00,000 --> 00:00:07,950
+Say we have a prior of a Gaussian with mean μ and covariance σ²,
+
+2
+00:00:07,950 --> 00:00:12,949
+and our measurement has exactly the same mean and the same covariance.
+
+3
+00:00:12,949 --> 00:00:18,449
+Suppose we multiply both and get a new mean, which is the same as the old mean,
+
+4
+00:00:18,449 --> 00:00:23,000
+and we get a new covarience, σ²,
+
+5
+00:00:23,000 --> 00:00:27,000
+which as you all know, corresponds to a peakier Gaussian.
+
+6
+00:00:27,000 --> 00:00:32,750
+I want you to express ν² as a multiple of σ².
+
+7
+00:00:32,750 --> 00:00:36,000
+Just put your answer here as a real number.
+

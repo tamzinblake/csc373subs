@@ -1,0 +1,5 @@
+Say we have a prior of a Gaussian with mean μ and covariance σ², and our measurement has exactly the same mean and the same covariance. Suppose we multiply both and get a new mean, which is the same as the old mean, and we get a new covarience, σ², which as you all know, corresponds to a peakier Gaussian.
+
+I want you to express ν² as a multiple of σ².
+
+Just put your answer here as a real number.

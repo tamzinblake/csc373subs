@@ -1,0 +1,9 @@
+So congratulations!
+
+You just made it through the Kalman filter class and the second homework assignment. You've implemented Kalman filters, you learned a lot about Gaussians, and you wrote your first vehicle tracking software.
+
+Congratulations, that's actually really, really cool.
+
+Next week, we'll talk about particle filters as yet another method for state estimation. It is very interesting and very fascinating. We're going to implement our first.
+
+See you next week in class.

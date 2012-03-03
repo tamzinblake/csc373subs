@@ -1,0 +1,11 @@
+I have another Gaussian question for you.
+
+This is called a heavy-tail Gaussian. So, as you go to +/- infinity, the Gaussian levels off at some finite value α, as opposed to 0.
+
+My question is:
+
+Is it possible to represent this function as a Gaussian?
+
+This is the formula for the Gaussian again. Put differently, can you find a μ and a σ² for which this exact function over here is obtained?
+
+Please just check one of these two boxes.

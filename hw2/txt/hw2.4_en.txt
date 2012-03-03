@@ -1,0 +1,9 @@
+My next question pertains to the tracking problem that we talked about in class.
+
+In class we addressed a 1-dimensional tracking problem where we were estimating the location of the system and its velocity (x dot). I'd like now to generalize this to a 2-dimensional problem, where we're given a coordinate x and y, and the object we're tracking moves in 2-dimensional space, and we wish to use a Kalman filter to understand where the object is, what its velocity is, and to even able to predict a future location based on the estimate of the position and its velocity.
+
+So the only difference to class, is that our object now moves in a 2-dimensional space, whereas in class it moved in a 1-dimensional space.
+
+So my first question is:  What's the dimension of the state vector in the Kalman filter? In the class, it was this kind of state vector. Now, we have a new one.
+
+How many dimensions or how many variables are there?

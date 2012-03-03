@@ -1,0 +1,44 @@
+﻿1
+00:00:00,000 --> 00:00:02,299
+I have another Gaussian question for you.
+
+2
+00:00:02,299 --> 00:00:04,969
+This is called a heavy-tail Gaussian.
+
+3
+00:00:04,969 --> 00:00:08,439
+So, as you go to +/- infinity,
+
+4
+00:00:08,439 --> 00:00:11,649
+the Gaussian levels off at some finite value α,
+
+5
+00:00:11,650 --> 00:00:13,550
+as opposed to 0.
+
+6
+00:00:13,550 --> 00:00:15,050
+My question is:
+
+7
+00:00:15,050 --> 00:00:23,890
+Is it possible to represent this function as a Gaussian?
+
+8
+00:00:23,890 --> 00:00:26,960
+This is the formula for the Gaussian again.
+
+9
+00:00:26,960 --> 00:00:33,870
+Put differently, can you find a μ and a σ²
+
+10
+00:00:33,869 --> 00:00:36,000
+for which this exact function over here is obtained?
+
+11
+00:00:36,000 --> 00:00:39,000
+Please just check one of these two boxes.
+
