@@ -1,0 +1,5 @@
+Let's do this again.
+
+Suppose our mean is 10 and 13, and the variances are imbalanced, 8 and 2, which corresponds to the following picture.
+
+There's a relatively shallow distribution centered on 10 and a much more peaky distribution centered on 13. Compute for me what the resulting μ' and σ²' prime are.

@@ -1,0 +1,7 @@
+So let's see if we can find a positive solution.
+
+The second insight is that any solution can be increased by 5^6, which is 15,625. So suppose N is a solution. We take 1 away, and we do this. Then N + 15,625 will move to this number by subtracting 1, which will move to this number over here. And interestingly enough, this is the same as this expression over here, factoring out the 5^6.
+
+Now, what's interesting is this expression over here is the same as this expression over here. So this works 6 times in a row if N is a valid solution. This expression over here is now 5 times divisible by 5, so we can plug this into the next iteration, and what we end up with is something like this: 5^4 times 16. We're going to go to 5^3 times 64 all the way while it's still divisible by 5. It's still an integer number. We can do this 6 times. So therefore, 5^6 minus 4 is a solution.
+
+So now I want you to write the world's shortest Python program to solve this problem that spits out a valid solution based on this insight.

@@ -1,0 +1,60 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+And the answer is here.
+
+2
+00:00:03,000 --> 00:00:08,000
+What the Kalman filter does for you, if you do estimation and high dimensional spaces,
+
+3
+00:00:08,000 --> 00:00:12,000
+is to not just go into x and y spaces,
+
+4
+00:00:12,000 --> 00:00:17,000
+but allows you to implicitly figure out what the velocity of the object is,
+
+5
+00:00:17,000 --> 00:00:22,000
+and then use this velocity estimate to make a really good prediction about the future.
+
+6
+00:00:22,000 --> 00:00:27,000
+Now notice the sensor itself only sees position.
+
+7
+00:00:27,000 --> 00:00:29,000
+It never sees the actual velocity.
+
+8
+00:00:29,000 --> 00:00:33,000
+The velocity is inferred from seeing multiple positions.
+
+9
+00:00:33,000 --> 00:00:37,000
+So one of the most amazing things about Kalman filters in tracking applications is
+
+10
+00:00:37,000 --> 00:00:42,000
+that it's able to figure out, even though it never directly measures it,
+
+11
+00:00:42,000 --> 00:00:48,000
+the velocity of the object, and from there is able to make predictions about future locations
+
+12
+00:00:48,000 --> 00:00:50,000
+that incorporate velocity.
+
+13
+00:00:50,000 --> 00:00:52,000
+That is just really, really, really great.
+
+14
+00:00:52,000 --> 00:00:57,000
+And that's one of the reasons that Kalman filters are such a popular algorithm
+
+15
+00:00:57,000 --> 00:01:01,000
+in artificial intelligence and in control theory at large.
+

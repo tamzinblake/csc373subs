@@ -1,0 +1,7 @@
+So now let's look at the Kalman filter.
+
+The Kalman filter represents all distributions by Gaussians. And just like in the last class where we talked about measurement cycles and motion cycles, the Kalman filter iterates two different things: measurement updates and motion updates.
+
+So this is identical to the situation before in localization where we got a measurement and then we took a motion. Here the math changes, but the basic principle applies.
+
+So let's do a quiz to see if we remember the material from last class. You might remember that one of the two steps, measurement or motion, required a convolution and the other one a product. Please check the corresponding box.

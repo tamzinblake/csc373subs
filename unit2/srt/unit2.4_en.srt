@@ -1,0 +1,24 @@
+﻿1
+00:00:00,000 --> 00:00:05,000
+So now I'd like you to do the same thing 6 times to emulate the 5 times
+
+2
+00:00:05,000 --> 00:00:09,000
+of getting up in the middle of the night, subtracting a 5th,
+
+3
+00:00:09,000 --> 00:00:13,000
+and the next day we still give a coconut to the monkey,
+
+4
+00:00:13,000 --> 00:00:17,000
+and the resulting number is still divisible by 5.
+
+5
+00:00:17,000 --> 00:00:21,000
+So please enter your code somewhere in here,
+
+6
+00:00:21,000 --> 00:00:26,000
+so we can test the same thing again with function f6.
+

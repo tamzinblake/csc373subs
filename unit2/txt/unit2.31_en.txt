@@ -1,0 +1,19 @@
+So when you design a Kalman filter, you need effectively 2 things.
+
+For the state, you need a state transition function, and that's usually a matrix, so we're now in the world of linear algebra. And for the measurements, you need a measurement function.
+
+So let me give you those for our example of the 1D motion of an object We know that the new location is the old location plus velocity. Turning this into this matrix, you have a 1 over here and a 1 over here. The new velocity should just be the old velocity, which gives us 0 over here and a 1 over here. If you multiply this matrix by this vector, this is exactly what you're getting. And for the measurement, we only observe the first component, the place, not velocity, and that uses a vector, a matrix like this.
+
+So this matrix would be called F and this H. The actual update equations for a Kalman filter are involved, and I give them to you, but please, don't memorize them, and I won't prove them for you. Even the proof is very involved. Every time I use them, I just look them up.
+
+There's a prediction step where I take my best estimate x, multiply it with a state transition matrix, matrix F, and I add whatever motion I know, u. That gives me my new x.
+
+I also have a covariance that characterizes my uncertainty, and that is updated as follows, where T is the transpose.
+
+There's also a measurement update step where we use the measurement Z. We compare the measurement with our prediction where H is the measurement function that maps the state to measurements. We call this this the error. The error is mapped into a matrix S, which is obtained by projecting the system uncertainty into the measurement space using the measurement function projection plus the matrix R, that characterizes the measurement noise.
+
+This is then mapped into a variable called K, which is often called the Kalman gain, where we invert the matrix S, and then finally, we actually update our estimate and our uncertainty using what ought to be the most cryptic equation that you've seen in a long time.
+
+Now I wrote this down so that you have a complete definition, but this is something you should not memorize. If you really wish to understand this math, it happens to be just a generalization of the math I gave you to higher dimensional spaces, but I would recommend just not to worry about this.
+
+There's a set of linear algebra equations that implement the Kalman filter on higher dimensions.

@@ -1,0 +1,12 @@
+﻿1
+00:00:00,000 --> 00:00:05,000
+So if we track another care with our Google self-driving car,
+
+2
+00:00:05,000 --> 00:00:08,000
+which Gaussian would we prefer?
+
+3
+00:00:08,000 --> 00:00:11,000
+The first, second, or third?
+

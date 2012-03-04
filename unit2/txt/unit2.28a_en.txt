@@ -1,0 +1,5 @@
+And the answer is right over here. Why?
+
+If our current starting point is the point over here, for which we know the location is 1, and the velocity is 1, and if we predict 1 time step in the future, then for that prediction, we know that the location will be 2, and the velocity might be a little bit uncertain, but it stays about the same.
+
+So we end up with a point over here. Let's do this again.

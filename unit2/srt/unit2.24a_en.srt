@@ -1,0 +1,12 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+And yes, it's as easy as this.
+
+2
+00:00:03,000 --> 00:00:06,000
+We just add the 2 means and the 2 variances.
+
+3
+00:00:06,000 --> 00:00:13,000
+It's amazing. This entire program over here implements a 1-dimensional Kalman filter.
+

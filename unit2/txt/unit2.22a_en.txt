@@ -1,0 +1,5 @@
+And here's my answer. This is the expression for the mean. This is the one for the variance. I run it, I get the exact same answer. I run it again for my other example of equal variances and 10 and 12 as a mean, and miraculously, the correct answer comes out: 11 for the new mean and 2 for the new variance squared.
+
+If you programmed this correctly, then congratulations!
+
+You've just programmed an essential update step in the Kalman filter: the measurement update step. That's really the difficult step in Kalman filtering. The other one, the prediction step or the motion step, is much, much easier to program.

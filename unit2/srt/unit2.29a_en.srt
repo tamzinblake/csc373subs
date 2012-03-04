@@ -1,0 +1,16 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+And just like before, it'll be over here with a velocity of 2, initial position of 1,
+
+2
+00:00:06,000 --> 00:00:08,000
+we find ourselves in 3.
+
+3
+00:00:08,000 --> 00:00:11,000
+And again, this model assumes that in the absence of more knowledge,
+
+4
+00:00:11,000 --> 00:00:14,000
+the velocity shouldn't really change.
+

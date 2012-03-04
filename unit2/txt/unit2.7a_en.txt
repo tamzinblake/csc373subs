@@ -1,0 +1,5 @@
+So this program over here is not quite the shortest. You could just plug in the number directly, but it gets us there.
+
+And of course, as I hit "run" I get our desired solution. So this is my teaser. Obviously, my class is about artificial intelligence, not about questions and puzzles like these.
+
+But we will learn to solve hard problems in building self-driving cars using exactly the same thing: a napkin, a tablet, and a Python interpreter.

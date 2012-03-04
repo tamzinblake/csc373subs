@@ -1,0 +1,23 @@
+So here's a quiz.
+
+Five guys and a monkey are stranded on an island. On the island are many coconut trees with many coconuts. The guys and the monkey spend all day collecting a huge pile of coconuts. When night falls, they are all very tired except for the monkey, and they all fall asleep after they agreed to divide the divide the coconuts into 5 equals part the next morning and part different ways.
+
+Now, in the middle of the night the first guy wakes up, and he doesn't trust the others, so he decides to take his 5th right now and hide it, but unfortunately, the number of coconuts is not divisible by 5. However, if he gives one to the monkey, then the remainder is divisible by 5. So he takes his 5th and hides it in a safe place. Afterwards, the guy falls asleep again.
+
+The same scene now repeats 4 more times for each of the guys.
+
+The next guy wakes up, realizes that remaining number N is still not divisible by 5, but if he gives a coconut to the monkey, who now holds 2 coconuts, then the remainder is divisible by 5, so he takes his 5th and hides it in a safe place. And now, the guy falls asleep again.
+
+The next guy wakes up, he gives 1 coconut to the monkey, which makes the remainder divisible by 5. He takes his 5th and hides it in a safe place before he falls asleep. The monkey now holds 3 coconuts.
+
+The fourth guy wakes up, same story, he has to give one to the monkey. He takes his 5th, which of course now is much smaller than the original 5th and hides it and falls asleep.
+
+And finally, the fifth guy wakes up, and again, the number of coconuts remaining is not divisible by 5, but as he gives 1 to the monkey, the remainder becomes divisible by 5, so he takes his 5th and hides it in a safe place before he falls asleep again.
+
+As the sun rises, all 5 guys wake up at the same time, and they all realize the mountain of coconuts has shrunk substantially, but they can't say anything, because each of them took some away in the middle of the night.
+
+So they decide to proceed as planned, but the number of coconuts, surprisingly, is not divisible by 5. By giving 1 more coconut to the monkey, the remainder is divisible by 5, and each one takes his 5th, and then they part their ways, leaving the monkey behind.
+
+Here's a question. How many coconuts has the monkey? Well, no. That's easy.
+
+How many coconuts were there originally?

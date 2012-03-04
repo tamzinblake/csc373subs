@@ -1,0 +1,12 @@
+﻿1
+00:00:00,000 --> 00:00:02,000
+And here is a simple solution.
+
+2
+00:00:02,000 --> 00:00:08,000
+You subtract from n - 1, you divide by 5, multiply by 4,
+
+3
+00:00:08,000 --> 00:00:11,000
+and when you hit the run button you get 76.
+

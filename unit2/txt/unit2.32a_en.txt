@@ -1,0 +1,31 @@
+And here is my code.
+
+If you got this correct, then I'm mightily impressed with what you've done because you've taken something that often takes many, many classes to explain to students, and within a single class, you understood the gist of it and you wrote a piece of code that is really non-trivial, that you can reuse many times, and that's the core of the Google self-driving cars' ability to check other vehicles.
+
+Here is the line by line implementation of what I've shown you before for the measurement update and the prediction.  And you'll find using my matrix class that it implements step after step exactly what I've shown you.
+
+A little non-triviality. We have to make a measurement matrix of the nth measurement. If you solve the problem, you have probably something like this.
+
+The arrow calculation, the matrix S with a transpose, the Kalman gain K with the inverse, back to my next prediction and my measurement update. And this is the prediction step. You can see it implements exactly what I showed you in these 2 equations over here.
+
+Now I know programming with this is involved, and I'm really impressed if you were able to do this. If you've done this, you've achieved something really, really major.
+
+You now understand Kalman filters. And you've implemented a multidimensional Kalman filter all on your own using a fairly mechanical matrix class that I wrote for you. You ran it, and you've gotten really good results in which a sequence of position estimates, 1, 2, 3, led you to make a prediction and understand the velocity of the moving object.
+
+So these are the equations you just implemented. Congratulations!
+
+You really understood something fundamental here that I believe is really essential to artificial intelligence and to building self-driving cars. You implemented effectively our method for finding other cars.
+
+Let me put this in context. Here's a Google self-driving car. Here's another car. Our Google self-driving car uses radar on the front bumper that measures the distance to vehicles and also gives a noisy estimate of the velocity. And it also uses its lasers, and again, it measures the distance to other cars but no velocities.
+
+If you paint the same situation from above, here is the Google car. It is localized on a map. Here is another vehicle, and another one.
+
+Using radars and lasers, the Google car estimates the distance and the velocity of all these vehicles, and it does so using a Kalman filter, where it feeds in range data from the laser, and it uses state spaces like this one of the relative distance in x and y and the relative velocity in x and y together with state transition matrices of the type I've just shown you to find out where these other cars are, and this is exactly what you've just learned and programmed yourself.
+
+I didn't tell you how to extract the location of other cars from radar and laser. There's something called a correspondence problem. Sometimes you don't know which one each car is, and I won't talk in much depth about it.
+
+But you understand the gist of the solution now, and you've been able to program it. So if you were in a situation like this, you can use range data like laser data and radar data and come up with a rational algorithm that takes momentary measurements of other cars and not just estimates where they are but also how fast they're moving.
+
+That's really a tremendous feat. Congratulations to getting this far. If you got this far in my class, I promise you you've just digested the most difficult thing I have to teach you in this entire class.
+
+Congratulations!

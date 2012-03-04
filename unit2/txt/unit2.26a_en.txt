@@ -1,0 +1,10 @@
+And the answer is here.
+
+What the Kalman filter does for you, if you do estimation and high dimensional spaces, is to not just go into x and y spaces, but allows you to implicitly figure out what the velocity of the object is, and then use this velocity estimate to make a really good prediction about the future.
+
+Now notice the sensor itself only sees position. It never sees the actual velocity. The velocity is inferred from seeing multiple positions. So one of the most amazing things about Kalman filters in tracking applications is that it's able to figure out, even though it never directly measures it, the velocity of the object, and from there is able to make predictions about future locations that incorporate velocity.
+
+That is just really, really, really great.
+
+And that's one of the reasons that Kalman filters are such a popular algorithm
+in artificial intelligence and in control theory at large.

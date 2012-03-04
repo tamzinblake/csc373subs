@@ -1,0 +1,20 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+And the answer is over here in the middle.
+
+2
+00:00:03,000 --> 00:00:10,000
+It's between the two old means, the mean of the prior and the mean of the measurement.
+
+3
+00:00:10,000 --> 00:00:13,000
+And it's slightly further on the measurement side,
+
+4
+00:00:13,000 --> 00:00:19,000
+because the measurement was more certain as to where the vehicle is than the prior.
+
+5
+00:00:19,000 --> 00:00:25,000
+The more certain we are, the more we pull the mean in the direction of the certain answer.
+

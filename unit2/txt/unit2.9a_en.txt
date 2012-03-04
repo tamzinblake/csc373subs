@@ -1,0 +1,5 @@
+And the answer is this one is a Gaussian, this one, and this one.
+
+And they are all characterized by this exponential drop-off on both sides they're symmetrical, and they have a single peak. they're what's called "unimodal".
+
+This is a bimodal function, it has two peaks, and as a result is not Gaussian. The same is true over here and over here, so these guys don't qualify.

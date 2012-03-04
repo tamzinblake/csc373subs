@@ -1,0 +1,3 @@
+And with a little bit of math we find that the new mean is 12.4, and the new σ² is 1.6. 12.4 is much closer to 13 than 10, and that's because the Gaussian centered on 13 has a much narrower variance than the one on 10.
+
+And we find the resulting variance is smaller than each of the two variances over here. In particular, let's start with the variance. 1 over 1/8 plus 1/2 is the same as 1 over 5/8, which results to 8/5 or 1.6. This is just applying this formula over here. For the weighted average we get 2 times 10 plus 8 times 13. And then we normalize by the sum of those two things over here. So this is 124 divided by 10, gives us 12.4.

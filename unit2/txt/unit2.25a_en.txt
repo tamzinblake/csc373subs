@@ -1,0 +1,29 @@
+So this piece of code implements the entire Kalman filter.
+
+It goes through all the measurement elements and quietly assumes there's as many measurements as motions indexed by n. It updates the mu and sigma using this recursive formula over here. If we plug in the nth measurement and the measurement uncertainty, it does the same with the motion, the prediction part over here. It updates the mu and sigma recursively using the nth motion and the motion uncertainty, and it prints all of those out.
+
+So if I hit the Run button, I find that my first measurement update gets me effectively 5.0. It's 4.98. And that makes sense because we had a huge initial uncertainty, and a Res.sub of 5 with a relatively small measurement uncertainty.
+
+And in fact the resulting sigma square term is 3.98, which is better than 4 and 1,000, slightly better than 4. So we're slightly more certain than the measurement itself. We now apply the motion of 1. We get to 5.9.
+
+Our uncertainty increases by exactly 2, from 3.9 to 5.98. And then the next update comes in at 6, and it gives us a measurement of 5.99 and now a reduced uncertainty of 2.39.
+
+And then we go to move to the right again by 1, which makes the prediction 6.99. Uncertainty goes up. We measure 7. We get to 6.99, almost 7. Uncertainty goes down.
+
+We move 2 to the right, measure 9, 1 to the right, measure 10, and move 1 again. The final thing is the motion. And if you look at the end result, our estimate is almost exactly 11, which is the result of 10 + 1. And the uncertainty is 4.0 after the motion and 2.0 after the measurement.
+
+This code that you just wrote implements a full Kalman filter for 1D. So if you look at this, we have an update function that implements what actually is a relatively simple equation, and a prediction function which is an even simpler equation of just addition.
+
+And then we apply it to a measurement sequence and a motion sequence with certain uncertainties associated, and this little piece of code over here gives you a full Kalman filter in 1D.
+
+I find this really amazing.
+
+So let's plug in some other values. Suppose you're really certain about the initial position. It's wrong. It's 0. It should be 5, but it's 0. And now we assume a really small uncertainty. Guess what's going to happen to the final prediction? As I hit the Run button, we find this has an effect on the final estimate. It's not 11. It's only 10.5.
+
+And the way this takes place is initially, after our first measurement update, we believe in the position of 0. This is 1.24 to the - 10th, but a really small uncertainty, even smaller than this one over here. We apply our motion update. We add a 1. We have a higher uncertainty.
+
+And now when the next measurement comes in, 6, we are now more inclined to believe the measurement because uncertainty is now basically 2 as opposed to 0.001. So we update our position to be 2.666, which is now a jump away from 1, and we reduce our uncertainty. Motion comes in, 3.66. Uncertainty goes up.
+
+We now are willing to update even more. As we see the 7, we're willing to go to 5.1, but not quite all the way because we feel fairly confident on our wrong prior estimate. And this confidence makes it all the way to the end when we predict 10.5 as opposed to 11 with a residual uncertainty of 3.98.
+
+So we've corrected some of it. We were able to drag it into the right direction but not all the way because our false initial belief has such a strong weight in the overall equation.

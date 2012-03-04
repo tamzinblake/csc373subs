@@ -1,0 +1,5 @@
+And yes, it's as easy as this.
+
+We just add the 2 means and the 2 variances.
+
+It's amazing. This entire program over here implements a 1-dimensional Kalman filter.

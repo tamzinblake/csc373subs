@@ -1,0 +1,32 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+So this program over here is not quite the shortest.
+
+2
+00:00:03,000 --> 00:00:07,000
+You could just plug in the number directly, but it gets us there.
+
+3
+00:00:07,000 --> 00:00:11,000
+And of course, as I hit "run" I get our desired solution.
+
+4
+00:00:11,000 --> 00:00:14,000
+So this is my teaser.
+
+5
+00:00:14,000 --> 00:00:17,000
+Obviously, my class is about artificial intelligence,
+
+6
+00:00:17,000 --> 00:00:20,000
+not about questions and puzzles like these.
+
+7
+00:00:20,000 --> 00:00:25,000
+But we will learn to solve hard problems in building self-driving cars
+
+8
+00:00:25,000 --> 00:00:30,000
+using exactly the same thing: a napkin, a tablet, and a Python interpreter.
+

@@ -1,0 +1,5 @@
+And very surprisingly, the resulting Gaussian is more certain than the two component Gaussians.
+
+That is, the covariance is smaller than either of the two covariances in isolation. And intuitively speaking, this is the case because we actually gain information. The two Gaussians together have higher information content than either Gaussian in isolation. So it'll look like something like this.
+
+And that is completely non-obvious. And you might have to take this with faith, but I can actually prove it to you.

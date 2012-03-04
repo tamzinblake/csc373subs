@@ -1,0 +1,3 @@
+Measurements were implemented using products, and motion using a convolution.
+
+And if you don't know this, please go back and check the last class on localization.

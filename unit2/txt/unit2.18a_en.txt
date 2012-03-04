@@ -1,0 +1,3 @@
+And the answer for the new mean is just the one in the middle, and reason is both weights over here are equivalent, so we take the mean between μ and ν, which is 11.
+
+And then with σ² it's 2. If you take 1/4 plus 1/4, then you get 1/2, so 1 over 1/2 equals 2, which means the new variance term is half the size of the previous variance terms.

@@ -1,0 +1,8 @@
+﻿1
+00:00:00,000 --> 00:00:05,000
+And the answer is the measurement, the product, was using Bayes Rule,
+
+2
+00:00:05,000 --> 00:00:10,000
+and motion was using total probability.
+

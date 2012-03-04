@@ -1,0 +1,44 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+So now let's look at the Kalman filter.
+
+2
+00:00:03,000 --> 00:00:08,000
+The Kalman filter represents all distributions by Gaussians.
+
+3
+00:00:08,000 --> 00:00:13,000
+And just like in the last class where we talked about measurement cycles and motion cycles,
+
+4
+00:00:13,000 --> 00:00:22,000
+the Kalman filter iterates two different things: measurement updates and motion updates.
+
+5
+00:00:22,000 --> 00:00:26,000
+So this is identical to the situation before in localization
+
+6
+00:00:26,000 --> 00:00:29,000
+where we got a measurement and then we took a motion.
+
+7
+00:00:29,000 --> 00:00:33,000
+Here the math changes, but the basic principle applies.
+
+8
+00:00:33,000 --> 00:00:39,000
+So let's do a quiz to see if we remember the material from last class.
+
+9
+00:00:39,000 --> 00:00:43,000
+You might remember that one of the two steps, measurement or motion,
+
+10
+00:00:43,000 --> 00:00:47,000
+required a convolution and the other one a product.
+
+11
+00:00:47,000 --> 00:00:50,000
+Please check the corresponding box.
+

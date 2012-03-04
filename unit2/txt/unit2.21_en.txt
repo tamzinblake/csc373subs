@@ -1,0 +1,5 @@
+Let me ask the hard question now.
+
+Will it be a Gaussian like this where the variance is larger, a Guassian with the exact same variance, or an even more peaky Guassian that's more certain than the two original factors in this calculation?
+
+Please check exactly one of the three boxes over here.

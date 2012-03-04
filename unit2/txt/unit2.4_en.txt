@@ -1,0 +1,3 @@
+So now I'd like you to do the same thing 6 times to emulate the 5 times of getting up in the middle of the night, subtracting a 5th, and the next day we still give a coconut to the monkey, and the resulting number is still divisible by 5.
+
+So please enter your code somewhere in here, so we can test the same thing again with function f6.

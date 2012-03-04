@@ -1,0 +1,128 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+You remember our Markov model where the world was divided into discrete grids,
+
+2
+00:00:06,000 --> 00:00:09,000
+and we assigned to each grid cell a probability.
+
+3
+00:00:09,000 --> 00:00:15,000
+Such a representation of probability over spaces is called a histogram
+
+4
+00:00:15,000 --> 00:00:21,000
+in that it divides the continuous space into discrete, into finitely many grid cells
+
+5
+00:00:21,000 --> 00:00:27,000
+and approximates the posterior distribution by a histogram over the original distribution.
+
+6
+00:00:27,000 --> 00:00:31,000
+And the histogram is a mere approximation for this continuous distribution.
+
+7
+00:00:31,000 --> 00:00:37,000
+In Kalman filters the distribution is given by what's called a Gaussian.
+
+8
+00:00:37,000 --> 00:00:40,000
+A Gaussian is a continuous function over the space of locations,
+
+9
+00:00:40,000 --> 00:00:45,000
+and the area underneath sums up to 1.
+
+10
+00:00:45,000 --> 00:00:48,000
+So here's our Gaussian again.
+
+11
+00:00:48,000 --> 00:00:54,000
+And if we call the space x, then the Gaussian is characterized by two parameters,
+
+12
+00:00:54,000 --> 00:01:01,000
+the mean, often abbreviated with the Greek letter μ, and the width of the Gaussian,
+
+13
+00:01:01,000 --> 00:01:05,000
+often called the variance, and for reasons I don't want to go into,
+
+14
+00:01:05,000 --> 00:01:10,000
+it's often written as a quadratic variable σ².
+
+15
+00:01:10,000 --> 00:01:16,000
+So any Gaussian in 1D, which means the parameter space over here is 1 dimensional,
+
+16
+00:01:16,000 --> 00:01:20,000
+is characterized by μ and σ².
+
+17
+00:01:20,000 --> 00:01:24,000
+So rather than estimating the entire distribution as a histogram,
+
+18
+00:01:24,000 --> 00:01:30,000
+our task in Kalman filters is to maintain a μ and a σ² that is our best estimate
+
+19
+00:01:30,000 --> 00:01:34,000
+of the location of the object we're trying to find.
+
+20
+00:01:34,000 --> 00:01:40,000
+The exact formula is an exponential of a quadratic function where we take
+
+21
+00:01:40,000 --> 00:01:45,000
+the exponent of this complicated expression over here.
+
+22
+00:01:45,000 --> 00:01:51,000
+The quadratic difference of our query point x relative to the mean μ
+
+23
+00:01:51,000 --> 00:01:56,000
+divided by σ² multiplied by -1/2.
+
+24
+00:01:56,000 --> 00:02:01,000
+Now, if x equals μ then the numerator becomes 0,
+
+25
+00:02:01,000 --> 00:02:05,000
+and we have exp of 0, which is 1.
+
+26
+00:02:05,000 --> 00:02:08,000
+It turns out we have to normalize this by a constant,
+
+27
+00:02:08,000 --> 00:02:12,000
+1 over the square root of 2πσ²,
+
+28
+00:02:12,000 --> 00:02:17,000
+but for everything we'll talk about today, this constant won't matter, so ignore it.
+
+29
+00:02:17,000 --> 00:02:21,000
+What matters is we have an exponential of a quadratic function over here.
+
+30
+00:02:21,000 --> 00:02:28,000
+Let me draw you a couple of functions, and you tell me which ones you believe
+
+31
+00:02:28,000 --> 00:02:32,000
+are Gaussian by checking the box on the right side.
+
+32
+00:02:32,000 --> 00:02:35,000
+And please excuse my poor drawing skills here.
+

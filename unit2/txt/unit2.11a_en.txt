@@ -1,0 +1,7 @@
+And the answer is the third, because that's the one that's most certain, and because it's most certain, it makes a chance of accidentally hitting another car the smallest just by the fact that we know more about the car than in the two other distributions.
+
+So you learned something really important. You learned the definition of a Gaussian. You learned about the fact that these are unimodal distributions. They are also symmetrical.
+
+And you learned a little bit about how to use them as a belief in a probabilistic filter.
+
+So let's go and program a Gaussian.

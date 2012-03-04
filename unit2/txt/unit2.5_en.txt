@@ -1,0 +1,7 @@
+Now let's write a test for integer, which returns "true" if n is an integer.
+
+There are many ways to write such a test. One is to compare n with the integer version of n and make sure that the absolute difference is smaller than a very small threshold. So if you apply this is_int test to f6(96), we fail, so 96 is not a valid number.
+
+So with all of this, I'd like you to write the final solution for the problem.
+
+Can you go through all the numbers until you find one that is a correct solution? And as a hint, the smallest number I find is this one: 15,621.

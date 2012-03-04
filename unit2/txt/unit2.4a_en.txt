@@ -1,0 +1,5 @@
+So to solve this we're going to set up a loop for 6 times.
+
+We apply our diminishing rule n = f(n) and then we simply return n. Hitting the run button gives us 22.21, which is not an integer. And that's a failure--the final number has to be an integer as well as all the numbers along the way, but I can tell you if the final number is an integer, then the numbers in between will be as well.
+
+Now important to know is I put a decimal point over here. If I omit this, then all this reverts to integer calculation, and I won't be able to test whether it is an integer. It's really important to have the decimal point over here.

@@ -1,0 +1,48 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+So let's look at the way to solve this.
+
+2
+00:00:03,000 --> 00:00:08,000
+I'll give you two solutions, a straightforward one and an elegant one.
+
+3
+00:00:08,000 --> 00:00:15,000
+In the straightforward one, you go from N0, N1, N2, all the way to N6,
+
+4
+00:00:15,000 --> 00:00:18,000
+which is divisible by 5.
+
+5
+00:00:18,000 --> 00:00:20,000
+This is the initial number of coconuts.
+
+6
+00:00:20,000 --> 00:00:24,000
+This is after the first guy woke up, the second, all the way to the fifth,
+
+7
+00:00:24,000 --> 00:00:29,000
+and this is the number of coconuts after the final coconut was given to the monkey.
+
+8
+00:00:29,000 --> 00:00:34,000
+So now we know that for any of those, we can write the ith number of coconuts
+
+9
+00:00:34,000 --> 00:00:39,000
+is obtained from the previous number by subtracting 1, dividing by 5,
+
+10
+00:00:39,000 --> 00:00:42,000
+and multiplying by 4.
+
+11
+00:00:42,000 --> 00:00:48,000
+And of course we want this to be an integer, and we want the initial number to be an integer.
+
+12
+00:00:48,000 --> 00:00:53,000
+How can we program a solution in Python?
+

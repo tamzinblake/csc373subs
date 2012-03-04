@@ -1,0 +1,52 @@
+﻿1
+00:00:01,000 --> 00:00:03,000
+So the answer is tricky.
+
+2
+00:00:03,000 --> 00:00:08,000
+I'm going to use a variable n that I increment by 1 in this while loop over here.
+
+3
+00:00:08,000 --> 00:00:12,000
+And I'm using a flag called "found" that I initialized with False.
+
+4
+00:00:12,000 --> 00:00:16,000
+And so as long as I don't find a valid number, I just go up by 1 over here.
+
+5
+00:00:16,000 --> 00:00:22,000
+And when I find it, I terminate the while loop, and I print the result.
+
+6
+00:00:22,000 --> 00:00:25,000
+And this is the tricky part over here.
+
+7
+00:00:25,000 --> 00:00:30,000
+So I'm testing the function f6 for is_int,
+
+8
+00:00:30,000 --> 00:00:34,000
+but when I pass my argument, I make sure it's actually a floating value argument,
+
+9
+00:00:34,000 --> 00:00:37,000
+not an integer; otherwise the procedure doesn't work.
+
+10
+00:00:37,000 --> 00:00:41,000
+This is a tricky part about Python and type treatment in Python.
+
+11
+00:00:41,000 --> 00:00:44,000
+This makes sure I'm using a floating point number,
+
+12
+00:00:44,000 --> 00:00:49,000
+and the loop over here when I hit run gives me 15,621.
+
+13
+00:00:49,000 --> 00:00:52,000
+Did you get it?
+

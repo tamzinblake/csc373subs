@@ -1,0 +1,11 @@
+So this completes my unit on Kalman filters. You learned actually quite a bit.
+
+You learned about Gaussians, how to do measurement updates using multiplication, how to do prediction or state transitions using convolution, and you even implemented your first Kalman filter, which is really super cool.
+
+You've implemented it in the context of vehicle tracking, and you used this to estimate a nonobservable velocity for measurement data.
+
+Now, next is your homework assignment. I hope you can prove what you've learned and ace it.
+
+And then, next week, we're going to move into particle filters, which is an exciting third method for state estimation.
+
+So I'll see you for the homework assignment, and then I'll see you in class for particle filters.

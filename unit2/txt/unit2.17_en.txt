@@ -1,0 +1,5 @@
+Now, here's a question that's really, really hard.
+
+When we graph the new Gaussian, I can graph one that's very wide, that's very peaky. So if I were to measure where the peak of the new Gaussian is, this would be a very narrow and skinny Gaussian. This would be one whose width would be inbetween the two Gaussians. And this is one that's even wider than the two original Gaussians.
+
+Which one do you believe is the correct posterior after multiplying these two Gaussians? This is an insanely hard question. I'd like you to take your chances here, and I'll explain you the answer in just a second.

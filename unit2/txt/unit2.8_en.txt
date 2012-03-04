@@ -1,0 +1,17 @@
+So I'd like to take my students on a little journey to Stanford and show them our self-driving car that uses sensors to sense the environment. So let me dive into the class pretty much right now.
+
+So in our last class, we talked about localization. We had a robot that lived in an environment and that could use its sensors to determine where in the environment it is.
+
+So here you can see the Google self-driving car using a road map localizing itself. But in addition, what's shown here in red are measurements of other vehicles. The car uses lasers and radars to track other vehicles and today we're going to talk about how to find other cars. The reason why I would like to find other cars is because we wouldn't want to run into them.
+
+So we have to understand how to interpret sensor data to make assessments, not just where these other cars are as in the localization case, but also how fast they're moving so you can drive in a way that avoids collisions with them in the future. That's important, not just for cars. It matters for pedestrians and for bicyclists. And understanding where other cars are and making predictions where they're going to move is absolutely essential for safe driving in the Google car project.
+
+So in this class we're going to talk about tracking. The technique I'd like to teach you is called a Kalman filter. This is an insanely popular technique for estimating the state of a system. It's actually very similar to the probabilistic localization method we taught in the previous class: Monte Carlo localization.
+
+The primary differences are that Kalman filters estimate a continuous state whereas in Monte Carlo localization we are voiced to chop the world into discrete places. And as a result, the Kalman filter happens to give us a unimodal distribution, and I'll tell you in a second what that means, whereas Monte Carlo was fine with multimodal distributions. Both of these techniques are applicable to robot localization and tracking other vehicles.
+
+In fact, in a later class, we're going to learn about particle filters, which are yet another way to address the same problem, and indeed they are actually continuous and multimodal. But for the time being let's look into Kalman filters and ignore these other two families of methods.
+
+Let me start with a example. Consider the car down here. Let's assume the it sees as its measurement, an object here, here, here, and here for the times t = 0, t = 1, t = 2, and t = 3.
+
+Where would you assume the object would be at t = 4? Check one of those 3 boxes.

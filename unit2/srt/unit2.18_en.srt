@@ -1,0 +1,104 @@
+﻿1
+00:00:00,000 --> 00:00:05,000
+Suppose we multiply two Gaussians as in Bayes rule,
+
+2
+00:00:05,000 --> 00:00:09,000
+a prior and a measurement probability.
+
+3
+00:00:09,000 --> 00:00:12,000
+And the prior has a mean of μ and a variance of σ².
+
+4
+00:00:12,000 --> 00:00:18,000
+The measurement has a mean of ν and a covariance of r².
+
+5
+00:00:18,000 --> 00:00:23,000
+Then the new mean, μ', is the weighted sum of the old means
+
+6
+00:00:23,000 --> 00:00:29,000
+where μ is weighted by r², ν is weighted by σ²
+
+7
+00:00:29,000 --> 00:00:33,000
+normalized by the sum of those weighting factors.
+
+8
+00:00:33,000 --> 00:00:38,000
+And the new variance term, I'm going to write σ²' here
+
+9
+00:00:38,000 --> 00:00:46,000
+for the new one after the update, is given by this equation over here.
+
+10
+00:00:46,000 --> 00:00:48,000
+So let's put this into action.
+
+11
+00:00:48,000 --> 00:00:50,000
+We have a weighted mean over here.
+
+12
+00:00:50,000 --> 00:00:55,000
+Clearly, the prior Guassian has a much higher uncertainty.
+
+13
+00:00:55,000 --> 00:00:57,000
+Therefore σ² is larger.
+
+14
+00:00:57,000 --> 00:01:01,000
+And that means that ν is weighted much, much larger than the μ.
+
+15
+00:01:01,000 --> 00:01:05,000
+So the mean will be closer to the ν than the μ,
+
+16
+00:01:05,000 --> 00:01:08,000
+which means that it'll be somewhere over here.
+
+17
+00:01:08,000 --> 00:01:12,000
+Interestingly enough, the variance term is unaffected by the actual means.
+
+18
+00:01:12,000 --> 00:01:18,000
+It just uses the previous variances and comes up with a new one that's even peakier.
+
+19
+00:01:18,000 --> 00:01:21,000
+So the result might look like this.
+
+20
+00:01:21,000 --> 00:01:24,000
+So this is the common situation for the measurement update step
+
+21
+00:01:24,000 --> 00:01:31,000
+where this is the prior, this is the measurement probability, and this is the posterior.
+
+22
+00:01:31,000 --> 00:01:36,000
+So let's practice these equations with a simple quiz.
+
+23
+00:01:36,000 --> 00:01:40,000
+So here are our equations again.
+
+24
+00:01:40,000 --> 00:01:44,000
+And suppose I use the following Gaussians:
+
+25
+00:01:44,000 --> 00:01:49,000
+These are Gaussians with equal variance but different means that might look as follows.
+
+26
+00:01:49,000 --> 00:01:56,000
+Compute for me the new mean after the update and the new σ².
+

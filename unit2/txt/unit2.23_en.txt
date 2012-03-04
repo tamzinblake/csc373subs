@@ -1,0 +1,19 @@
+So let's step a step back and look at what we've achieved.
+
+We knew there was a measurement update and a motion update, which is also called prediction. And we know that the measurement update is implemented by multiplication, which is the same as Bayes rule, and the motion update is done by total probability or an addition.
+
+So we tackled the more complicated case. This is actually the hard part mathematically. And we solved this. We gave an exact expression. We even derived it mathematically, and you were able to write a computer program that implements this step of the Kalman filter.
+
+I don't want to go into too much depth here. This is a really, really easy step. Let me write it down for you.
+
+Suppose you live in a world like this. This is your current best estimate of where you are, and this is your uncertainty. And now say you move to the right side a certain distance and that motion itself has its own set of uncertainty. Then you arrive at a prediction that adds the motion of command to the mean, and it has an increased uncertainty over the initial uncertainty.
+
+Intuitively this makes sense. If you move to the right by this distance, in expectation you're exactly where you wish to be but you've lost information because your motion tends to lose information as manifested by this uncertainty over here.
+
+Now the math for this is really, really easy. Your new mean is your old mean plus the motion, often called u. So if you move over 10 meters, this will be 10 meters. And your new σ² is your old σ² plus variance of the motion Gaussian.
+
+This is all you need to know. It's just an addition. And I won't prove it to you because it's really trivial. But in summary, we have a Gaussian over here, we have a Gaussian for the motion, with u as the mean and r² as its own motion uncertainty, and the resulting Gaussian in the prediction step just adds these 2 things up: μ plus u and σ² plus r².
+
+Since this was so simple, let me quiz you.
+
+We have a Gaussian before the prediction step which μ equals 8 and σ² equals 4. We then move to the right a total of 10, with a motion uncertainty of 6. Now describe to me the predictive Gaussian and give me the new μ and the new σ².

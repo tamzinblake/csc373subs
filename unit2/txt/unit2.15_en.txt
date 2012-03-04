@@ -1,0 +1,3 @@
+In fact, we talked about Bayes Rule, and we talked about total probability.
+
+Please, again, check, whether Bayes Rule and total probability apply to measurements or motions.

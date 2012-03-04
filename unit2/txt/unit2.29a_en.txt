@@ -1,0 +1,3 @@
+And just like before, it'll be over here with a velocity of 2, initial position of 1, we find ourselves in 3.
+
+And again, this model assumes that in the absence of more knowledge, the velocity shouldn't really change.

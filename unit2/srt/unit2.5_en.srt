@@ -1,0 +1,36 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+Now let's write a test for integer,
+
+2
+00:00:06,000 --> 00:00:10,000
+which returns "true" if n is an integer.
+
+3
+00:00:10,000 --> 00:00:14,000
+There are many ways to write such a test.
+
+4
+00:00:14,000 --> 00:00:18,000
+One is to compare n with the integer version of n and make sure
+
+5
+00:00:18,000 --> 00:00:22,000
+that the absolute difference is smaller than a very small threshold.
+
+6
+00:00:22,000 --> 00:00:31,000
+So if you apply this is_int test to f6(96), we fail, so 96 is not a valid number.
+
+7
+00:00:31,000 --> 00:00:35,000
+So with all of this, I'd like you to write the final solution for the problem.
+
+8
+00:00:35,000 --> 00:00:41,000
+Can you go through all the numbers until you find one that is a correct solution?
+
+9
+00:00:41,000 --> 00:00:52,000
+And as a hint, the smallest number I find is this one: 15,621.
+

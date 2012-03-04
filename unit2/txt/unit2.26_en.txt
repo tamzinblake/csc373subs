@@ -1,0 +1,13 @@
+So now we understand a lot about the 1D Kalman filter.
+
+You've programmed one. You understand how to incorporate measurements. You understand how to incorporate motion, and you really implemented something that's actually really cool, which is a full Kalman filter for the 1D case.
+
+Now in reality, we often have many Ds, and then things become more involved, so I'm going to just tell you how things work with an example, and why it's great to estimate in higher dimensional state spaces.
+
+Suppose you have a 2-dimensional state space of x and y, like a camera image, or in our case, we might have a car that uses a radar to detect the location of a vehicle over time.
+
+Then what the 2D Kalman filter affords you is something really amazing, and here is how it goes. Suppose at time t = 0, you observe the object of interest to be at this coordinate. This might be another car in traffic for the Google self-driving car. One time step later, you see it over here. Another time step later, you see it right over here.
+
+Where would you now expect at time t = 3 the object to be?
+
+Let me give you 3 different places. Please click at the most likely location.

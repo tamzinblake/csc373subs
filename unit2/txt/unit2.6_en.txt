@@ -1,0 +1,5 @@
+So 15,621 is indeed an answer.
+
+Subtract 1 to the monkey. The first guy now takes 3124, leaving to the next guy 12,496.
+
+Again subtracting 1 gives us... please fill in the number for the second guy who wakes up.

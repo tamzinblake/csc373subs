@@ -1,0 +1,44 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+And with a little bit of math we find that the new mean is 12.4,
+
+2
+00:00:06,000 --> 00:00:09,000
+and the new σ² is 1.6.
+
+3
+00:00:09,000 --> 00:00:16,000
+12.4 is much closer to 13 than 10, and that's because the Gaussian centered on 13
+
+4
+00:00:16,000 --> 00:00:19,000
+has a much narrower variance than the one on 10.
+
+5
+00:00:19,000 --> 00:00:25,000
+And we find the resulting variance is smaller than each of the two variances over here.
+
+6
+00:00:25,000 --> 00:00:28,000
+In particular, let's start with the variance.
+
+7
+00:00:28,000 --> 00:00:39,000
+1 over 1/8 plus 1/2 is the same as 1 over 5/8, which results to 8/5 or 1.6.
+
+8
+00:00:39,000 --> 00:00:42,000
+This is just applying this formula over here.
+
+9
+00:00:42,000 --> 00:00:48,000
+For the weighted average we get 2 times 10 plus 8 times 13.
+
+10
+00:00:48,000 --> 00:00:53,000
+And then we normalize by the sum of those two things over here.
+
+11
+00:00:53,000 --> 00:00:58,000
+So this is 124 divided by 10, gives us 12.4.
+

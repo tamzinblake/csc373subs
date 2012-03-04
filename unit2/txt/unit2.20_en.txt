@@ -1,0 +1,5 @@
+Let me ask a different quiz, which follows from the math, but it tests your intuition.
+
+Suppose we have a prior that sits over here and a measurement probability that sits over here, really far away, and both have the same covariance.
+
+Let me first quiz you where the new mean would be. Is it going to be here, here, here, or here? Please check the corresponding check mark.

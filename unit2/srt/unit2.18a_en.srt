@@ -1,0 +1,24 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+And the answer for the new mean is just the one in the middle,
+
+2
+00:00:03,000 --> 00:00:06,000
+and reason is both weights over here are equivalent,
+
+3
+00:00:06,000 --> 00:00:11,000
+so we take the mean between μ and ν, which is 11.
+
+4
+00:00:11,000 --> 00:00:15,000
+And then with σ² it's 2.
+
+5
+00:00:15,000 --> 00:00:25,000
+If you take 1/4 plus 1/4, then you get 1/2, so 1 over 1/2 equals 2,
+
+6
+00:00:25,000 --> 00:00:31,000
+which means the new variance term is half the size of the previous variance terms.
+

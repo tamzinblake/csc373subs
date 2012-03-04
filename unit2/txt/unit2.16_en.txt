@@ -1,0 +1,13 @@
+So in Kalman filters we iterate measurement and motion.
+
+This is often called a "measurement update", and this is often called "prediction". And this update will use Bayes rule, which is nothing else but a product or a multiplication. And this update will use total probability, which is a convolution, or simply an addition.
+
+Let's talk first about the measurement cycle and then the prediction cycle, using our great, great, great Gaussians for implementing those steps.
+
+So suppose you're localizing another vehicle, and you have a prior distribution that looks as follows. It's a very wide Gaussian with the mean over here.
+
+And now, say we get a measurement that tells us something about the localization of the vehicle, and it comes in like this. It has a mean over here called ν, and this example has a much smaller covariance for the measurement.
+
+This is an example where in our prior we were fairly uncertain about a location, but the measurement told us quite a bit as to where the vehicle is.
+
+So here's a quiz for you. Will the new mean of the subsequent Gaussian be over here, over here, or over here? Check one of these three boxes.

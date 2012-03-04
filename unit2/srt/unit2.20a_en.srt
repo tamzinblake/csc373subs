@@ -1,0 +1,12 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+And the answer is here. It's in the middle.
+
+2
+00:00:03,000 --> 00:00:06,000
+It's in the straight middle, because these two variances are the same,
+
+3
+00:00:06,000 --> 00:00:10,000
+so we just average the means.
+

@@ -1,0 +1,5 @@
+So let me ask you again about your intuition and draw three more Gaussians, and, again, excuse my poor drawing skills here.
+
+And now I'm going to ask you about the covariance.
+
+So for each of those check exactly one box. Is the covariance large, medium, or small? Obviously, one of those is the largest, one is the medium, and one is small.

@@ -1,0 +1,40 @@
+﻿1
+00:00:00,000 --> 00:00:05,000
+Now, here's a question that's really, really hard.
+
+2
+00:00:05,000 --> 00:00:14,000
+When we graph the new Gaussian, I can graph one that's very wide, that's very peaky.
+
+3
+00:00:14,000 --> 00:00:18,000
+So if I were to measure where the peak of the new Gaussian is,
+
+4
+00:00:18,000 --> 00:00:22,000
+this would be a very narrow and skinny Gaussian.
+
+5
+00:00:22,000 --> 00:00:25,000
+This would be one whose width would be inbetween the two Gaussians.
+
+6
+00:00:25,000 --> 00:00:29,000
+And this is one that's even wider than the two original Gaussians.
+
+7
+00:00:29,000 --> 00:00:33,000
+Which one do you believe is the correct posterior after multiplying these two Gaussians?
+
+8
+00:00:33,000 --> 00:00:35,000
+This is an insanely hard question.
+
+9
+00:00:35,000 --> 00:00:37,000
+I'd like you to take your chances here,
+
+10
+00:00:37,000 --> 00:00:41,000
+and I'll explain you the answer in just a second.
+

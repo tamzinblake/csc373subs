@@ -1,0 +1,17 @@
+You remember our Markov model where the world was divided into discrete grids, and we assigned to each grid cell a probability.
+
+Such a representation of probability over spaces is called a histogram in that it divides the continuous space into discrete, into finitely many grid cells and approximates the posterior distribution by a histogram over the original distribution. And the histogram is a mere approximation for this continuous distribution.
+
+In Kalman filters the distribution is given by what's called a Gaussian. A Gaussian is a continuous function over the space of locations, and the area underneath sums up to 1.
+
+So here's our Gaussian again. And if we call the space x, then the Gaussian is characterized by two parameters, the mean, often abbreviated with the Greek letter μ, and the width of the Gaussian, often called the variance, and for reasons I don't want to go into, it's often written as a quadratic variable σ².
+
+So any Gaussian in 1D, which means the parameter space over here is 1 dimensional, is characterized by μ and σ². So rather than estimating the entire distribution as a histogram, our task in Kalman filters is to maintain a μ and a σ² that is our best estimate of the location of the object we're trying to find.
+
+The exact formula is an exponential of a quadratic function where we take the exponent of this complicated expression over here. The quadratic difference of our query point x relative to the mean μ divided by σ² multiplied by -1/2.
+
+Now, if x equals μ then the numerator becomes 0, and we have exp of 0, which is 1. It turns out we have to normalize this by a constant, 1 over the square root of 2πσ², but for everything we'll talk about today, this constant won't matter, so ignore it. What matters is we have an exponential of a quadratic function over here.
+
+Let me draw you a couple of functions, and you tell me which ones you believe are Gaussian by checking the box on the right side.
+
+And please excuse my poor drawing skills here.

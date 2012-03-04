@@ -1,0 +1,9 @@
+And yes, you'd expect it right over here.
+
+From those observations you would say that the velocity points in the direction of this vector. So assuming no drastic change in velocity, you expect that the 5th position would be over here.
+
+So the Kalman filter takes observations like these and estimates future locations and velocities based on data like this. And today I'm going to teach you how to write a piece of software that lets you take points like those, even if they're noisy and uncertain, and estimate automatically where future locations might be and at what velocity the object is moving.
+
+The Google self-driving car uses methods like these to understand where other traffic is based on radar and laser-range data.
+
+So let's dive in!

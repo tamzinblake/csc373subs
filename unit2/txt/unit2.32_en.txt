@@ -1,0 +1,37 @@
+So, I have a new, a challenging programming assignment for you that will kind of take you a while, but I would like you to implement a multidimensional Kalman filter for the example I've just given you.
+
+The matrix class is a class for manipulating matrices that should make it really easy. It has a function that initializes matrices.  I'll show you an example in a second. It can set them down to 0. It can compute an identity matrix. It can print out a matrix with show. It overloads operators like addition, subtraction, multiplication, and even computes the transpose of a matrix, and in some more extended code, it can actually invert a matrix using Cholesky factorization. So there's a function here called inverse.
+
+So this matrix class is available. It's a small version of what is found in typical libraries. And I want to demonstrate it for you just for a second. You can make a matrix with a command like this with the argument in the parenthesis.
+
+It's a 2-dimensional matrix. In this case it's a vertical vector. And with the show command, you can print out the result of the vertical vector. You can compute the transpose as follows.
+
+If you run this, you'll find the horizontal vector. And say you wish to multiply a matrix by a vector, then we can make a 2 x 2 matrix with this initialization over here, a matrix of [12., 8.] and [6., 2.]. We can print this matrix. Here it is: [12, 8, 6, 2]. These are these values over here.
+
+And we can multiply F and a. So here b = F * a. And if we show the result, we get the vector 280. That's obtained by 10 * 12 + 10 * 8 is 200. 10 * 6 + 10 * 2 is 80.
+
+So using my matrix libraries, I set an initial state. This is a tracking in 1D where the state is the position and the velocity. I initialized both with 0 because I don't know the actual location and the velocity. I give an uncertainty matrix where I have a really high uncertainty in the position and a really high uncertainty in the velocity, and they're both uncorrelated. That's the matrix of 1000, 0, 0, 1000.
+
+I specify an external motion, but it's 0, 0, so it has no effect, so just ignore this. I build the next state function, which is the one we just discussed, [[1., 1] [0, 1.]]. That assumes that the velocity is just being added to the position, and the velocity in expectation stays the same.
+
+I build a measurement function that extracts just the first of the 2 values, 1 and 0, so I can observe the location but not the velocity. I have a measurement uncertainty. It happens to be 1 in this example.
+
+And I have an identity matrix, [[1., 0.] [0., 1.]].
+
+And then I run a filter with these 3 measurements over here, and what should come out is that by running the filter, I can estimate the velocity and therefore make better predictions.
+
+In the filter that I want you to program, I want the measurement update first and then the motion update. So every time we run the filter, I want you to update the measurement first, then the motion.
+
+So here is my empty procedure filter that you have to fill in where I go through all measurements, and then build the measurement update and then the motion update, the prediction, and then I just print out the resulting estimates. I do this a number of times, 3 times in this case.
+
+Once you fill this in and I hit the Run button, I get the following output. After my first measurement update, I observed the location 1, which gets copied over essentially to 0.999 over here. I learn nothing about the velocity, so it's still 0, just the way I initialized it. And then there's an updated uncertainty matrix which now shows what happens to be a strong correlation, That differs from the initial one only that we filled in the off-diagonal elements.
+
+It happens to be exactly what the Kalman filter does. And then I'm gonna observe again the 2. I want the output to now tell me that my next prediction is 3. It's the observation plus the prediction.
+
+But now I have a really good estimate on what the velocity is. It's essentially 1, and the reason is my Kalman filter was able to use the Kalman filter equations to find this value.
+
+There's a new covariance matrix, and for the third observation followed by the prediction, the prediction is correctly effectively 4, 3.999. The velocity estimate is correctly 1, which is 0.99999, and I have yet another uncertainty matrix which illustrates that I have high certainty in the velocity estimate, and also a relatively high certainty in the position estimate compared to my initial uncertainties.
+
+So can you write the algorithm filter that outputs those exact values over here?
+
+This is an involved programming assignment. What you have to do is you have to essentially implement the equations I gave you. You have to familiarize yourself with the matrix class and then go and fill in the filter code in accordance to the things that I showed you for the multivariate Kalman filter.

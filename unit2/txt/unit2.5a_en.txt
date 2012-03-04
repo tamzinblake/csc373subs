@@ -1,0 +1,9 @@
+So the answer is tricky.
+
+I'm going to use a variable n that I increment by 1 in this while loop over here. And I'm using a flag called "found" that I initialized with False. And so as long as I don't find a valid number, I just go up by 1 over here. And when I find it, I terminate the while loop, and I print the result.
+
+And this is the tricky part over here. So I'm testing the function f6 for is_int, but when I pass my argument, I make sure it's actually a floating value argument, not an integer; otherwise the procedure doesn't work.
+
+This is a tricky part about Python and type treatment in Python. This makes sure I'm using a floating point number, and the loop over here when I hit run gives me 15,621.
+
+Did you get it?

@@ -1,0 +1,13 @@
+So now let's put everything together.
+
+Let's write a main program that takes these 2 functions, update and predict, and feeds into a sequence of measurements and motions.
+
+In the example I've chosen here are the measurements of 5., 6., 7., 9., and 10. The motions are 1., 1., 2., 1., 1. This all would work out really well if the initial estimate was 5, but we're setting it to 0 with a very large uncertainty of 10,000. Let's assume the measurement uncertainty is constant 4, and the motion uncertainty is constant 2.
+
+And when you run this, your first estimate for position should basically become 5, 4.99, and the reason is your initial uncertainty is so large, the estimate is dominated by the first measurement. Your uncertainty shrinks to 3.99, which is slightly better than the measurement uncertainty.
+
+You then predict that you add 1, but the uncertainty increases to 5.99, which is the motion uncertainty of 2. You update again based on the measurement 6, you get your estimate of 5.99, which is almost 6. You move 1 again. You measure 7. You move 2. You measure 9. You move 1. You measure 10, and you move a final 1.
+
+And out comes as the final result, a prediction of 10.99 for the position, which is your 10 position moved by 1, and the uncertainty, residual uncertainty, of 4.
+
+Can you implement this so you get the exactly same outputs as I've gotten over here?

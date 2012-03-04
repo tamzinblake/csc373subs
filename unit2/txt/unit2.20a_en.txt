@@ -1,0 +1,3 @@
+And the answer is here. It's in the middle.
+
+It's in the straight middle, because these two variances are the same, so we just average the means.

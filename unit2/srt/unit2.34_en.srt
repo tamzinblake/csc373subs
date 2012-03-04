@@ -1,0 +1,40 @@
+﻿1
+00:00:00,000 --> 00:00:04,000
+So this completes my unit on Kalman filters. You learned actually quite a bit.
+
+2
+00:00:04,000 --> 00:00:08,000
+You learned about Gaussians, how to do measurement updates using multiplication,
+
+3
+00:00:08,000 --> 00:00:14,000
+how to do prediction or state transitions using convolution,
+
+4
+00:00:14,000 --> 00:00:18,000
+and you even implemented your first Kalman filter, which is really super cool.
+
+5
+00:00:18,000 --> 00:00:20,000
+You've implemented it in the context of vehicle tracking,
+
+6
+00:00:20,000 --> 00:00:25,000
+and you used this to estimate a nonobservable velocity for measurement data.
+
+7
+00:00:25,000 --> 00:00:27,000
+Now, next is your homework assignment.
+
+8
+00:00:27,000 --> 00:00:30,000
+I hope you can prove what you've learned and ace it.
+
+9
+00:00:30,000 --> 00:00:35,000
+And then, next week, we're going to move into particle filters, which is an exciting third method for state estimation.
+
+10
+00:00:35,000 --> 00:00:40,000
+So I'll see you for the homework assignment, and then I'll see you in class for particle filters.
+

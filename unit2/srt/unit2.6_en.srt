@@ -1,0 +1,20 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+So 15,621 is indeed an answer.
+
+2
+00:00:06,000 --> 00:00:09,000
+Subtract 1 to the monkey.
+
+3
+00:00:09,000 --> 00:00:13,000
+The first guy now takes 3124,
+
+4
+00:00:13,000 --> 00:00:17,000
+leaving to the next guy 12,496.
+
+5
+00:00:17,000 --> 00:00:25,000
+Again subtracting 1 gives us... please fill in the number for the second guy who wakes up.
+

@@ -1,0 +1,5 @@
+And the answer is over here in the middle.
+
+It's between the two old means, the mean of the prior and the mean of the measurement. And it's slightly further on the measurement side, because the measurement was more certain as to where the vehicle is than the prior.
+
+The more certain we are, the more we pull the mean in the direction of the certain answer.

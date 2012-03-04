@@ -1,0 +1,44 @@
+﻿1
+00:00:01,000 --> 00:00:05,000
+So to solve this we're going to set up a loop for 6 times.
+
+2
+00:00:08,000 --> 00:00:12,000
+We apply our diminishing rule n = f(n)
+
+3
+00:00:12,000 --> 00:00:16,000
+and then we simply return n.
+
+4
+00:00:16,000 --> 00:00:21,000
+Hitting the run button gives us 22.21, which is not an integer.
+
+5
+00:00:21,000 --> 00:00:24,000
+And that's a failure--the final number has to be an integer as well as
+
+6
+00:00:24,000 --> 00:00:28,000
+all the numbers along the way, but I can tell you if the final number is an integer,
+
+7
+00:00:28,000 --> 00:00:31,000
+then the numbers in between will be as well.
+
+8
+00:00:31,000 --> 00:00:34,000
+Now important to know is I put a decimal point over here.
+
+9
+00:00:34,000 --> 00:00:37,000
+If I omit this, then all this reverts to integer calculation,
+
+10
+00:00:37,000 --> 00:00:39,000
+and I won't be able to test whether it is an integer.
+
+11
+00:00:39,000 --> 00:00:42,000
+It's really important to have the decimal point over here.
+

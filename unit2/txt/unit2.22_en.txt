@@ -1,0 +1,7 @@
+So let's now go back and write a program in which we calculate the new mean and the new variance term.
+
+So I really just want you to write a Python program that implements those equations so that we can test them. I'm giving you a skeleton program, which has a function "update", that takes as an input a mean and a variance for the first distribution and a mean and a variance for the second distribution and outputs the new mean and the new variance of the product of those.
+
+And here I'm testing it with a mean of 10 and a variance of 8, and a mean of 13 and a variance of 2, which was one of our examples. And out should come the answer over here: 12.4 and 1.6. Of course, Python tends to not give you the exact output, so there's a couple of zeros over here but ignore those.
+
+The answer is effectively 12.4 and 1.6. Can you fill in those gaps?

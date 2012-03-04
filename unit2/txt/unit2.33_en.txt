@@ -1,0 +1,9 @@
+So, in the next class, I'm going to teach you our final state estimation algorithm.
+
+It's called particle filters. And whereas the two first methods we learned, the histogram method and now the Kalman method are really complex and involved, this one is really simple and easy to implement and really powerful.
+
+We are using it in various places in the Google self-driving car. And it's possibly the most popular method to-date in recent times. And it really overcomes some basic barriers in both of the 2 previous methods.
+
+It's also really fun to implement because you can implement it in about 5 lines of code, which is quite amazing.
+
+So, please come back when the next class comes and learn how to program a particle filter.

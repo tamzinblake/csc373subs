@@ -1,0 +1,32 @@
+﻿1
+00:00:02,000 --> 00:00:06,000
+And the approximate answer is 0.12.
+
+2
+00:00:06,000 --> 00:00:13,000
+(x minus μ) squared is 4, which is 10 minus 8 to the square
+
+3
+00:00:13,000 --> 00:00:16,000
+divided by 4 equals 1.
+
+4
+00:00:16,000 --> 00:00:21,000
+So the expression of the exponential is -1/2,
+
+5
+00:00:21,000 --> 00:00:23,000
+which is about 0.6.
+
+6
+00:00:23,000 --> 00:00:32,000
+And this guy over here is approximately 0.2, which gives us as a product 0.12
+
+7
+00:00:32,000 --> 00:00:36,000
+So I won't torture you with any more questions like these, because they're really not fun,
+
+8
+00:00:36,000 --> 00:00:39,000
+but we can program this now.
+

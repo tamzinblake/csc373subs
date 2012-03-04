@@ -1,0 +1,9 @@
+The answer is 2499.
+
+It's just 12,495 divided by 5, and the remainder becomes 9996.
+
+When you work this out for all iterations of the puzzle, you'll find that in the morning when they wake up there's 5116 coconuts left, just about a third. The monkey gets 1, and each of the people take with them yet another 1023 coconuts.
+
+Now, why is this an interesting quiz? Because there's another solution. That one is really hard, but it's also very elegant; very, very elegant. Let me build up the solution by finding a really simple number that satisfies the variance of giving 1 to the monkey, removing a 5th.
+
+Now, such a number is impossible to find in the set of positive numbers, but here is one that works: -4. If we subtract 1, you get -5. If you now take a 5th away, which happens to be -1, then the result is -4 again. So you can keep doing this, and you'll always arrive at -4. So -4 is a valid solution to the puzzle except it is negative, and it's hard to think of negative numbers of coconuts.

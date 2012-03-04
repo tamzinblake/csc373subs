@@ -1,0 +1,28 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+And the answer is this one is a Gaussian, this one, and this one.
+
+2
+00:00:06,000 --> 00:00:09,000
+And they are all characterized by this exponential drop-off on both sides
+
+3
+00:00:09,000 --> 00:00:14,000
+they're symmetrical, and they have a single peak.
+
+4
+00:00:14,000 --> 00:00:16,000
+they're what's called "unimodal".
+
+5
+00:00:16,000 --> 00:00:21,000
+This is a bimodal function, it has two peaks, and as a result is not Gaussian.
+
+6
+00:00:21,000 --> 00:00:24,000
+The same is true over here and over here,
+
+7
+00:00:24,000 --> 00:00:28,000
+so these guys don't qualify.
+

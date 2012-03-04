@@ -1,0 +1,3 @@
+And the answer is to set it to the same value as mu, in which case this expression over here becomes 0, and we get the maximum. We get the peak of the Gaussian.
+
+So we set x to the same value as mu, to 10, and the output is 0.2 approximately.

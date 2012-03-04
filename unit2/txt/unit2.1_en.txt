@@ -1,0 +1,11 @@
+Welcome to my second class on Kalman filters.
+
+I want to take you on a little tour to where it all began, Stanford University. Behind me is VAIL, Stanford's Automotive Research Center. And let's go inside.
+
+This is Junior, Standord's most recent self-driving car. It's the child of Stanley, whom you can find in the National Museum of American History in Washington, D.C. And let me tell you something about the equipment that's on this car that makes it self-driving.
+
+So this rotating thing over here is a laser-range finder that takes distance scans 10 times a second, about a million data points. It'll be really important for the Kalman filter class I'm teaching you today. Its major function is to spot other cars so you don't run into them.
+
+There is also a camera on top. There is a stereo camera system over here. And in the rear there are antennas for a GPS (global positioning system) that allows us to estimate where the car is in the world.
+
+This is a supplemental system to the localization class I just taught you. This is the data that comes from the laser. This is the car parked in the garage right now. We see the back wall. These are all range measurements that tell you how far things are away, and they are essential as the input to the Kalman filter that we're going to learn about today.

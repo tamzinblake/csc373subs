@@ -1,0 +1,5 @@
+So starting with the following source code, I'm looking for a completion of this one line over here that returns the Gaussian function with arguments mu = 10, sigma2 = 4, and x = 8, and I want the output to be approximately 0.12.
+
+So here's my solution. This is the constant: 1/sqrt(2*pi*sigma2). And then I multiply with the exponential of (-.5*(x-mu)**2/sigma2). Applying that to the following numbers over here gives me 0.12.
+
+Now, here's a question for you. How do I have to modify x, the 8, to get the maximum return value for this function f?

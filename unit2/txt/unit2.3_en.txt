@@ -1,0 +1,7 @@
+Let's do this in stages.
+
+Let's program a function f(n) that takes as an input number of coconuts, and that outputs the number of coconuts after 1 was given to the monkey and a 5th of those were removed.
+
+And let's test it with the number 96. It's your turn to program this function, and when you hit the run button, we can look at the results, which for 96 I'd like to be 76. If we subtract 1 from 96, you have 95, and if you now subtract a 5th of those, you end up with 76.
+
+So please insert your function here and hit the run button to see 76 down here.

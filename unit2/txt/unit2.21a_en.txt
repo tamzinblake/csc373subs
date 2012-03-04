@@ -1,0 +1,7 @@
+And the answer is it's the more peaky Gaussian. That is somewhat counter-intuitive.
+
+You'd think if this was your initial guess, this is your measurement probability, you really don't know where you are, and you should pick a very wide Gaussian.
+
+But the truth is our new σ² is obtained independent of the means. It's this formula over here. Now because both means are the same, this resolves to 1 over 2/σ². That's the same as σ²/2, which means a new variance squared is half of the old one. That makes it a narrower Gaussian, so the green one here that's the most peaky is indeed the correct answer.
+
+This is very counter-intuitive, but now we understand why. I hope you feel comfortable with the fact that we have actually gotten more information about the location, which is manifest by a more focused estimate.

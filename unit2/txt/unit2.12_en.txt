@@ -1,0 +1,1 @@
+So let me ask you to calculate the value of f(x), you will need a calculator for this, for the following values: μ equals 10, σ² equals 4, x equals 8.

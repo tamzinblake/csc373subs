@@ -1,0 +1,36 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+So starting with the following source code,
+
+2
+00:00:03,000 --> 00:00:09,000
+I'm looking for a completion of this one line over here that returns the Gaussian function
+
+3
+00:00:09,000 --> 00:00:15,000
+with arguments mu = 10, sigma2 = 4, and x = 8,
+
+4
+00:00:15,000 --> 00:00:18,000
+and I want the output to be approximately 0.12.
+
+5
+00:00:21,000 --> 00:00:29,000
+So here's my solution. This is the constant: 1/sqrt(2*pi*sigma2).
+
+6
+00:00:29,000 --> 00:00:37,000
+And then I multiply with the exponential of (-.5*(x-mu)**2/sigma2).
+
+7
+00:00:37,000 --> 00:00:43,000
+Applying that to the following numbers over here gives me 0.12.
+
+8
+00:00:43,000 --> 00:00:45,000
+Now, here's a question for you.
+
+9
+00:00:45,000 --> 00:00:53,000
+How do I have to modify x, the 8, to get the maximum return value for this function f?
+

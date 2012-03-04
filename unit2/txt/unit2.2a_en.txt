@@ -1,0 +1,9 @@
+So let's look at the way to solve this.
+
+I'll give you two solutions, a straightforward one and an elegant one. In the straightforward one, you go from N0, N1, N2, all the way to N6, which is divisible by 5. This is the initial number of coconuts. This is after the first guy woke up, the second, all the way to the fifth, and this is the number of coconuts after the final coconut was given to the monkey.
+
+So now we know that for any of those, we can write the ith number of coconuts is obtained from the previous number by subtracting 1, dividing by 5, and multiplying by 4.
+
+And of course we want this to be an integer, and we want the initial number to be an integer.
+
+How can we program a solution in Python?

@@ -1,0 +1,5 @@
+And the answer is this is the largest covariance. It's the widest spread. This is the smallest, and this is medium.
+
+And to see how this is being found in the formula over here, the difference between x and y is being normalized by the covariance. So the larger this value, the less the difference over here matters, and, as a result, the more the function is spread out. So functions with a very wide spread have the largest covariance, whereas functions with small spread have the smallest covariance.
+
+Put differently, the σ² covariance is a measure of uncertainty. The larger σ², the more uncertain we are about the actual state. This is a very certain distribution where expected deviation is small. This is a relatively uncertain distribution where we know very little.

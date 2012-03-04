@@ -1,0 +1,80 @@
+﻿1
+00:00:00,000 --> 00:00:04,000
+The answer is 2499.
+
+2
+00:00:04,000 --> 00:00:09,000
+It's just 12,495 divided by 5,
+
+3
+00:00:09,000 --> 00:00:14,000
+and the remainder becomes 9996.
+
+4
+00:00:14,000 --> 00:00:18,000
+When you work this out for all iterations of the puzzle,
+
+5
+00:00:18,000 --> 00:00:21,000
+you'll find that in the morning when they wake up
+
+6
+00:00:21,000 --> 00:00:26,000
+there's 5116 coconuts left, just about a third.
+
+7
+00:00:26,000 --> 00:00:35,000
+The monkey gets 1, and each of the people take with them yet another 1023 coconuts.
+
+8
+00:00:35,000 --> 00:00:38,000
+Now, why is this an interesting quiz?
+
+9
+00:00:38,000 --> 00:00:42,000
+Because there's another solution.
+
+10
+00:00:42,000 --> 00:00:48,000
+That one is really hard, but it's also very elegant; very, very elegant.
+
+11
+00:00:48,000 --> 00:00:54,000
+Let me build up the solution by finding a really simple number that
+
+12
+00:00:54,000 --> 00:00:59,000
+satisfies the variance of giving 1 to the monkey, removing a 5th.
+
+13
+00:00:59,000 --> 00:01:04,000
+Now, such a number is impossible to find in the set of positive numbers,
+
+14
+00:01:04,000 --> 00:01:07,000
+but here is one that works: -4.
+
+15
+00:01:07,000 --> 00:01:11,000
+If we subtract 1, you get -5.
+
+16
+00:01:11,000 --> 00:01:15,000
+If you now take a 5th away, which happens to be -1,
+
+17
+00:01:15,000 --> 00:01:19,000
+then the result is -4 again.
+
+18
+00:01:19,000 --> 00:01:25,000
+So you can keep doing this, and you'll always arrive at -4.
+
+19
+00:01:25,000 --> 00:01:32,000
+So -4 is a valid solution to the puzzle except it is negative,
+
+20
+00:01:32,000 --> 00:01:35,000
+and it's hard to think of negative numbers of coconuts.
+

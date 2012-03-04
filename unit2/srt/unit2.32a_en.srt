@@ -1,0 +1,312 @@
+﻿1
+00:00:00,000 --> 00:00:02,000
+And here is my code.
+
+2
+00:00:02,000 --> 00:00:04,000
+If you got this correct,
+
+3
+00:00:04,000 --> 00:00:09,000
+then I'm mightily impressed with what you've done because
+
+4
+00:00:09,000 --> 00:00:12,000
+you've taken something that often takes many, many classes
+
+5
+00:00:12,000 --> 00:00:16,000
+to explain to students, and within a single class,
+
+6
+00:00:16,000 --> 00:00:19,000
+you understood the gist of it and you wrote a piece of code
+
+7
+00:00:19,000 --> 00:00:23,000
+that is really non-trivial, that you can reuse many times,
+
+8
+00:00:23,000 --> 00:00:27,000
+and that's the core of the Google self-driving cars' ability to check other vehicles.
+
+9
+00:00:27,000 --> 00:00:30,000
+Here is the line by line implementation
+
+10
+00:00:30,000 --> 00:00:33,000
+of what I've shown you before for the measurement update
+
+11
+00:00:33,000 --> 00:00:36,000
+and the prediction.  And you'll find
+
+12
+00:00:36,000 --> 00:00:39,000
+using my matrix class that it implements
+
+13
+00:00:39,000 --> 00:00:42,000
+step after step exactly what I've shown you.
+
+14
+00:00:42,000 --> 00:00:44,000
+A little non-triviality.
+
+15
+00:00:44,000 --> 00:00:47,000
+We have to make a measurement matrix of the nth measurement.
+
+16
+00:00:47,000 --> 00:00:50,000
+If you solve the problem, you have probably something like this.
+
+17
+00:00:50,000 --> 00:00:52,000
+The arrow calculation,
+
+18
+00:00:52,000 --> 00:00:55,000
+the matrix S with a transpose,
+
+19
+00:00:55,000 --> 00:00:58,000
+the Kalman gain K with the inverse,
+
+20
+00:00:58,000 --> 00:01:03,000
+back to my next prediction and my measurement update.
+
+21
+00:01:03,000 --> 00:01:05,000
+And this is the prediction step.
+
+22
+00:01:05,000 --> 00:01:09,000
+You can see it implements exactly what I showed you
+
+23
+00:01:09,000 --> 00:01:12,000
+in these 2 equations over here.
+
+24
+00:01:12,000 --> 00:01:16,000
+Now I know programming with this is involved,
+
+25
+00:01:16,000 --> 00:01:18,000
+and I'm really impressed if you were able to do this.
+
+26
+00:01:18,000 --> 00:01:22,000
+If you've done this, you've achieved something really, really major.
+
+27
+00:01:22,000 --> 00:01:25,000
+You now understand Kalman filters.
+
+28
+00:01:25,000 --> 00:01:28,000
+And you've implemented a multidimensional Kalman filter
+
+29
+00:01:28,000 --> 00:01:33,000
+all on your own using a fairly mechanical
+
+30
+00:01:33,000 --> 00:01:35,000
+matrix class that I wrote for you.
+
+31
+00:01:35,000 --> 00:01:38,000
+You ran it, and you've gotten really good results
+
+32
+00:01:38,000 --> 00:01:44,000
+in which a sequence of position estimates, 1, 2, 3,
+
+33
+00:01:44,000 --> 00:01:47,000
+led you to make a prediction
+
+34
+00:01:47,000 --> 00:01:51,000
+and understand the velocity of the moving object.
+
+35
+00:01:51,000 --> 00:01:54,000
+So these are the equations you just implemented.
+
+36
+00:01:54,000 --> 00:01:56,000
+Congratulations!
+
+37
+00:01:56,000 --> 00:01:59,000
+You really understood something fundamental here
+
+38
+00:01:59,000 --> 00:02:02,000
+that I believe is really essential to artificial intelligence
+
+39
+00:02:02,000 --> 00:02:05,000
+and to building self-driving cars.
+
+40
+00:02:05,000 --> 00:02:09,000
+You implemented effectively our method for finding other cars.
+
+41
+00:02:09,000 --> 00:02:12,000
+Let me put this in context.
+
+42
+00:02:12,000 --> 00:02:14,000
+Here's a Google self-driving car.
+
+43
+00:02:14,000 --> 00:02:16,000
+Here's another car.
+
+44
+00:02:16,000 --> 00:02:21,000
+Our Google self-driving car uses radar on the front bumper
+
+45
+00:02:21,000 --> 00:02:24,000
+that measures the distance to vehicles
+
+46
+00:02:24,000 --> 00:02:27,000
+and also gives a noisy estimate of the velocity.
+
+47
+00:02:27,000 --> 00:02:30,000
+And it also uses its lasers,
+
+48
+00:02:30,000 --> 00:02:33,000
+and again, it measures the distance to other cars but no velocities.
+
+49
+00:02:33,000 --> 00:02:36,000
+If you paint the same situation from above,
+
+50
+00:02:36,000 --> 00:02:38,000
+here is the Google car.
+
+51
+00:02:38,000 --> 00:02:40,000
+It is localized on a map.
+
+52
+00:02:40,000 --> 00:02:45,000
+Here is another vehicle, and another one.
+
+53
+00:02:45,000 --> 00:02:51,000
+Using radars and lasers, the Google car estimates the distance
+
+54
+00:02:51,000 --> 00:02:54,000
+and the velocity of all these vehicles,
+
+55
+00:02:54,000 --> 00:02:58,000
+and it does so using a Kalman filter,
+
+56
+00:02:58,000 --> 00:03:00,000
+where it feeds in range data from the laser,
+
+57
+00:03:00,000 --> 00:03:07,000
+and it uses state spaces like this one of the relative distance in x and y
+
+58
+00:03:07,000 --> 00:03:11,000
+and the relative velocity in x and y together with state transition matrices
+
+59
+00:03:11,000 --> 00:03:15,000
+of the type I've just shown you to find out
+
+60
+00:03:15,000 --> 00:03:18,000
+where these other cars are, and this is exactly what you've just learned
+
+61
+00:03:18,000 --> 00:03:21,000
+and programmed yourself.
+
+62
+00:03:21,000 --> 00:03:24,000
+I didn't tell you how to extract the location of other cars from radar and laser.
+
+63
+00:03:24,000 --> 00:03:26,000
+There's something called a correspondence problem.
+
+64
+00:03:26,000 --> 00:03:28,000
+Sometimes you don't know which one each car is,
+
+65
+00:03:28,000 --> 00:03:31,000
+and I won't talk in much depth about it.
+
+66
+00:03:31,000 --> 00:03:34,000
+But you understand the gist of the solution now,
+
+67
+00:03:34,000 --> 00:03:36,000
+and you've been able to program it.
+
+68
+00:03:36,000 --> 00:03:38,000
+So if you were in a situation like this,
+
+69
+00:03:38,000 --> 00:03:42,000
+you can use range data like laser data and radar data
+
+70
+00:03:42,000 --> 00:03:44,000
+and come up with a rational algorithm that takes
+
+71
+00:03:44,000 --> 00:03:47,000
+momentary measurements of other cars
+
+72
+00:03:47,000 --> 00:03:51,000
+and not just estimates where they are but also how fast they're moving.
+
+73
+00:03:51,000 --> 00:03:53,000
+That's really a tremendous feat.
+
+74
+00:03:53,000 --> 00:03:55,000
+Congratulations to getting this far.
+
+75
+00:03:55,000 --> 00:03:57,000
+If you got this far in my class,
+
+76
+00:03:57,000 --> 00:04:01,000
+I promise you you've just digested the most difficult thing
+
+77
+00:04:01,000 --> 00:04:03,000
+I have to teach you in this entire class.
+
+78
+00:04:03,000 --> 00:04:05,000
+Congratulations!
+
