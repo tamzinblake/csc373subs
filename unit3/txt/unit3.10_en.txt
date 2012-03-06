@@ -1,0 +1,10 @@
+Next, I'd like you to play with the noise.
+Our class robot has built-in noise variables.
+One is for forward motion.
+This is a added Gaussian noise variable to the motion you command.
+The same for turn and the same for the sensor measurements.
+And as I scroll down I find the function set_noise()
+lets me set those values to values other than zero.
+So, I want you, into your code, set these values as follows:
+forward noise equals 5.0, turn noise equals 0.1, and sense noise equals 5.0.
+So, please fit this into your code.

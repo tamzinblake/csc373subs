@@ -1,0 +1,44 @@
+﻿1
+00:00:00,000 --> 00:00:04,000
+I now want you to take each of these particles
+
+2
+00:00:04,000 --> 00:00:06,000
+and simulate robot motion.
+
+3
+00:00:06,000 --> 00:00:09,000
+Depending on the heading direction,
+
+4
+00:00:09,000 --> 00:00:11,000
+this might yield a different directions.
+
+5
+00:00:11,000 --> 00:00:19,000
+So, each of these particles shall first turn by 0.1 and then move by 5 meters.
+
+6
+00:00:19,000 --> 00:00:24,000
+We already implemented something just like this for individual robot motion.
+
+7
+00:00:24,000 --> 00:00:28,000
+Now I'd like you to apply this to the entire particle set.
+
+8
+00:00:28,000 --> 00:00:32,000
+So, please go back to the code and make a new set P
+
+9
+00:00:32,000 --> 00:00:35,000
+that is the result of this specific motion turning by 0.1
+
+10
+00:00:35,000 --> 00:00:38,000
+and moving forward by 5.0
+
+11
+00:00:38,000 --> 00:00:42,000
+to all of those particles in P.
+

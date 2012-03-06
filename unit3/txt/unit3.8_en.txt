@@ -1,0 +1,7 @@
+So thank you Kathleen. I really appreciate it.
+
+This code has a little bit more stuff than you just talked about. It actually assimilates noise, but the noise variables are all set to 0, and those noise variables are really important for particle filters so you can play with those if you like.
+
+In fact, there's a function over here called set noise, that allows you to set them. And then later on we have a function that makes kind of no sense right now, but it will be important as we implement particle filters, called measurement probability. And this accepts a measurement and tells you how plausible this measurement is.
+
+It's kind of the key thing for the survival of the fittest rule in particle filters. So, if you look through the code don't be confused by this function; we will actually use it later.

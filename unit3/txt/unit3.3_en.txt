@@ -1,0 +1,5 @@
+So let me ask you a second quiz.
+
+In particular, I would like to know whether the distributions that can be represented may be unimodal, or can also be multimodal.
+
+So check unimodal if this is all we can do.  Whereas if we can have multiple bumps in our probability distribution, check multimodal.

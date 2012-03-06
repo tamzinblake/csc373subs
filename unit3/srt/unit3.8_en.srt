@@ -1,0 +1,48 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+So thank you Kathleen. I really appreciate it.
+
+2
+00:00:03,000 --> 00:00:06,000
+This code has a little bit more stuff than you just talked about.
+
+3
+00:00:06,000 --> 00:00:10,000
+It actually assimilates noise, but the noise variables are all set to 0,
+
+4
+00:00:10,000 --> 00:00:12,000
+and those noise variables are really important for particle filters
+
+5
+00:00:12,000 --> 00:00:14,000
+so you can play with those if you like.
+
+6
+00:00:16,000 --> 00:00:18,000
+In fact, there's a function over here called set noise,
+
+7
+00:00:18,000 --> 00:00:21,000
+that allows you to set them.
+
+8
+00:00:21,000 --> 00:00:25,000
+And then later on we have a function that makes kind of no sense right now,
+
+9
+00:00:25,000 --> 00:00:30,000
+but it will be important as we implement particle filters, called measurement probability.
+
+10
+00:00:30,000 --> 00:00:34,000
+And this accepts a measurement and tells you how plausible this measurement is.
+
+11
+00:00:34,000 --> 00:00:38,000
+It's kind of the key thing for the survival of the fittest rule in particle filters.
+
+12
+00:00:38,000 --> 00:00:42,000
+So, if you look through the code don't be confused by this function; we will actually use it later.
+

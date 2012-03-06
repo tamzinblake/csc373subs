@@ -1,0 +1,11 @@
+And it turns out it's actually harder than you think, but I'm going to show you how to do it, and once you've done it, you can use the exact same code forever for any particle filter.
+
+But let me be precise what resampling actually means. We are given N particles, each of which has 3 values, and there's N of them, and they also now have weights. These are simple floats or continuous values. Let's call big W the sum of all these weights, and let's normalize them just for the consideration of what to do, and it's called the normalized weights, alpha.
+
+So alpha 1 would be the weight 1 divided by the normalizer W, and so on all the way to alpha N, and obviously it goes without saying that the sum of all alphas is now 1, since we normalized them. What resampling now does is it puts all these particles and their normalized weights into a big bag, and then it draws with replacement N new particles by picking each particle with probability alpha.
+
+So, for example, alpha 2 might be large so we're going to pick this one, P2. Alpha 3 might also be large so we pick that one. Alpha 4 might be really small but just by chance you might actually pick it. So, we have P4 over here, and then we might pick alpha 2, again. So, you get 2 versions of P2, perhaps even 3 versions of P2, depending on the probabilities.
+
+We have N particles over here. We do this thing N times, which is why I said with replacement we can draw multiple copies of the same particle, and in the end those particles that have a high-normalized weight alpha over here will occur likely more frequently in the new set over here. That's called resampling.
+
+So, to make sure you understand this let me ask you a couple of quizzes. Suppose we have 5 particles with the following importance weights: 0.6, 1.2, 2.4, 0.6, and 1.2. If I, in the process of resampling, randomly draw a particle in accordance to the normalized importance weights, what is the probability of drawing P1, P2, P4, and P5?

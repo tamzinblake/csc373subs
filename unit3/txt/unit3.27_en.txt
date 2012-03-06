@@ -1,0 +1,9 @@
+In the next class, I will tell you about robot motion, how to make the robot move.
+
+So we're going to move beyond the idea of just state estimation, finding out where we are or where the other cars are.
+
+And we're going to move to the fascinating topic: how to use all this to decide where to move.
+
+So in the next class, I'll talk about a basic AI method called "search", in particular, "A* search", which is an algorithm invented by my colleague, Nils Nilsson, at Stanford, and I will apply it to the problem of planning robot trajectories and making it move in real time.
+
+So I'll see you in the next class.

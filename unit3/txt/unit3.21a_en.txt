@@ -1,0 +1,9 @@
+And the correct answer is: of course they will eventually matter. So "No" is the correct answer, and let me show this to you.
+
+Again, assume our 4 landmarks and consider a robot facing to the right, to this direction. We get a certain set of distances that is invariant to the orientation.
+
+But now this robot moves, and we get a new set of distances. And now orientation matters. If we assume a different initial orientation, like this one over here, and that robot moves, its measurements will be very, very different.
+
+So orientation does matter in the second step of particle filtering, because the prediction is so different for different orientations.
+
+Let's go and program this.

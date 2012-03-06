@@ -1,0 +1,25 @@
+Let me ask you a few questions.
+
+We had measurement updates and motion updates. In the measurement update, we computed posterior over state given the measurement. And it was proportional to, up to normalization, our probability of the measurement, given the state times p of the state itself.
+
+In the motion update, you compute a posterior over distribution, 1 time step later, and that is the convolution of the transition probability times my prior.
+
+Now those formulas, those should look familiar. This is exactly what you implemented. You might not know you implemented this; let me explain to you how you implemented it.
+
+This distribution was a set of particles. A thousand particles, together, represented your prior "x". These were importance weights. And technically speaking, the particles with the importance weights are a representation of distribution.
+
+But we wanted to get rid of the importance weights so by resampling, we work the importance weights back into the set of particle so the resulting particles, the ones over here, would represent the correct posterior.
+
+You've implemented this. I'm just telling you what the math is behind this. This, you also implemented. This was your set of particles again, and you sampled from the sum by taking a random particle over here and applying the motion model with a noise model to generate a random particle, "x-prime". As a result, you get a new particle set that is the correct distribution after the robot motion.
+
+So you recognize the math, and hopefully you understand how your code implements this math. You can prove all kinds of interesting facts about this math. For example, you can prove convergence if the number of particles goes to infinity. It is obviously approximate. Particles are not an exact representation.
+
+And it was amazingly easy to program. So when you go over your particle code you realize you implemented a fairly involved piece of math that is actually the same for all the filters we talked about so far. The same math underlies our histogram filter we talked about in Class No. 1. And the same math for Gaussians is the Kalman filter we talked in Class No. 2.
+
+So let me ask you an interesting question. Which of the 3 filters did Sebastian use in his Job Talk at Stanford? Histogram Filters, Kalman filters, Particle Filters or None of the above?
+
+Check one or all that apply and, of course, you can't really know unless you Google me and look up my Home Page. Then you might find out some evidence.
+
+So just take a random guess and I'll tell you the answer in a second.
+
+I should say I was hired by Stanford, in 2003, into a tenured Associate Professor position so obviously my Job Talk wasn't that bad.

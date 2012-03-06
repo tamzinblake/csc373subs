@@ -1,0 +1,52 @@
+﻿1
+00:00:00,000 --> 00:00:06,000
+So, here's one possible solution: we construct p2 as a temporary particle set
+
+2
+00:00:06,000 --> 00:00:10,000
+with a later set p equals p2, so this is just a temporary set.
+
+3
+00:00:10,000 --> 00:00:14,000
+We then go through all the particles, again, and here is the tricky line.
+
+4
+00:00:14,000 --> 00:00:21,000
+We append to list p2 the results of our motion of 0.1 and 5.0
+
+5
+00:00:21,000 --> 00:00:26,000
+applied to the ith particle chosen from the original particle set.
+
+6
+00:00:26,000 --> 00:00:29,000
+So this applies the move command to each of the particles
+
+7
+00:00:29,000 --> 00:00:33,000
+exactly the same way we applied move to the robot motion before.
+
+8
+00:00:33,000 --> 00:00:36,000
+When we're all done we reset p=p2.
+
+9
+00:00:36,000 --> 00:00:40,000
+So, we've done the full recursion of applying our motion update
+
+10
+00:00:40,000 --> 00:00:43,000
+to our full particle set.
+
+11
+00:00:43,000 --> 00:00:47,000
+If you've gotten this far then you got about half of particle filters implemented,
+
+12
+00:00:47,000 --> 00:00:50,000
+unfortunately it's the easy half,
+
+13
+00:00:50,000 --> 00:00:53,000
+but the difficult half isn't that much more difficult.
+

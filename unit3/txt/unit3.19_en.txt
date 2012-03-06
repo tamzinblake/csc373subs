@@ -1,0 +1,7 @@
+So, what I'd like you to do next is to modify our algorithm to take the lists of particles and importance weights, to sample N times the replacement N new particles with a sampling probability proportional to the importance weights. Or in the code now that we calculated our new particles and the corresponding importance weights, construct a new particle set p3, which we will call p, again, when everything is said and done, so that the particles in p3 are drawn from p according to the importance weights w.
+
+Now to warn you, this is more difficult than it looks like.
+
+I'm going to show you a trick in a second, so if you fail to do this don't worry. I give you a chance to do it right now, but then I'm going to tell you a little bit more about how to organize this in an efficient way and you get a second chance.
+
+So, try it out, see if you can do it, and if you fail look for my advice and then try it again.

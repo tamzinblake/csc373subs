@@ -1,0 +1,5 @@
+The next question I really didn't dwell on in the class, but I think it's important: when it comes to scaling in the number of dimensions of the state space, the amount of storage we have to assign.
+
+I'll give you 2 answers - it could be quadratic or exponential.  So we have quadratic, exponential, quadratic, exponential.
+
+And I understand I didn't really discuss this, but go back in your memory to how grids are represented and how Gaussians are represented, and I promise you, one of those answers is correct for either of the two filters here.

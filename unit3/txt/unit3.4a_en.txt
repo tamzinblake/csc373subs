@@ -1,0 +1,7 @@
+The histogram filter's biggest disadvantage is that it scales exponentially.
+
+And the reason is, any grid that is defined over K dimensions will end up having exponentially many grid cells in the number of dimensions, which is really misfortunate because we can't really represent high-dimensional grids very well.  So it works really well for low-dimensional problems like 3-dimensional robot localization problems.
+
+The Kalman filter, in contrast, under certain assumptions, is quadratic.  All we represented was a vector, the mean, and a covariance matrix.  And the covariance matrix is quadratic.  And it turns out all the computation, if your measurement space is fixed-size, ends up to be quadratic, without a proof here so you just have to take it by faith.
+
+But the key thing is, this is a much more efficient method.  So if we have a 15, 20-dimensional state space, the Kalman filters will be more efficient than the histogram filters.

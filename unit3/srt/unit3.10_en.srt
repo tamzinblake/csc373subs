@@ -1,0 +1,40 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+Next, I'd like you to play with the noise.
+
+2
+00:00:03,000 --> 00:00:05,000
+Our class robot has built-in noise variables.
+
+3
+00:00:05,000 --> 00:00:07,000
+One is for forward motion.
+
+4
+00:00:07,000 --> 00:00:11,000
+This is a added Gaussian noise variable to the motion you command.
+
+5
+00:00:11,000 --> 00:00:15,000
+The same for turn and the same for the sensor measurements.
+
+6
+00:00:15,000 --> 00:00:19,000
+And as I scroll down I find the function set_noise()
+
+7
+00:00:19,000 --> 00:00:23,000
+lets me set those values to values other than zero.
+
+8
+00:00:23,000 --> 00:00:27,000
+So, I want you, into your code, set these values as follows:
+
+9
+00:00:27,000 --> 00:00:34,000
+forward noise equals 5.0, turn noise equals 0.1, and sense noise equals 5.0.
+
+10
+00:00:34,000 --> 00:00:36,000
+So, please fit this into your code.
+

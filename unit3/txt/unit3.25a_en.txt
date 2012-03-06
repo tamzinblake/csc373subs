@@ -1,0 +1,5 @@
+And the answer are those 2.
+
+Those, I used in a Job Talk in 2003. But I previously applied at Stanford and actually received an offer, which I turned down, in 1998. And in my earlier work, I didn't understand particle filters, and I did everything with this filter over here.
+
+But came 2003, I was a big, big fan of particle filters and my Job Talk talked about a version of those that applied them to the somewhat more involved robot mapping problem.

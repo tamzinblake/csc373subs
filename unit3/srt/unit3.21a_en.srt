@@ -1,0 +1,60 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+And the correct answer is: of course they will eventually matter.
+
+2
+00:00:03,000 --> 00:00:07,000
+So "No" is the correct answer, and let me show this to you.
+
+3
+00:00:07,000 --> 00:00:09,000
+Again, assume our 4 landmarks
+
+4
+00:00:09,000 --> 00:00:13,000
+and consider a robot facing to the right, to this direction.
+
+5
+00:00:13,000 --> 00:00:15,000
+We get a certain set of distances
+
+6
+00:00:15,000 --> 00:00:18,000
+that is invariant to the orientation.
+
+7
+00:00:18,000 --> 00:00:21,000
+But now this robot moves, and we get a new set of distances.
+
+8
+00:00:21,000 --> 00:00:23,000
+And now orientation matters.
+
+9
+00:00:23,000 --> 00:00:25,000
+If we assume a different initial orientation,
+
+10
+00:00:25,000 --> 00:00:27,000
+like this one over here,
+
+11
+00:00:27,000 --> 00:00:29,000
+and that robot moves,
+
+12
+00:00:29,000 --> 00:00:32,000
+its measurements will be very, very different.
+
+13
+00:00:32,000 --> 00:00:36,000
+So orientation does matter in the second step of particle filtering,
+
+14
+00:00:36,000 --> 00:00:40,000
+because the prediction is so different for different orientations.
+
+15
+00:00:40,000 --> 00:00:42,000
+Let's go and program this.
+

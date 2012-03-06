@@ -1,0 +1,5 @@
+So, I want to ask you a tricky question and maybe you can calculate this.
+
+So, what is the probability of never sampling P3?
+
+To answer this question assume we make a new particle set with N=5 new particles where particles are drawn independently and with replacement.

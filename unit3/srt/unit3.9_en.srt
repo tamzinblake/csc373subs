@@ -1,0 +1,68 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+So here's our first programming exercise.
+
+2
+00:00:03,000 --> 00:00:08,000
+I'd like you to make a robot that starts at coordinates 30 and 50,
+
+3
+00:00:08,000 --> 00:00:13,000
+and it heads north, which means its heading direction is pi/2.
+
+4
+00:00:13,000 --> 00:00:20,000
+It then turns clockwise by pi/2, which means you subtract pi/2 from the heading direction,
+
+5
+00:00:20,000 --> 00:00:23,000
+and it moves 50 meters.
+
+6
+00:00:23,000 --> 00:00:27,000
+It then senses, and I want you to print out the sensor measurements.
+
+7
+00:00:27,000 --> 00:00:32,000
+It then turns clockwise by pi/2, again, and moves 10 meters this time,
+
+8
+00:00:32,000 --> 00:00:37,000
+and I just want you to print out the sensor measurements after this entire procedure.
+
+9
+00:00:37,000 --> 00:00:40,000
+So, there are 2 print statements for the sensor over here
+
+10
+00:00:40,000 --> 00:00:42,000
+and the sensor measurements over here.
+
+11
+00:00:42,000 --> 00:00:45,000
+So, here's the output I would like your program to generate.
+
+12
+00:00:45,000 --> 00:00:49,000
+After the first motion, the first measurements will be 39 + something,
+
+13
+00:00:49,000 --> 00:00:53,000
+46, 39, and 46,
+
+14
+00:00:53,000 --> 00:00:59,000
+and then after the second motion I expect to see 32, 53, 47, 40.
+
+15
+00:00:59,000 --> 00:01:01,000
+Of course, there's lots of decimal-point numbers over here,
+
+16
+00:01:01,000 --> 00:01:04,000
+but these are the numbers I would expect you to output.
+
+17
+00:01:04,000 --> 00:01:07,000
+So, have fun coding it.
+

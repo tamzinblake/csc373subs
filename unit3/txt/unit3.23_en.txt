@@ -1,0 +1,13 @@
+What I'll do next is to give you another programming assignment. Rather than printing out the particles themselves, I want you to print out the overall quality of the solution and to do this, I've programmed for you an "eval" code which takes in as a robot position and a particle set, and it computes the average error of each particle, relative to the robot pos in "x" and "y", not in the orientation.
+
+And the way it does it, it basically compares the "x" of the particle with the "x" of the robot, computes the Euclidian distance of these differences, and averages all of those. So it sums them all up and it averages them, through the number of particles over here, which is upper caps M.
+
+Now, there's some funny stuff over here. The reason is, the world is cyclic and it might be that the robot is at 0.0 or at 99.9. It's about the same values but, according to this calculation over here, they'd be different.
+
+So while there's normalization over here, I make sure that the cyclicity of the world doesn't really affect negatively the estimated error I've enclosed in the boundary. You might parse this.
+
+I'm adding "world_size" over to then compute a modulo operation and then subtract the same thing over here, I can't even see it. It's just too long a line.
+
+Be that as it is, I want you to take the function, "eval", and produce a sequence of performance evaluations. And when you hit the run button, I want you to produce something like this stuff over here: This is the residual error. Remember, it's a world of size 100 by 100, so this is actually a relatively small error, compared to the world's size.
+
+Can you code it so I get, for each iteration, the error number produced by this routine over here?

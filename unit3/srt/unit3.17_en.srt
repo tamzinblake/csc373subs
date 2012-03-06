@@ -1,0 +1,20 @@
+﻿1
+00:00:00,000 --> 00:00:04,000
+Let me now ask the same question about P3
+
+2
+00:00:04,000 --> 00:00:07,000
+which is the particle with the largest importance weight.
+
+3
+00:00:07,000 --> 00:00:09,000
+Please check yes or no.
+
+4
+00:00:09,000 --> 00:00:13,000
+Is it possible that P3 is never sampled in the resampling step?
+
+5
+00:00:13,000 --> 00:00:15,000
+Yes or no?
+

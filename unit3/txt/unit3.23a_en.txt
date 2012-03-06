@@ -1,0 +1,11 @@
+So here's my solution. It's the simple command it's: print eval(myrobot, p), I know it wasn't very hard, but it gets you a kind of fun to play with it.
+
+So here's the sequence of numbers I get out. It turns out, we don't always get the same number. Sometimes it doesn't work.
+
+Here's the second run. These are small values again, another run, another run.
+
+Here's one that's interesting, so we can look at these errors: It is a good run, so the error is down to 6, compared to whatever it would be if you didn't do particle filters and had a random set of particles. In fact, to understand this, let me just take the "print eval" command and move it to the very beginning, where we have done no particle filters. So hit run, and what you will find is it goes from 38 to 4, 3, 3 in just one step of particle filtering, which is a drastic reduction of error.
+
+Now running many times, there will be cases where it fails, where there's just no particle nearby. Strangely, they don't show up right now. When I was testing it and programming it, I actually got one of those. I had an error of like 15 or 20. Whenever I want to demo something it just doesn't work.
+
+Well, this particle filter is just too good. It just gets the answer relatively right really, really quickly.

@@ -1,0 +1,36 @@
+﻿1
+00:00:00,000 --> 00:00:02,000
+And here's my solution.
+
+2
+00:00:02,000 --> 00:00:07,000
+I initialized the robot myrobot using the function robot().
+
+3
+00:00:07,000 --> 00:00:11,000
+I set the coordinates to be 30, 50, and pi/2.
+
+4
+00:00:11,000 --> 00:00:15,000
+I then apply the motion command, assign the result to myrobot again
+
+5
+00:00:15,000 --> 00:00:18,000
+with -pi/2 and 15.
+
+6
+00:00:18,000 --> 00:00:21,000
+I print the measurement values.
+
+7
+00:00:21,000 --> 00:00:24,000
+I move again, and I print the measurement values again,
+
+8
+00:00:24,000 --> 00:00:26,000
+and when I hit run,
+
+9
+00:00:26,000 --> 00:00:29,000
+this is exactly what I get.
+

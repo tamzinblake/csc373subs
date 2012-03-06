@@ -1,0 +1,5 @@
+Let me ask a last question.
+
+When applied to robotics, do we believe the histogram filter is exact or approximate?  Same here.
+
+I know we've never talked about this.  Please just check the boxes you find most likely, and then move on to see my explanation.

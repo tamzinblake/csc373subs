@@ -1,0 +1,1 @@
+And the answer is 0.1, 0.2, 0.4, 0.1, and 0.2, and to see, we just have to normalize those importance weights. The sum of those numbers over here is 6. So, we divide 0.6 by 6. We get 0.1. 1.2 divided by 6 is 0.2. 2.4 divided by 6 is 0.4. Obviously those over here add up to 1.

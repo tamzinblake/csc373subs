@@ -1,0 +1,21 @@
+Hi, I'm Kathleen and Sebastian wrote a piece of code for you that I am now going to demonstrate.
+
+So, the main class is a class called robot.
+
+This robot lives in a 2-dimensional world of size 100 meters by 100 meters. It can see 4 different landmarks that are located at the following coordinates: 20, 20; 80,80; 20,80; and 80,20.
+
+So, here's how we make such a robot. So it's really easy. All you have to do is call a function robot() and assign it to a variable myrobot.
+
+So, now that we can do things with my robot. For example, we can set a position. These 3 values are the X coordinate, the Y coordinate, and the heading in radians, and this command assigns those values to the robot.
+
+Let's print these things out.  And down here you see the output X=10, Y=10, and heading=0.
+
+Next, let's make the robot move. This robot moves 10 meters forward and doesn't turn. So, let's print the resulting position.
+
+And here we go, you can see that it's now at 20, 10, and 0. It moved 10 meters forward from 10,10 to 20,10.
+
+Now, let's make the robot turn by pi/2 and move 10 meters. So, now the robot is heading in the direction of pi/2, and it moved forward 10 meters in the Y direction, instead of the X direction. So, as you can tell it's really easy to program.
+
+The last thing I want to show you is how to generate measurements. There's a really easy command called sense and all it does is give you the distance to the 4 landmarks, 1, 2, 3, and 4. For now this is all you need to know about the class robot that Sebastian has programmed for you.
+
+You might want to spend some time familiarizing yourself with the code to see how this is all configured.

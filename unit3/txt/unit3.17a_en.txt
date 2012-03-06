@@ -1,0 +1,3 @@
+And the answer is yes, again.
+
+Even though this importance weight over here is large, it could happen that in each of the 5 resampling steps we pick one of the other 4.

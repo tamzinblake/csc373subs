@@ -1,0 +1,7 @@
+Here's a quiz.
+
+Will orientation or heading never play a role?
+
+And the answers are:
+
+Yes: Never, so we always get a random set of orientations, or No: eventually they matter.

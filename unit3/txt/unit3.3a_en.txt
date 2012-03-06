@@ -1,0 +1,7 @@
+And here the histogram filter scores better.
+
+Even though it was discrete, it was able to represent multiple bumps, which the Kalman filter couldn't, so it's unimodal.
+
+If you forgot this, go back to the past class and look at this.
+
+The Kalman filter was a single Gaussian, which is by definition unimodal, whereas the histogram filter can have bumps over arbitrary grid cells.

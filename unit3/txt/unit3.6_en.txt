@@ -1,0 +1,35 @@
+Now let's look into particle filters, the subject of today's class.
+
+And it's really interesting to see the answers for particle filters.
+
+First, the state space for particle filters is usually continuous.  So we can deal with the more interesting version of state spaces.
+
+And we're not confined to unimodal distributions.  We can actually represent arbitrarily multimodal distributions.
+
+They are also approximate, just like the other 2 filters.
+
+And in terms of efficiency, the word is still out there.  In certain incarnations they clearly scale exponentially, and it's a mistake to represent the particle filters over anything more than, say, 4 dimensions.  But in other domains, mostly in tracking domains, they tend to scale much, much better.  And I've not seen a good treatment yet of the complexity in practice of particle filters.
+
+However, the key advantage of particle filters is actually none of those things over here.  The key advantage, at least in my life, has been they're really easy to program.
+
+As we hopefully see today, writing a particle filter is really, really easy.  In fact, you will write your own particle filter for a continuous-valued localization problem, which is in many ways more difficult than any of the problems we've talked about before.
+
+So let's dive in and see a particle filter in action.
+
+So here is a floor plan of an environment where a robot is located, and it has to perform what's called global localization, which is: it has no clue where it is, and it has to find out where it is just based on sensor measurements.
+
+This robot has range sensors, as indicated by the blue stripes.  Those use sonar sensors, which means sound, to range the distance to nearby obstacles.  And it has to use these range sensors to determine a good posterior distribution to where it is.  What the robot doesn't know is it's starting in the middle of the corridor.  In fact, it is completely uncertain as to where it is.
+
+Now the particle filter represents this using particles.  Each of these red dots, of which there are several thousand here, is a discrete guess where the robot might be.  It's structured as an x coordinate, a y coordinate, and also a heading direction.  And these 3 values together comprise a single guess.  But a single guess is not a filter.  It is the set of several thousand of such guesses that together comprise an approximate representation for the posterior of the robot.
+
+So let's start the video.
+
+In the beginning, the particles are all uniformly spread, but the particle filter makes them survive in proportion of how consistent one of these particles is with the sensor measurement.
+
+Very quickly, the robot has figured out it's in the corridor, but two clouds survive because of the symmetry of the corridor.  As the robot enters one of the offices, the symmetry is broken and the correct set of particles survive.
+
+Let me play this again.
+
+The essence of paricle filters is to have these particles guess where the robot might be moving, but also have them survive using effectively survival of the fittest, so that particles that are more consistent with the measurements are more likely to survive.  And as a result, places of high probability will collect more particles, and therefore will be more representative of the robot's posterior belief.
+
+Those particles together, those thousands of particles that now cluster at a single location, those comprise the approximate belief of the robot as it localizes itself.

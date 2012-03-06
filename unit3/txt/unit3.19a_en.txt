@@ -1,0 +1,7 @@
+Now it turns out this is not an easy thing to do and obviously our idea might be to compute all this normalized alphas, but you still have to be able to sample from those.
+
+So, in the spectrum of our alphas you might draw a random variable uniformly from the interval 0:1, and then find out the alpha so that all the alphas leading up to it, in sum are smaller than beta, but if we add the new alpha to the sum you would get a value larger than beta.
+
+Now that's doable. It's inefficient. In the best case you get an Nlog(N) implementation.
+
+Let me show you what is commonly done, and I don't take any guarantee that it's entirely unbiased, but there's a very simple trick.

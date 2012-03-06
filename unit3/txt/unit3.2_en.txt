@@ -1,0 +1,7 @@
+So in this class we will learn about particle filters.  In our sequence of algorithms for estimating the state of a system, this is the third one, and in many ways it's the best one: it's the easiest to program and in most ways it is the most flexible.
+
+And to understand why I'm saying this, let me start with a little quiz that goes back into the first 2 classes.  In class 1, we learned about histogram filters.  In class 2, about Kalman filters, and we even had a proof there.  Today, I'll teach you about particle filters.  But you can't really know about particle filters quite yet, so my questions will only pertain to histogram filters and Kalman filters.
+
+First, I'd like to know whether the state space was discrete or continuous.  Please check exactly one of those two boxes over here.
+
+And I understand these are not entirely non-ambiguous these questions, but in the spirit of the method please check whichever fits best.

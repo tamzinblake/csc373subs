@@ -1,0 +1,11 @@
+And here's my solution.
+
+I initialized the robot myrobot using the function robot().
+
+I set the coordinates to be 30, 50, and pi/2.
+
+I then apply the motion command, assign the result to myrobot again with -pi/2 and 15.
+
+I print the measurement values.
+
+I move again, and I print the measurement values again, and when I hit run, this is exactly what I get.

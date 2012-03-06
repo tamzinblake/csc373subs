@@ -1,0 +1,7 @@
+Let me now ask the same question about P3 which is the particle with the largest importance weight.
+
+Please check yes or no.
+
+Is it possible that P3 is never sampled in the resampling step?
+
+Yes or no?

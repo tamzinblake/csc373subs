@@ -1,0 +1,44 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+Now it turns out this is not an easy thing to do and
+
+2
+00:00:03,000 --> 00:00:07,000
+obviously our idea might be to compute all this normalized alphas,
+
+3
+00:00:07,000 --> 00:00:09,000
+but you still have to be able to sample from those.
+
+4
+00:00:09,000 --> 00:00:13,000
+So, in the spectrum of our alphas you might draw a random variable
+
+5
+00:00:13,000 --> 00:00:18,000
+uniformly from the interval 0:1, and then find out the alpha
+
+6
+00:00:18,000 --> 00:00:22,000
+so that all the alphas leading up to it, in sum are smaller than beta,
+
+7
+00:00:22,000 --> 00:00:27,000
+but if we add the new alpha to the sum you would get a value larger than beta.
+
+8
+00:00:27,000 --> 00:00:30,000
+Now that's doable. It's inefficient.
+
+9
+00:00:30,000 --> 00:00:33,000
+In the best case you get an Nlog(N) implementation.
+
+10
+00:00:33,000 --> 00:00:37,000
+Let me show you what is commonly done, and I don't take any guarantee
+
+11
+00:00:37,000 --> 00:00:41,000
+that it's entirely unbiased, but there's a very simple trick.
+

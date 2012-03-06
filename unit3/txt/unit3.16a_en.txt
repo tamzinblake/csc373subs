@@ -1,0 +1,1 @@
+And the answer is yes, in the random resampling process something with an importance weight of 0.1 is actually quite unlikely to be sampled into the next data set.

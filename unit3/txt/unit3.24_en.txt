@@ -1,0 +1,5 @@
+So one thing I want to stress here is that you've just programmed a full particle filter. So you got, from me, kind of a very primitive and rudimentary robot simulator that uses landmarks as a way of doing measurements, and it uses three-dimensional robot coordinates, so it's a little bit better than the stuff we talked about in previous classes; it's not quite a Google car yet.
+
+And you solved the estimation problem. In fact, you solved this problem in 30 lines of code. That is an amazing small amount of code for something that's amazingly powerful. And you can reuse these 30 lines of code in pretty much all problems you might study that require particle filtering; they're very generic.
+
+So let me get back to the theory of particle filtering.

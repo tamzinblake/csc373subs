@@ -1,0 +1,17 @@
+So before I start today's class, I'd like to take you on a trip that I recently did to share some of the things that excite me in my life with all of you.
+
+I actually went to Washington D.C. and the highlight of the day, for me, was to visit the National Museum of American History. Some of you might know this, in 1998 a team lead by Wolfenbarger and myself put a robotic tour guide into this museum.
+
+This robot was in the museum for about 2 weeks and it led kids and visitors of the museum through the exhibit.
+
+It did localization similar to what I taught you before. It used a learned map of the environment. We programmed by hand the specific location of exhibits, and the robot was able to say something.
+
+The robot was able to smile and to frown, and as you can see in this video sometimes even kids climbed onto it.
+
+But today I'm here to see Stanley. Stanley has been here for a couple of years now on exhibit, our robot that won the DARPA Grand Challenge, and it was really fascinating to see the thing that we've built and visited in its own little room in the Smithsonian Museum.
+
+This exhibit has been made specifically to celebrate Stanley's victory, and in exploring this exhibit, again, I found that the curators had actually put some program code on the wall for people to understand, and as I zoom in you can see "kalman".
+
+So, at the time we were already working with Kalman filters, And in our parameter file, as shown here, the word "kalman" appears many times, so what I've been teaching you last class about Kalman filters really had a major role to play in making Stanley the robot win the Darpa Grand Challenge. So these are really deep, emotional moments for me, going back to the past and seeing what we've done and how it's being preserved.
+
+But I want to share this with everybody here, because it's part of my life and it's part of what we've done in building self-driving cars, and the methods I'm teaching you in this class are esenntially the same methods as we used back in Stanley and in Junior when we did the Urban Challenge.

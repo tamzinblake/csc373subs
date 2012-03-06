@@ -1,0 +1,11 @@
+So here's our first programming exercise.
+
+I'd like you to make a robot that starts at coordinates 30 and 50, and it heads north, which means its heading direction is pi/2. It then turns clockwise by pi/2, which means you subtract pi/2 from the heading direction, and it moves 50 meters. It then senses, and I want you to print out the sensor measurements.
+
+It then turns clockwise by pi/2, again, and moves 10 meters this time, and I just want you to print out the sensor measurements after this entire procedure.
+
+So, there are 2 print statements for the sensor over here and the sensor measurements over here.
+
+So, here's the output I would like your program to generate. After the first motion, the first measurements will be 39 + something, 46, 39, and 46, and then after the second motion I expect to see 32, 53, 47, 40. Of course, there's lots of decimal-point numbers over here, but these are the numbers I would expect you to output.
+
+So, have fun coding it.

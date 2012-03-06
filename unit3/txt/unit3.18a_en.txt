@@ -1,0 +1,9 @@
+And the answer is 0.0777 approximately, and the way to obtain this is for this particle to never to be drawn in the resampling phase, we always have to draw 1 of the following 4 particles.
+
+Those together have a probability of 0.6 to be drawn, which contrasts to the 0.4 for P3. So for 5 independent samplings to draw 1 of those 4, we get a total probability of 0.6^5, which is approximately 0.0777.
+
+Put differently, there is about a 7.7% chance that this particle over here is missing, but with almost 93% probability we'd have this particle included. If we had instead of P3, gone for P1 over here, which has a much smaller probability of being drawn, then this 0.07 will be as large as 0.59, which is 0.9^5.
+
+Now this means with about 60% chance we will lose particle 1, and only with a 40% chance we will include it.
+
+Put differently, the particles with small importance weights will survive at a much lower rate than the ones with larger importance weights, which is exactly what we wish to get from the resampling step.

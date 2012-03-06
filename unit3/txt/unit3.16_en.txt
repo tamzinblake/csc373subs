@@ -1,0 +1,5 @@
+So, let me make these alpha values explicit and ask you another question.
+
+Is it possible that P1 is never sampled in the resampling step? Yes or no?
+
+Please just check one.

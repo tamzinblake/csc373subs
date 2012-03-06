@@ -1,0 +1,5 @@
+Well, the histogram filter was discrete.
+
+Distribution was defined over a finite set of bins.
+
+Whereas the Kalman filter had a continuous state space.

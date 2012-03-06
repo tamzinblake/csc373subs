@@ -1,0 +1,25 @@
+So, here's my implementation of the resampling step. And it follows the same logic that I gave you in the diagram.
+
+We're creating a new set of particles called p3; it's an empty set in the beginning, and inside this routine, every time I resample, I add a particle from the previous particle set with the index: index.
+
+So, that's the main loop over here, and at the end I assign p3 back to p. So, that's the resampling step.
+
+My very first index is drawn at random. This is a uniform random sampler of all the indices, and then I had this running variable beta that I set to 0.0, and I cache away the max of w just to be slightly faster. You don't have to do this; they come in over here. Doesn't really matter you could have max over here.
+
+But then I go and produce exactly N particles, and the way I do this I add to beta a uniform random that is twice as large and maximum in the range as my max weight w. Now, 2 times max weight w will be a very large step, but by adding a random variable that sits between 0 and 1, I have uniformity in 0 and 2 times mw, and then while this beta variable is larger than the weight of the current index, I subtract this weight from my beta value and I increment index by 1 % N, the total number of particles, and when it's smaller I'm done. I can just take that particle, add it, append it, and repeat.
+
+So, this entire procedure over here is somewhat involved if you got that right I'm impressed. I hope you learn something from doing it. It happens to be really easy to program once you know what to do, and every time we write a particle filter you can just reuse it.
+
+You never have to think about it again because there's nothing domain specific in this specific procedure over here.
+
+So, let's run it; if I run it nothing happens to that empty set. So, let me print out the resulting set of particles. So, now I have a print p over here. Let me run it, and of course, I'm going to get 1000 particles, right? A lot of particles but let's look through them.
+
+If you just look at the first value over here, they are all about the same. They are all between 76 and 82. The second one, they're all about 42, 44, 43, 41, 39, 38. So, what you've gotten here is a set of particles that are all co-located.
+
+So, instead of having a complete random set of particles, like we had before, the resampling step, we can see this,  already gives me particles of very similar X and Y positions.
+
+Now it turns out the orientations are not very similar. They jump like crazy, and the reason is, well, if you think about it, we only have 1 location so far, our distances to landmarks are independent of the orientation. So as a result orientation plays no role in the projected measurement, and therefore has no role in the selection.
+
+Let me make the point, again; here's our 4 landmarks, and we measure the distances to those. A robot facing this direction has a certain set of distances. A robot facing a different direction, like this one, has the exact same set of distances.
+
+Therefore, in our particle future, the heading direction plays no role.

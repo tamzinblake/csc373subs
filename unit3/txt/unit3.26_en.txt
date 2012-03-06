@@ -1,0 +1,17 @@
+Now fast forward to 2012. We built the Google Car.
+
+We're now using multiple methods. We use histogram methods and particle methods. The main difference to what you've learned, so far, is two-fold. The main difference that we've learned so far is the Robot Model. The vehicle is actually modeled as a system with 2 non-steerable wheels and 2 steerable wheels. That's often called a Bicycle Model because half of it,this thing over here, acts like a bicycle.
+
+The big difference is the Sensor Data. Instead of using landmarks, we get this really elaborate road map, and then we take a single snapshot and we match that snapshot into the map. And the better the match, the higher the score.
+
+And then on top of it, we have additional sensors, like GPS. We also have Inertial Sensors. And I'm not going to go into those at all, but the methods I taught you are rich enough to handle these additional sensors.
+
+So you've just learned about the gist of the method in which the Google Car is able to find where it is, and where other cars are.
+
+When you build a system, you have to dive into these more elaborate methods. But I think it's very much doable. It's very easy to replace the current simple motion model with the slightly more sophisticated, for what's called a Bicycle Model, and it's easy to write a correlation function that looks into map data and computes normalized correlations of measurement images in a big pixel map.
+
+I'll leave this an an exercise so if you want to hack your own car and make it drive itself, have fun.
+
+I just want to congratulate you. You've actually, in these 3 classes, learned pretty much as much as any of my Stanford student learns in my Specialized AI classes on robotics, when it comes to robot perception.
+
+In fact, you've learned pretty much what there is to know to become a successful practitioner in robotics.

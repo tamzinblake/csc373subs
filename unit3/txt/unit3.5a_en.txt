@@ -1,0 +1,5 @@
+Well the histogram filters tend to be approximate, because the world tends not to be discrete.  So localization, for example, is clearly an approximate filter.
+
+It turns out Kalman filters are also approximate, and that's a much more subtle observation.  It turns out Kalman filters only are exact for linear systems, whereas the world happens to be non-linear.  Now this goes into a lot of deep math that I don't want to get into here.
+
+But you should understand that both of these filters are not exact.  Both of them tend to be just approximations of the correct posterior distribution.

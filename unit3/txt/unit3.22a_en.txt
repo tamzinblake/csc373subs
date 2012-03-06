@@ -1,0 +1,9 @@
+And here's my answer: this is all initialization over here, so we shouldn't touch it.
+
+But from here on, we want to do things twice. So we're going to put a "for" loop here, for t in range(T) and then we have to indent all the stuff below. I'll indent all the way to the final statement, but I only want to print the final distribution.
+
+Let's run it, and surprisingly, the orientations aren't really that well worked out. If I go down I find, still, fairly random orientations here. But if I go to 10 steps forward, which means the robot really moves quite a bit across its environment, and I hit the run button, I actually get orientations that all look alike.
+
+So you can see, they're all about 3.6, 3.8, 3.9, 3.7. You can see the "y" values are all about the same and the "x" values are all about the same.
+
+So this is the particle filter working.

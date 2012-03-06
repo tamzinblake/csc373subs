@@ -1,0 +1,139 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+So before I start today's class, I'd like to take you on a trip
+
+2
+00:00:03,000 --> 00:00:09,000
+that I recently did to share some of the things that excite me in my life with all of you.
+
+3
+00:00:09,000 --> 00:00:13,000
+I actually went to Washington D.C. and the highlight of the day, for me,
+
+4
+00:00:13,000 --> 00:00:17,000
+was to visit the National Museum of American History.
+
+5
+00:00:17,000 --> 00:00:21,000
+Some of you might know this, in 1998
+
+6
+00:00:21,000 --> 00:00:25,000
+a team lead by Wolfenbarger and myself
+
+7
+00:00:25,000 --> 00:00:28,000
+put a robotic tour guide into this museum.
+
+8
+00:00:28,000 --> 00:00:31,000
+This robot was in the museum for about 2 weeks
+
+9
+00:00:31,000 --> 00:00:35,000
+and it led kids and visitors of the museum through the exhibit.
+
+10
+00:00:35,000 --> 00:00:39,000
+It did localization similar to what I taught you before.
+
+11
+00:00:39,000 --> 00:00:41,000
+It used a learned map of the environment.
+
+12
+00:00:41,000 --> 00:00:45,000
+We programmed by hand the specific location of exhibits,
+
+13
+00:00:45,000 --> 00:00:48,000
+and the robot was able to say something.
+
+14
+00:00:48,000 --> 00:00:51,000
+The robot was able to smile and to frown, and as you can see in this video
+
+15
+00:00:51,000 --> 00:00:54,000
+sometimes even kids climbed onto it.
+
+16
+00:00:54,000 --> 00:00:57,000
+But today I'm here to see Stanley.
+
+17
+00:00:57,000 --> 00:01:01,000
+Stanley has been here for a couple of years now on exhibit,
+
+18
+00:01:01,000 --> 00:01:05,000
+our robot that won the DARPA Grand Challenge, and it was really fascinating
+
+19
+00:01:05,000 --> 00:01:09,000
+to see the thing that we've built and visited
+
+20
+00:01:09,000 --> 00:01:12,000
+in its own little room in the Smithsonian Museum.
+
+21
+00:01:12,000 --> 00:01:16,000
+This exhibit has been made specifically to celebrate Stanley's victory,
+
+22
+00:01:16,000 --> 00:01:20,000
+and in exploring this exhibit, again, I found that
+
+23
+00:01:20,000 --> 00:01:25,000
+the curators had actually put some program code on the wall for people to understand,
+
+24
+00:01:25,000 --> 00:01:28,000
+and as I zoom in you can see "kalman".
+
+25
+00:01:28,000 --> 00:01:30,000
+So, at the time we were already working with Kalman filters,
+
+26
+00:01:30,000 --> 00:01:32,000
+And in our parameter file, as shown here, the word "kalman" appears many times,
+
+27
+00:01:32,000 --> 00:01:35,000
+so what I've been teaching you last class about Kalman filters
+
+28
+00:01:35,000 --> 00:01:41,000
+really had a major role to play in making Stanley the robot win the Darpa Grand Challenge.
+
+29
+00:01:41,000 --> 00:01:45,000
+So these are really deep, emotional moments for me,
+
+30
+00:01:45,000 --> 00:01:49,000
+going back to the past and seeing what we've done and how it's being preserved.
+
+31
+00:01:49,000 --> 00:01:53,000
+But I want to share this with everybody here, because it's part of my life
+
+32
+00:01:53,000 --> 00:01:56,000
+and it's part of what we've done in building self-driving cars,
+
+33
+00:01:56,000 --> 00:01:57,000
+and the methods I'm teaching you in this class
+
+34
+00:01:57,000 --> 00:02:00,000
+are esenntially the same methods as we used back in Stanley
+
+35
+00:02:00,000 --> 00:02:02,000
+and in Junior when we did the Urban Challenge.

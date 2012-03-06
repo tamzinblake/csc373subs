@@ -1,0 +1,11 @@
+And this can be done in a single line of code.
+
+You construct the list W by appending the output of the function measurement_prob() applied to the ith particle with the argument of the actual measurement, and as you can see over here most of them look insanely unlikely. So, they have exponents -146, -24.
+
+Some of them are more likely, the ones that are closer to the truth like -5. Those are the particles that should really survive, whereas those ones over here with a -126, those are really ready to die off because they are so far away from the truth we really don't need them anymore.
+
+So, in the final step of the particle filter algorithm, we just have to sample particles from p with a probability that is proportional to its corresponding w value.
+
+Particles in P that have a large value over here should be drawn more frequently than the ones with a small value over here.
+
+How hard can that be?
