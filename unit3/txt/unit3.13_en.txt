@@ -1,11 +1,7 @@
-I now want you to take each of these particles
-and simulate robot motion.
-Depending on the heading direction,
-this might yield a different directions.
-So, each of these particles shall first turn by 0.1 and then move by 5 meters.
-We already implemented something just like this for individual robot motion.
-Now I'd like you to apply this to the entire particle set.
-So, please go back to the code and make a new set P
-that is the result of this specific motion turning by 0.1
-and moving forward by 5.0
-to all of those particles in P.
+I now want you to take each of these particles and simulate robot motion.
+
+Depending on the heading direction, this might yield a different directions. So, each of these particles shall first turn by 0.1 and then move by 5 meters.
+
+We already implemented something just like this for individual robot motion. Now I'd like you to apply this to the entire particle set.
+
+So, please go back to the code and make a new set P that is the result of this specific motion turning by 0.1 and moving forward by 5.0 to all of those particles in P.

@@ -1,10 +1,7 @@
-So, now we know about our class robot
-who can turn and then move straight after the turn,
-and which also can sense the distance to 4 designated landmarks,
-L1, L2, L3, and L4, and these distances
-comprise the measurement vector of the robot.
-We told you the robot lives in a world of size 100 x 100,
-and what this means if this robot falls off 1 end,
-it disappears on the other.
+So, now we know about our class robot who can turn and then move straight after the turn, and which also can sense the distance to 4 designated landmarks, L1, L2, L3, and L4, and these distances comprise the measurement vector of the robot.
+
+We told you the robot lives in a world of size 100 by 100, and what this means if this robot falls off 1 end, it disappears on the other.
+
 So, it's a cyclic world.
+
 So, let's now talk about particle filters.

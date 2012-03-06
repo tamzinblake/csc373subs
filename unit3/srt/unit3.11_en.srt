@@ -20,7 +20,7 @@ comprise the measurement vector of the robot.
 
 6
 00:00:24,000 --> 00:00:27,000
-We told you the robot lives in a world of size 100 x 100,
+We told you the robot lives in a world of size 100 by 100,
 
 7
 00:00:27,000 --> 00:00:30,000

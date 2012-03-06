@@ -1,23 +1,17 @@
-The particle filter that you're going to program
-maintains a set of 1000 random guesses as to where the reward might be.
-Now, I'm not going to draw 1000 dots here,
-but let me explain how each of these dots looks like.
-Each of these dots is a vector which contains an X coordinate,
-in this case 38.2, a Y coordinate 12.4,
-and a heading direction of 0.1,
-which is the angle at which the robot points relative to the X axis.
+The particle filter that you're going to program maintains a set of 1000 random guesses as to where the reward might be.
+
+Now, I'm not going to draw 1000 dots here, but let me explain how each of these dots looks like.
+
+Each of these dots is a vector which contains an X coordinate, in this case 38.2, a Y coordinate 12.4, and a heading direction of 0.1, which is the angle at which the robot points relative to the X axis.
+
 So, this robot moves forward, it will move slightly upwards.
-In fact, now our code, every time you call the function robot
-and assign it say to a particle,
-here the ith particle,
-these elements p[i].x, y, and orientation,
-which is the same as heading,
-are initialized at random.
-So, to make a particle set of 1000 particles
-what you have to program is a simple piece of code that assigns 1000 of those to a list.
+
+In fact, now our code, every time you call the function robot and assign it say to a particle, here the ith particle, these elements p[i].x, y, and orientation, which is the same as heading, are initialized at random.
+
+So, to make a particle set of 1000 particles what you have to program is a simple piece of code that assigns 1000 of those to a list.
+
 So, let's do this; let me set N=1000 for 1000 particles.
-Here's my initial set of particles; it's going to be an empty list,
-and I want you to fill in some code
-after which we have 1000 particles assigned to this vector over here.
-So, when I print the length of this thing
-I will get 1000 instead of 0.
+
+Here's my initial set of particles; it's going to be an empty list, and I want you to fill in some code after which we have 1000 particles assigned to this vector over here.
+
+So, when I print the length of this thing I will get 1000 instead of 0.

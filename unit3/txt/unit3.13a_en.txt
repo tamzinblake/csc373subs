@@ -1,13 +1,11 @@
-So, here's one possible solution: we construct p2 as a temporary particle set
-with a later set p equals p2, so this is just a temporary set.
-We then go through all the particles, again, and here is the tricky line.
-We append to list p2 the results of our motion of 0.1 and 5.0
-applied to the ith particle chosen from the original particle set.
-So this applies the move command to each of the particles
-exactly the same way we applied move to the robot motion before.
+So, here's one possible solution: we construct p2 as a temporary particle set with a later set p equals p2, so this is just a temporary set.
+
+We then go through all the particles, again, and here is the tricky line. We append to list p2 the results of our motion of 0.1 and 5.0 applied to the ith particle chosen from the original particle set.
+
+So this applies the move command to each of the particles exactly the same way we applied move to the robot motion before.
+
 When we're all done we reset p=p2.
-So, we've done the full recursion of applying our motion update
-to our full particle set.
-If you've gotten this far then you got about half of particle filters implemented,
-unfortunately it's the easy half,
-but the difficult half isn't that much more difficult.
+
+So, we've done the full recursion of applying our motion update to our full particle set.
+
+If you've gotten this far then you got about half of particle filters implemented, unfortunately it's the easy half, but the difficult half isn't that much more difficult.

@@ -1,12 +1,5 @@
-Here's 1 possible solution if we iterate the following loop 1000 times
-we create an object called robot, and we append this object to our growing list p,
-and when we're done we have 1000 particles,
-and let me do something I might regret,
-which is let me just print out this entire set of particles with print P,
-and what I get is 1000 items that look just like this over here.
-Here we have an X, a Y, and a heading direction all generated at random.
-So, if you look through those you'll find there's a lot of those.
-So, we now have a set of 1000 particles,
-each of which just looks like one of these dots over here,
-and each of which has exactly 3 values associated,
-an X, a Y, and an orientation.
+Here's 1 possible solution if we iterate the following loop 1000 times we create an object called robot, and we append this object to our growing list p, and when we're done we have 1000 particles, and let me do something I might regret, which is let me just print out this entire set of particles with print P, and what I get is 1000 items that look just like this over here.
+
+Here we have an X, a Y, and a heading direction all generated at random. So, if you look through those you'll find there's a lot of those.
+
+So, we now have a set of 1000 particles, each of which just looks like one of these dots over here, and each of which has exactly 3 values associated, an X, a Y, and an orientation.
