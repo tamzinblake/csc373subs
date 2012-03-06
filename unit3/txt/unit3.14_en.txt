@@ -12,61 +12,26 @@ And now here comes the big trick in particle filters: the mismatch of the actual
 
 Well, we now have many, many different particles and a specific measurement. Each of these particles will have a different weight. Some look very plausible, others might look very implausible as indicated by the size of the circles over here.
 
-We now let these particles survive somewhat at random, but the probability of survival will be proportional to their weights. If something has a very big weight like this guy over here will survive at a higher proportion than someone with a really small weight over here, which means after what's called resampling, which is just a technical term for randomly drawing N new particles from these old ones with replacement
-in proportion to the importance weight.
-After that resampling phase,
-those guys over here are very likely to live on, in fact many, many times.
-Whereas those guys over here likely have died out.
-That's exactly what happened in our movie in the beginning
-when we looked at localization in this corridor environment.
-The particles that were very consistent with the sensor measurement
-survive with a higher probability, and the ones with lower importance weight
-tended to die out.
-So, we get the fact that the particles cluster
-around regions of high posterior probability.
-That is really cool and all we have to do is
-we have to implement a method for setting importance weights
-and that is, of course, related to the likelihood of a measurement,
-as we will find out, and we have to implement a method for resampling
-that grabs particles in proportion to those weights.
+We now let these particles survive somewhat at random, but the probability of survival will be proportional to their weights. If something has a very big weight like this guy over here will survive at a higher proportion than someone with a really small weight over here, which means after what's called resampling, which is just a technical term for randomly drawing N new particles from these old ones with replacement in proportion to the importance weight.
+
+After that resampling phase, those guys over here are very likely to live on, in fact many, many times. Whereas those guys over here likely have died out. That's exactly what happened in our movie in the beginning when we looked at localization in this corridor environment.
+
+The particles that were very consistent with the sensor measurement survive with a higher probability, and the ones with lower importance weight tended to die out. So, we get the fact that the particles cluster around regions of high posterior probability.
+
+That is really cool and all we have to do is we have to implement a method for setting importance weights and that is, of course, related to the likelihood of a measurement, as we will find out, and we have to implement a method for resampling that grabs particles in proportion to those weights.
+
 So, let's just do this.
-So, let me add back the robot code.
-We build a robot, and we make the robot move,
-and we now get a sensor measurement for that specific robot using the sense function.
-So, let's just print this out.
-These are the ranges or distances to the 4 landmarks
-and by adding your print my_robot statement
-you can also figure out where the robot is, at 33, 48, 0.5,
-obviously this is a random output
-because you randomly initialized the position of the robot.
-What I want you to program now is a way to assign importance weights
-to each of the particles in here.
-I want you to make a list of 1000 elements
-where each element in the list contains a number.
-So, this number is proportional to how important that particle is.
-And to make things easier I coded for you a function in the class robot
-called the measurement probability.
-This function accepts a single parameter, the measurement vector,
-the Z I just defined, and it calculates as an output
-how likely this measurement is, and it uses effectively a Gaussian
-that measures how far away the
-predicted measurements would be from the actual measurements.
-You can dive into this code and understand what's going on.
-There's one last change we have to do to make this code run.
-We have to actually assume that there is measurement noise.
-If there is 0 measurement noise, then this function will end up dividing by 0.
-So, let's put in a clause that specifies what we believe the actual measurement noise is.
-I'm going to do this not for the robot,
-but I do this for the particles.
-In this line of code over here where we create the particles for the first time,
-I not just initialized these positions with random numbers
-but also assume a certain amount of noise that goes with each particle,
-0.05 for the translational noise, 0.05 for the rotational noise,
-and 5.0 for the measurement noise in those ranges.
-So, this is the crucial number over here.
-So, coming back to what I want you to do,
-I wish you to construct a list of 1000 elements in w
-so that each number in this vector reflects the output of the
-function measurement_prob() applied to the measurement Z that we receive from
-the real robot, such that when I hit print w,
-I actually get a list of 1000 importance weights.
+
+So, let me add back the robot code. We build a robot, and we make the robot move, and we now get a sensor measurement for that specific robot using the sense function. So, let's just print this out.
+
+These are the ranges or distances to the 4 landmarks and by adding your print my_robot statement you can also figure out where the robot is, at 33, 48, 0.5, obviously this is a random output because you randomly initialized the position of the robot.
+
+What I want you to program now is a way to assign importance weights to each of the particles in here. I want you to make a list of 1000 elements where each element in the list contains a number. So, this number is proportional to how important that particle is.
+
+And to make things easier I coded for you a function in the class robot called the measurement probability. This function accepts a single parameter, the measurement vector, the Z I just defined, and it calculates as an output how likely this measurement is, and it uses effectively a Gaussian that measures how far away the predicted measurements would be from the actual measurements. You can dive into this code and understand what's going on.
+
+There's one last change we have to do to make this code run. We have to actually assume that there is measurement noise. If there is 0 measurement noise, then this function will end up dividing by 0. So, let's put in a clause that specifies what we believe the actual measurement noise is. I'm going to do this not for the robot, but I do this for the particles.
+
+In this line of code over here where we create the particles for the first time, I not just initialized these positions with random numbers but also assume a certain amount of noise that goes with each particle, 0.05 for the translational noise, 0.05 for the rotational noise, and 5.0 for the measurement noise in those ranges. So, this is the crucial number over here.
+
+So, coming back to what I want you to do, I wish you to construct a list of 1000 elements in w so that each number in this vector reflects the output of the function measurement_prob() applied to the measurement Z that we receive from the real robot, such that when I hit print w, I actually get a list of 1000 importance weights.
