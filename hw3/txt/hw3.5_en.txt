@@ -1,0 +1,17 @@
+Now I want you to implement a measurement model, using the function sense, that is more characteristic of what's often in the literature on robotics.
+
+Say we have a robot and we have a landmark, then the robot can measure the bearing, or angle, to this landmark relative to its own local coordinate system. Whereas before we measured ranges or distances, now we measure bearings or angles. We assume in the world there are 4 landmarks: L1, L2, L3, and L4. All of those are distinguishable. So the measurement vector is a set of 4 bearings that correspond to those four different landmarks.
+
+So when you implement this, I recommend you use the function atan2, which is the generalization of arctangent that takes as input delta y and then delta x. Atan2 would give you the orientation of a vector in global coordinates. We then have to adjust for the fact that it's relative to the robot's local coordinates, which is done by subtracting the orientation of the robot. This should give you the implementation of a bearing to a landmark.
+
+So with this implementation I add a variable called "bearing_noise". which you probably already used because it was already referenced before. I set it to 0 just so that we have no noise, and you can check your code.
+
+We initialize the robot coordinates as 30 and 20. Motions are now irrelevant. But as I go down, I now just actually give the following two lines of code. I print the robot coordinates as before, and I print the measurements. The robot is at 30/20, and the bearings for these landmarks will be 6.00, 3.72, 1.92, and 0.85.
+
+My question for you is: can you implement the software the measures those bearings?
+
+If I change the initial orientation of the robot to be pi over 5, I now get my new robot coordinates over here, and my measurement vector outputs me very different values.
+
+And that's because this robot is now rotated and therefore all the bearings to the landmarks do change. It's 5.3, 3.1, 1.3, and 0.22.
+
+Implement a measurement function that gives me exactly those values.

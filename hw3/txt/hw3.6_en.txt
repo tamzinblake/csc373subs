@@ -1,0 +1,38 @@
+So now, our final programming exercise, I want you to put everything together and build a particle filter.
+
+And I'm supplying you with code that has as gaps pretty much the 2 functions you just programmed, move and sense, and some additional code that I copied from class, the particle filter code that you're familiar with and also some code that helps you test your routines so you can make sure they're correct.
+
+The key new thing you have to do is you have to work in the noise. There is now bearing noise and steering noise and distance noise. The code that you wrote didn't have any of those. I want you now to modify your procedures to accommodate this noise, steering noise, distance noise, and bearing noise, and all of it should be Gaussian.
+
+So let's go all the way to the end. There are 2 test cases. The first test case, which are uncommented so we can run it. What this is is it creates a sequence of robot motions. At each of these time steps the robot turns a little bit and moves forward. And it also has 8 measurements, which are the bearings to the those 4 different landmarks. If I go up a little bit in the code, then you'll find that the ground truth final position was 93, 75, and 5.2.
+
+When I run it, it runs the routine particle_filter with those motions and those measurements as an input. And it produces an estimate, which is 94, 71, and 5.2, which isn't exactly the same as up here, but it's close. So this is a particle filter working.
+
+I'm supplying quite a few functions for you. You should look around. One is called particle filters. That's exactly the same code we used in class and constructed together. I just copied it over, so if you look through this you'll find, hopefully, no surprise here.
+
+And I'm also supplying you the measurement probability function, which is part of the implementation. Lets just go there. Here is the measurement probability function. There is something non-trivial here. I compute the predicted measurements, and then I compute a Gaussian that measures the distance between the measurements passed into the routine and the predicted measurements computer over here. That's all happening down here. Here's my Gaussian function with the exponential. And then I return my Gaussian error. There should be no surprise here.
+
+What's important is a little modification to the sense function that we haven't seen before. I can now give the sense function a parameter, and I give it the parameter 0. It switches off the noise model, so you will need the noise model for forward simulation of the robot, but you don't need it for computing the probability of the measurement. So augment your sense function to have a flag that if it's set to 0 it switches off the noise modeling and gets you the predicted best possible measurements.
+
+So what you have to do is you have to find the part in the code that says "only add/modify code below here." You have to copy over your move function and then work in, as it says in the instructions, the steering noise and the distance noise, that is Gaussian noise; I hope you know how to do this. Then you also have to plug in the sense function, and you also have to plug in bearing noise and make sure there's a flag that allows you to switch off the bearing noise. It should be an optional flag, so it has to have a default value of the bearing noise being on. Otherwise your code won't run.
+
+Here is how we will test your code.
+
+If you go to test case number 2, then I wrote a few extra functions for you that allow you to test your particle filters on many, many instances just like the ones we were using for testing that are all randomly generated. Let me just go through that code line-by-line.
+
+Our test case will be 8 steps long. There is the same motions vector we had before of a slight turn on the circle. "Generate_ground_truth" gives us a sequence of measurements and a robot position that we can split as follows, using a robot simulation.
+
+Then you run your particle filter over here, and the function "check_output" down here compares the final robot position, the ground truth position, with your particle filter position, estimated position, from here and gives us a single flag whether this is all correct. So let me just do this.
+
+We generated a robot that finished with final location 20, -29, and this orientation over here. The particle filter came up with 22, -31, and 0.14, which is close to the originals. And my code check said "True." Let me run it again.
+
+Different values, still true. Run it again. Different values, still true. Now, it could happen that the code check says "False." I just ran it 20 times, and it said true for me every single time. But I've seen it say "False."
+
+And the reason is it's a randomized algorithm. It's a particle filter. It might actually not have a particle at the right place. So when we test your routine, we're going to code our own code check, check_output. We have our own function for this, but we're going to run it multiple times. And if you get it wrong once it's not a big deal.
+
+So in summary, you will have comment out all the test cases again. All you have to do is supply the missing function. You can test the correctness yourself.
+
+You can basically grade yourself with this test case over here, but when you submit it, have those commented out, because we have our own test software.
+
+And all we're going to test is whether your particle filter gives us a good estimate when we choose randomly the initial position of the robot, measurements, motions, and so on.
+

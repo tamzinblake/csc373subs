@@ -1,0 +1,36 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+So welcome to homework assignment number 3.
+
+2
+00:00:03,000 --> 00:00:07,000
+This is all about particle filters. I'll ask you 3 questions,
+
+3
+00:00:07,000 --> 00:00:11,000
+and then we will have a fairly involved programming assignment.
+
+4
+00:00:11,000 --> 00:00:13,000
+So here's my first question.
+
+5
+00:00:13,000 --> 00:00:18,000
+Consider the following world with 4 states, A, B, C, and D.
+
+6
+00:00:18,000 --> 00:00:22,000
+Suppose we wish to initialize our estimate with uniformly drawn particles.
+
+7
+00:00:22,000 --> 00:00:27,000
+My question is what is the probability that cell A is empty?
+
+8
+00:00:27,000 --> 00:00:30,000
+And I'm asking this for different values of N:
+
+9
+00:00:30,000 --> 00:00:35,000
+N equals 1, 4, and 10.
+

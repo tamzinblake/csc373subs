@@ -1,0 +1,9 @@
+Question 2: consider the same world as before with 4 states.
+
+And now we're facing a situation in which there's 5 particles in A, 3 in B, 3 in C, and 1 in D. We will now take a motion step. So this is not about measurements, just motion. Our robot moves with a 50% probability horizontally.
+
+So for example, if it was in D, it would move to C. It moves with a 50% chance vertically, but never diagonally, and it never stays in the same cell.
+
+After 1 motion step, how many particles do we expect in cell A, B, C, and D?
+
+Answer the same for the asymptote. So if we move infinitely often, what is the distribution that we expect this to converge to? So I somewhat sloppily wrote "after infinite steps." This is really what does it converge to in the end.

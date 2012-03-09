@@ -1,0 +1,15 @@
+In question 3 I'd like to quiz your intuition.
+
+Suppose we run a particle filter with N equals 1 particle. What will happen?
+
+It'll work just fine, perhaps with a slightly larger error.
+
+It ignores robot measurements.
+
+It ignores robot motion.
+
+It likely fails.
+
+Or none of the above.
+
+You can check multiple boxes on the left.

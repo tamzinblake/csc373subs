@@ -1,0 +1,52 @@
+So here's our programming assignment.
+
+In class you already programmed a particle filter for a really simplistic robot that was able to measure ranges to landmarks and moved pretty much like a trashbin.
+
+Now I'd like to replace it with a more interesting robot that's more realistic. In particular, I'd like you to use a car. So here's a car. A car tends to have 2 fixed tires and 2 steerable tires in the front.
+
+Suppose the location of our car in a coordinate system is given by its x-coordinate and its y-coordinate, and I'm picking the halfway point on the rear axle as the reference point, and by its heading direction theta. So the state will be x, y, and the orientation theta. Then this car also has a steering angle that is called the alpha.
+
+The question is how is the state affected by driving a certain distance d with a fixed steering angle, assuming the initial state is x, y, and theta.
+
+It turns out to answer this, I also need to know the length of the vehicle, which I will just call L for length that is a constant throughout our consideration.
+
+This is usually called a "bicycle model". Obviously, it suffices to look at one pair of tires because the other one, at least in approximation, runs pretty much parallel.
+
+So if we look at the robot locally where we have a steering angle, alpha, robot length L, and we're driving the rear tire forward by distance D, then the robot will turn to the left, and its turning angle, beta, is proportional to the distance that the rear tire moves forward divided by the length of the vehicle times the tangent of the steering angle.
+
+Now compute the changes of x, y, and theta in the local coordinate system. Realize the turning radius R of this robot, is simply the distance that we drive forward divided by beta. So it's relatively simple math, which I don't want to explain in detail.
+
+This means that the robot is turning around a point over here, call it cx and cy. After the turn, the vehicle is located somewhere over here.
+
+In global coordinates, here is the way we describe this. cx is the x coordinate of the robot x minus, now we go to the left, the sine of the robot orientation before motion times radius R. Similarly, cy is this expression over here, y plus cosine of the orientation times R.
+
+Then after motion, we can go back from cx to cy to a new state over here simply by adding in the turning radius beta. That is, our new x is cx plus sine of theta plus beta times radius.
+
+Notice how this parallels this guy over here, except for two changes.
+
+What we previously subtracted we're now adding, and we're adding beta to the argument of the sine. The same with y, and the orientation is just increased by beta, modulo 2π.
+
+This all works if the robot is actually turning. If the robot were to go straight, then R would become infinity by this division over here. So for small betas, in my code that's smaller than 0.001, we can approximate this all as straight motion. Our new x is the old x times our driven distance pointed in the cosine of the heading direction. Similarly for y we go in sine of heading direction, and the heading direction stays the same. You could add beta, which is basically zero, to be slightly more precise or you could just use theta. It doesn't really matter.
+
+So in this programming assignment, I'd like you to implement this piece of math over here in our particle filter. And to make sure you implemented it correctly, I will give you some example data that you can check.
+
+So in our first part, I've prepared a lot of software for you, basically copying the old particle filter software over, and removing the motion and the measurement model for now. And in this I just want you to practice the motion model.
+
+So we assume a length of the robot of 20. We initialize the robot with this length parameter, and for this first iteration we assume no steering noise and no distance noise. I set the robot to (0.0, 0.0, 0.0) in the beginning, and then I cache away a number of motions, And the way to read those is this robot is moving by 10 total with the steering angle of zero. Then it moves another 10 with a steering angle of pi divided by 6. And then it moves 20 again with a steering angle of zero.
+
+A pi over 6 is a left steering, so the robot should change its coordinates in the beginning just in the x direction, because it's facing an x direction over here. Then turn left a little bit, go forward, and go straight again. Scrolling down a little bit, I also give you the code to run the robot.
+
+We've created the robot here. You print the initial coordinate. And then for each of the motions in this list over here, we apply the myrobot equals myrobot.move command, and we print out the successive command.
+
+So if you get this right, these are the numbers I would like to see. Initially, the robot position is 0, 0, 0. That's just the one over here. It's out first print command. It then moves forward in the x direction by 10. The orientation stays 0 and so does y, because there's no steering. And now we steer. This affects x. It doesn't quite move 10. It only moves 9.86. In the y direction it only moves 1.433, and its new orientation is 0.2886. Then we move straight again, and now the x coordinate becomes 0.3903, y coordinate becomes 7.12, orientation 0.28.
+
+So your code should output exactly the same values also over here.
+
+And just to give you a second test: so this is a sequence of 10 motions where the robot moves 10 forward and always turns right by an angle of 0.2 in radians. And we look at the outputs, then we get the following array.
+
+You can see that the orientation starting at zero, which is the same as 2π, decreases all the way to 5.26, and you can also see that the robot starts running in a circle whereas initially we add almost 10 to the x direction and almost nothing in the y direction.
+
+As you come down here, we subtract quite a bit in the y direction, because now the robot is going on a circle.
+
+So you should look at these numbers over here and see if your code matches these exact numbers that my code outputs.
+

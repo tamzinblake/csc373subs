@@ -1,0 +1,9 @@
+So welcome to homework assignment number 3.
+
+This is all about particle filters. I'll ask you 3 questions, and then we will have a fairly involved programming assignment.
+
+So here's my first question.
+
+Consider the following world with 4 states, A, B, C, and D. Suppose we wish to initialize our estimate with uniformly drawn particles. My question is what is the probability that cell A is empty?
+
+And I'm asking this for different values of N: N equals 1, 4, and 10.
