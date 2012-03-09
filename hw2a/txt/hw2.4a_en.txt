@@ -1,0 +1,5 @@
+And the answer is 4.
+
+So rather than X and X dot, we have X and Y and X dot and Y dot as our state vector.
+
+And there's 4 variables

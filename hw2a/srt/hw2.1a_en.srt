@@ -1,0 +1,12 @@
+﻿1
+00:00:00,000 --> 00:00:03,000
+And the correct answer is smaller. We are more certain afterwards.
+
+2
+00:00:03,000 --> 00:00:08,000
+You'll get a more peaky Gaussian whose standard deviation is smaller.
+
+3
+00:00:08,000 --> 00:00:10,000
+This is the correct answer.
+

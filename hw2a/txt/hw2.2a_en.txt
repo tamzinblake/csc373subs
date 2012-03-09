@@ -1,0 +1,7 @@
+And The answer is a 1/2 or 0.5
+
+To see, let us multiply these two Gaussians over here, which in the exponent becomes an addition. We can now rewrite this as follows:
+
+We bring the factor 2, for these 2 terms into the denominator as 1/2 σ², and from that we see that the new variance is 0.5 as large as the old one when applied to the squares.
+
+So, as a result, you would have this equation over here.

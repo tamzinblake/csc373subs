@@ -1,0 +1,5 @@
+And the correct answer is smaller. We are more certain afterwards.
+
+You'll get a more peaky Gaussian whose standard deviation is smaller.
+
+This is the correct answer.

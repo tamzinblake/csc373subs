@@ -1,0 +1,25 @@
+So here's my solution for the programming assignment, And there's many different ways to structure this, but that's what I've done.
+
+I have a dt equals 0.1. I set my initial state vector to be the initial x and y coordinates, and for the two velocities I set them both to 0.
+
+My u vector, as I said in the statement of the problem, is zero everywhere, so just ignore it.
+
+Interesting is my P matrix that measures the uncertainty. And I set the uncertainty initially for the locations to be zero. These are the two main diagonal elements over here, and the uncertainty for the velocity is to be really high - it's 1000. So this is my initial uncertainty matrix. That guarantees that I can really estimate the velocity based on data, and I believe the initial state estimates are correct.
+
+Our F matrix is a 4-dimensional generalization of the F matrix we had before where we have 1 along the main diagonal. This one says that the position is retained in expectation and the velocity is retained, and we have two dt's over here. The x dot, which is my third state vector influences the x by a factor of dt for each time stamp. The same is true for y dot. So these are the places where our velocities impact our position estimate.
+
+And then as I scroll down, the H matrix is a 4 x 2 projection matrix where we project out the x dimension and the y dimension without any velocities.
+
+For the measurement uncertainty I assume that each measurement has uncertainty covariance of 0.1, and these are along the main diagonal of this 2 x 2 measurement noise uncertainty matrix.
+
+This is obviously how a 4-dimensional identity matrix looks over here.
+
+So if I run this for my first example where the measurements are 5, 6, 7, 8, 9, and 10, and the second dimension 10, 8, 6, 4, and 2 and you can't see it but it's 0 over here. In my output, I correctly get the estimate of 10 for my x and 0 for my y. And the velocity is 10 and -20. And as we had before, because dt equals 0.1, a step from 5 to 6 within a 10th of a time unit requires velocity of 10 and from 10 to 8 one of -20. These numbers are correct.
+
+But we can also look at the covariance matrix. And it's hard to read anything off it other than we are fairly certain as to what our location is, and we have a fairly good estimate of what our velocities are. Our covariance of velocity uncertainty is 0.1, and this is down from 1000, which was the initial value in these uncertainties.
+
+Going to the second example, I now commented away the first example and put in place a second example. If I run it again, here we see the first dimension go from -4, 1, 6, 11, 16. The second dimension 8, 4, 0, -4, -8. These are the exact same values over here, 16 and -8. For velocities I get 50 and -40, which are exactly the correct velocities.
+
+Finally, for our third example, where the first coordinate doesn't change at all, we get the correct 1 over here and velocity of 0. Second coordinate goes from 19, 17 all the way to 11. We get 11 over here and velocity of -20. So this is the implementation I wanted you to do.
+
+If you implemented this thing over here, you got it right and congratulations, you implemented a fairly nontrivial Kalman filter in stages, but through this class, we now have code that allows you to run Kalman filters on complicated problems, and I hope you really got an understanding how the Kalman filter works.

@@ -1,0 +1,7 @@
+And the answer is the main diagonal remains one.
+
+This is expressing the effect that in the absence of any velocity, we expect the x-coordinate and the y-coordinate not to change. We also don't expect the velocities to change.
+
+But the x-velocity will impact the x-position through a 0.1 over here. The third coordinate is the velocity, and it affects the first coordinate. The same over here. All the other values should be zero.
+
+So this is the 4-dimensional generalization of this 2-dimensional state transition matrix over here.

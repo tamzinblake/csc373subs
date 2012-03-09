@@ -1,0 +1,52 @@
+﻿1
+00:00:00,000 --> 00:00:02,000
+The correct answer here is no.
+
+2
+00:00:02,000 --> 00:00:06,000
+Suppose we let x go to infinity,
+
+3
+00:00:06,000 --> 00:00:11,000
+then (x-μ)² for any fixed μ would go to infinity.
+
+4
+00:00:11,000 --> 00:00:14,750
+So we have x to the -infinity, which would go to zero.
+
+5
+00:00:14,750 --> 00:00:16,000
+This is a constant.
+
+6
+00:00:16,000 --> 00:00:21,000
+Therefore, we know that in the limit of x goes to infinity,
+
+7
+00:00:21,000 --> 00:00:24,750
+this expression must be zero.
+
+8
+00:00:24,750 --> 00:00:28,000
+However, in this graph, it stays at α, and doesn't go to zero.
+
+9
+00:00:28,000 --> 00:00:32,000
+So, therefore, there can't be a valid μ at σ².
+
+10
+00:00:32,000 --> 00:00:35,000
+If a deep improbability, you know that the area in the Gaussian
+
+11
+00:00:35,000 --> 00:00:37,000
+has to integrate into one,
+
+12
+00:00:37,000 --> 00:00:41,000
+and this area diverges, it is actually infinite in size,
+
+13
+00:00:41,000 --> 00:00:43,500
+so it's not even a valid execution.
+

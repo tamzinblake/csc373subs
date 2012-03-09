@@ -1,0 +1,7 @@
+The correct answer here is no.
+
+Suppose we let x go to infinity, then (x-μ)² for any fixed μ would go to infinity. So we have x to the -infinity, which would go to zero. This is a constant.
+
+Therefore, we know that in the limit of x goes to infinity, this expression must be zero. However, in this graph, it stays at α, and doesn't go to zero.
+
+So, therefore, there can't be a valid μ at σ². If a deep improbability, you know that the area in the Gaussian has to integrate into one, and this area diverges, it is actually infinite in size, so it's not even a valid execution.
