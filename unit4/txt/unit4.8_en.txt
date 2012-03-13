@@ -1,0 +1,49 @@
+The big question now is can we write a program that finds the shortest path from start to goal?
+
+To do so, let's give the grid cell names. We have 6 columns, named from 0 to 5, and 5 rows, from 0 to 4. And the basic idea I'll pursue is that I keep a list of notes that I wish to investigate further or, as we call it in search, expand. Let's call this list "open".
+
+So in the beginning we only have 1 state on this list, it's [0, 0] my initial state. Just to make sure I never pick this state again - I don't want any cycles in my path - let me just check mark this state with a little red check. I now can test whether this state is my final goal state.
+
+Obviously, it's not. I'm not done with planning yet. So what I do next is expand this state. So I take it off my open list and look at all the successors, of which there are 2 over here: [1, 0] and [0, 1]. Those two are now expanded, so I check them.
+
+And one last thing I maintain for each of these states on the open list is how many expansions it took to get there. This was 0 over here, and it's 1 for these 2 states in red. That's called my "g-value." When I'm done with planning, this will be the length of the optimal path.
+
+Let's now go further and expand one of the two. We always expand the one with the smallest g-value, but these are equivalent. They both have a g-value of one, so it doesn't make a difference. So let me expand the first one. It's this one over here. This one has 3 neighbors: [0, 0], [1, 1], and [2, 0]. But because [0, 0] is already closed with a check mark, we don't consider it anymore, which gives me [2, 0] and [1, 1], both now with a g-value of 2, and we check those over here.
+
+I now pick the node on the open list with the smallest g-value, which happens to be this one over here. There's really no choice. It's the node over here. And this has 2 neighbors, [0, 0] and [1, 1], but both are already checked.
+
+So therefore, there is no expansion that takes place. I only expand if I find an unchecked node.
+
+So the new open list are these two nodes over here, and I recurse, and what's going to happen is my nodes will expand gradually into the free space until I eventually hit the goal node.
+
+Without proof, the g-value when I hit the goal node will be exactly the number of steps it takes to go from the start state to the goal node. The secret here for that to be the case lies in the fact that I always expand the node with the smallest g-value. But we won't worry about this.
+
+What I want you to do is to implement a piece of code that implements what I just described. And to warn you, this is a bit of work.
+
+Here is my coding environment. My grid is this one over here. It's the same as the grid over here. You can see the obstacles here and the T-shaped obstacle over here. Our starting location is [0, 0], which is the first one you put on the open list. Our goal happens to be [4, 5], which is the coordinate of the cell over here, starting counting of course at [0, 0].
+
+I've also coded for you the 4 potential actions into a single field called delta, so that when you go through the different successors on the list in the search you can just go through these sequentially. The first one goes up by subtracting 1 from this dimension. The second one goes left. The third one goes down. The fourth one goes right. Ignore for now the names of these actions. I will use them later.
+
+And I want to use the cost function of 1, so each step costs you exactly 1 for now. So I'd like you to write a piece of software that outputs triplets of this type where the first value is the g-value and the next two are the coordinates x and y. It then retrieves the element with the smallest g-value from the list, expands it, the grid cells [0, 0] gets expanded to [1, 0] and [0, 1].
+
+The g-value is incremented to 1 in both cases. And then as I scroll down a little bit, now it takes again one of the items with the smallest g-value, breaking ties whichever way you want to break them. There's a tie over here.
+
+I just happened to take the second one. Expand this one into a new successor. the only one that's not checked yet in the table is [1, 1], which gets a g-value of 2. Now remove again the element with the smallest g-value, which is now the first one. It's being taken down from the list over here to produce a new open list that's sitting over here. And as it goes through this - I'm going to scroll down a little bit more. You can see these different elements being taken.
+
+You can see the g-value keep going up: 3, 4, and so on, all the way to 7 here. And at the very end, when the g-value turns 11, it should expand node [3, 5], which is this one over here, find its only non-checked neighbor, which is [4, 5], this guy over here, and add to the list with the g-value of 11.
+
+When it then looks at the remaining list and picks the one with the smallest g-value, which is this one over here, it should identify that this is actually the goal state and call the search a success.
+
+Now, this is all intermediate debugging output.
+
+What I want your code to output just for us to check is just the final triplet of the g-value and the coordinate of the very last item that is being retrieved.
+
+This is the path length over here, and this is the coordinate of the goal, which is the same as the one over here.
+
+I want you to write the code to only output this one triplet over here. So, your code should output to this grid over here: [11, 4, 5], and [4, 5] is the goal coordinates. There's nothing interesting here, but the 11 is the key thing.
+
+It takes 11 steps to go from here to here. If I change this, for example, by opening up this grid cell over here. It now takes 2 steps less. And I want to see the 9 over here. If instead I force a greater detour, I see now a 15 over here for this maze where you have to go down, left, up again, and down again.
+
+And if there's no way to reach the goal point, as is the case if I block out this entire area over here. Then I want the program to output "fail", the single word "fail".
+
+Please implement this using the algorithm idea that I've just given you. And it's going to be difficult. It's going to take you a while. But if you do this, you're almost where I want you to be to learn about A*.

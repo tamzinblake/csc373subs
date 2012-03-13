@@ -1,0 +1,19 @@
+Let's talk about motion planning.
+
+The fundamental problem in motion planning is that a robot might live in a world like this, and it might want to find its way to a goal like this and has to devise a plan to get there.
+
+This same problem occurs for a self-driving car that might live in a city near a highway on the network of streets. It has to find its way around and navigate to its target location.
+
+If we zoom in and look at this intersection - and this is my best rendering of a street-light environment - we have also planning problems here. Picture a car coming from here that wishes to go over here. To take a left turn on this intersection over here, this car would have to turn right first, engage in a lane shift and then take the left turn to the goal location.
+
+Now, a lane shift over here is a risky proposition. If there's a bit truck parked over here, the space might be insufficient to carry out the lane shift.
+
+So an alternative plan might be to go straight over here, take the detour around the block, and then go straight to the target location.
+
+The process of finding a path from a start location to a goal location is called "planning." And for robots, it's often called "robot motion planning".
+
+So today I'm going to talk about discrete methods for planning in which the world chopped into small bins. In the next class we're going to talk about continuous motion using those plans.
+
+So what's the planning problem? We're given a map of the world. We're given a starting location. We're given a goal location. And usually, we're given some sort of a cost function. And the simplest way to think of cost is just the time it takes to drive a certain route. And the goal is: find the minimum cost path.
+
+So before we program anything, let me see if I can ask you a couple of questions for minimum cost paths.

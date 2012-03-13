@@ -1,0 +1,5 @@
+And the answer is 6. We apply this action over here 3 times: 1, 2, 3.
+
+We're at this section over here. Now we apply the left turn and go forward action, which is the center action over here. We end facing over here. That's the fourth. Then we go straight again twice. This action over here, 5 and 6.
+
+So we get a total of 6, as opposed to 7 when we counted the turning separately.

@@ -1,0 +1,3 @@
+And the answer is 11.
+
+You go 2 down, 3 to the right makes 5, 1 up 6, 2 to the right is 8, 3 down is 11.

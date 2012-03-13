@@ -1,0 +1,6 @@
+Let me look at a different maze, and this is not a car example anymore, but it's close to what we're going to program.
+
+Suppose we start over here, and our goal is to go into this corner over here. And there's multiple blocked cells along the way. And in this case, we have a robot that can go up, down, left, or right. How many steps does it take for the robot that starts over here to reach the goal position?
+
+Please enter your number over here.
+

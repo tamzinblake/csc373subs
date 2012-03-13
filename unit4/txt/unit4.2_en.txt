@@ -1,0 +1,7 @@
+Suppose we live in a discrete world like this, and this is a world we'll be programming.
+
+Let's for simplicity assume that the world is divided into little grid cells. Our initial location is over here facing north, or up. This is the vehicle and the little arrow over here indicates where it's facing. I'll call this "Start".
+
+And we wish to get to this area over here, presumably facing to the left side. Let's assume at each time step I can either move forward or I can turn the vehicle. I'm going to call these actions. And each of those costs me exactly 1 unit of cost.
+
+Then what's the total cost I have to endure to move from start to goal? This is a number. Please put a number in here.

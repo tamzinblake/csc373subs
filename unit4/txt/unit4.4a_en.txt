@@ -1,0 +1,11 @@
+And this was a tricky question.  This was a tricky question, it's 15, turns out.
+
+The path stays the same. I haven't punished left turns enough. Let me just try this.
+
+If I were to go forward, forward, forward, left, forward, forward, we accrue a total cost of 1, 2, 3, 13, 14, 15. You can arrive at the same 15 by taking the 6 steps it takes to the goal and add the extra 9 penalty it takes just for the turn itself, which is 10 minus 1, and you get 15.
+
+Let me look at the possible other path, which would take the loop over here and avoid the left turn altogether: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16.
+
+So the path around this loop over here has a cost of 16, which is more than 15.
+
+We still prefer the left turn.

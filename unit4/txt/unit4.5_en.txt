@@ -1,0 +1,5 @@
+So for this final version, let me punish left turns even more.
+
+Now they cost us 20.
+
+What is now the total cost to get to the goal?

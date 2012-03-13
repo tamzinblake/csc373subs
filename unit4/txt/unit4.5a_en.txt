@@ -1,0 +1,3 @@
+And the answer is 16.
+
+Now we're going to take the loop over here: With a cost of left turns this high, the left turn over here becomes prohibitively expensive, and we'd rather take a detour on the right side and do 3 right turns as opposed to 1 left turn.

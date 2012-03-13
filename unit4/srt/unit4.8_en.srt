@@ -1,0 +1,412 @@
+﻿1
+00:00:00,000 --> 00:00:07,000
+The big question now is can we write a program that finds the shortest path from start to goal?
+
+2
+00:00:07,000 --> 00:00:10,000
+To do so, let's give the grid cell names.
+
+3
+00:00:10,000 --> 00:00:17,000
+We have 6 columns, named from 0 to 5, and 5 rows, from 0 to 4.
+
+4
+00:00:17,000 --> 00:00:24,000
+And the basic idea I'll pursue is that I keep a list of notes that I wish to investigate further
+
+5
+00:00:24,000 --> 00:00:28,000
+or, as we call it in search, expand.
+
+6
+00:00:28,000 --> 00:00:30,000
+Let's call this list "open".
+
+7
+00:00:30,000 --> 00:00:35,000
+So in the beginning we only have 1 state on this list, it's [0, 0] my initial state.
+
+8
+00:00:35,000 --> 00:00:38,000
+Just to make sure I never pick this state again - I don't want any cycles in my path -
+
+9
+00:00:38,000 --> 00:00:43,000
+let me just check mark this state with a little red check.
+
+10
+00:00:43,000 --> 00:00:47,000
+I now can test whether this state is my final goal state.
+
+11
+00:00:47,000 --> 00:00:49,000
+Obviously, it's not. I'm not done with planning yet.
+
+12
+00:00:49,000 --> 00:00:51,000
+So what I do next is expand this state.
+
+13
+00:00:51,000 --> 00:00:56,000
+So I take it off my open list and look at all the successors,
+
+14
+00:00:56,000 --> 00:01:01,000
+of which there are 2 over here: [1, 0] and [0, 1].
+
+15
+00:01:01,000 --> 00:01:04,000
+Those two are now expanded, so I check them.
+
+16
+00:01:04,000 --> 00:01:07,000
+And one last thing I maintain for each of these
+
+17
+00:01:07,000 --> 00:01:11,000
+states on the open list is how many expansions it took to get there.
+
+18
+00:01:11,000 --> 00:01:16,000
+This was 0 over here, and it's 1 for these 2 states in red.
+
+19
+00:01:16,000 --> 00:01:18,000
+That's called my "g-value."
+
+20
+00:01:18,000 --> 00:01:22,000
+When I'm done with planning, this will be the length of the optimal path.
+
+21
+00:01:22,000 --> 00:01:25,000
+Let's now go further and expand one of the two.
+
+22
+00:01:25,000 --> 00:01:29,000
+We always expand the one with the smallest g-value, but these are equivalent.
+
+23
+00:01:29,000 --> 00:01:31,000
+They both have a g-value of one, so it doesn't make a difference.
+
+24
+00:01:31,000 --> 00:01:35,000
+So let me expand the first one. It's this one over here.
+
+25
+00:01:35,000 --> 00:01:40,000
+This one has 3 neighbors: [0, 0], [1, 1], and [2, 0].
+
+26
+00:01:40,000 --> 00:01:45,000
+But because [0, 0] is already closed with a check mark, we don't consider it anymore,
+
+27
+00:01:45,000 --> 00:01:48,000
+which gives me [2, 0] and [1, 1],
+
+28
+00:01:48,000 --> 00:01:52,000
+both now with a g-value of 2, and we check those over here.
+
+29
+00:01:52,000 --> 00:01:56,000
+I now pick the node on the open list with the smallest g-value,
+
+30
+00:01:56,000 --> 00:02:00,000
+which happens to be this one over here. There's really no choice.
+
+31
+00:02:00,000 --> 00:02:02,000
+It's the node over here.
+
+32
+00:02:02,000 --> 00:02:06,000
+And this has 2 neighbors--[0, 0] and [1, 1], but both are already checked.
+
+33
+00:02:06,000 --> 00:02:08,000
+So therefore, there is no expansion that takes place.
+
+34
+00:02:08,000 --> 00:02:11,000
+I only expand if I find an unchecked node.
+
+35
+00:02:11,000 --> 00:02:15,000
+So the new open list are these two nodes over here, and I recurse,
+
+36
+00:02:15,000 --> 00:02:19,000
+and what's going to happen is my nodes will expand gradually into the free space
+
+37
+00:02:19,000 --> 00:02:22,000
+until I eventually hit the goal node.
+
+38
+00:02:22,000 --> 00:02:26,000
+Without proof, the g-value when I hit the goal node will be exactly
+
+39
+00:02:26,000 --> 00:02:31,000
+the number of steps it takes to go from the start state to the goal node.
+
+40
+00:02:31,000 --> 00:02:34,000
+The secret here for that to be the case lies in the fact
+
+41
+00:02:34,000 --> 00:02:37,000
+that I always expand the node with the smallest g-value.
+
+42
+00:02:37,000 --> 00:02:39,000
+But we won't worry about this.
+
+43
+00:02:39,000 --> 00:02:42,000
+What I want you to do is to implement a piece of code
+
+44
+00:02:42,000 --> 00:02:44,000
+that implements what I just described.
+
+45
+00:02:44,000 --> 00:02:48,000
+And to warn you, this is a bit of work. Here is my coding environment.
+
+46
+00:02:48,000 --> 00:02:51,000
+My grid is this one over here.
+
+47
+00:02:51,000 --> 00:02:54,000
+It's the same as the grid over here.
+
+48
+00:02:54,000 --> 00:02:59,000
+You can see the obstacles here and the T-shaped obstacle over here.
+
+49
+00:02:59,000 --> 00:03:03,000
+Our starting location is [0, 0], which is the first one you put on the open list.
+
+50
+00:03:03,000 --> 00:03:08,000
+Our goal happens to be [4, 5], which is the coordinate of the cell over here,
+
+51
+00:03:08,000 --> 00:03:11,000
+starting counting of course at [0, 0].
+
+52
+00:03:11,000 --> 00:03:15,000
+I've also coded for you the 4 potential actions into a single field called delta,
+
+53
+00:03:15,000 --> 00:03:19,000
+so that when you go through the different successors on the list in the search
+
+54
+00:03:19,000 --> 00:03:21,000
+you can just go through these sequentially.
+
+55
+00:03:21,000 --> 00:03:25,000
+The first one goes up by subtracting 1 from this dimension.
+
+56
+00:03:25,000 --> 00:03:29,000
+The second one goes left. The third one goes down. The fourth one goes right.
+
+57
+00:03:29,000 --> 00:03:33,000
+Ignore for now the names of these actions. I will use them later.
+
+58
+00:03:33,000 --> 00:03:39,000
+And I want to use the cost function of 1, so each step costs you exactly 1 for now.
+
+59
+00:03:39,000 --> 00:03:43,000
+So I'd like you to write a piece of software that outputs triplets of this type
+
+60
+00:03:43,000 --> 00:03:48,000
+where the first value is the g-value and the next two are the coordinates x and y.
+
+61
+00:03:48,000 --> 00:03:52,000
+It then retrieves the element with the smallest g-value from the list,
+
+62
+00:03:52,000 --> 00:03:57,000
+expands it, the grid cells [0, 0] gets expanded to [1, 0] and [0, 1].
+
+63
+00:03:57,000 --> 00:04:00,000
+The g-value is incremented to 1 in both cases.
+
+64
+00:04:00,000 --> 00:04:03,000
+And then as I scroll down a little bit,
+
+65
+00:04:03,000 --> 00:04:06,000
+now it takes again one of the items with the smallest g-value,
+
+66
+00:04:06,000 --> 00:04:09,000
+breaking ties whichever way you want to break them. There's a tie over here.
+
+67
+00:04:09,000 --> 00:04:12,000
+I just happened to take the second one.
+
+68
+00:04:12,000 --> 00:04:15,000
+Expand this one into a new successor.
+
+69
+00:04:15,000 --> 00:04:22,000
+the only one that's not checked yet in the table is [1, 1], which gets a g-value of 2.
+
+70
+00:04:22,000 --> 00:04:29,000
+Now remove again the element with the smallest g-value, which is now the first one.
+
+71
+00:04:29,000 --> 00:04:32,000
+It's being taken down from the list over here
+
+72
+00:04:32,000 --> 00:04:35,000
+to produce a new open list that's sitting over here.
+
+73
+00:04:35,000 --> 00:04:39,000
+And as it goes through this - I'm going to scroll down a little bit more.
+
+74
+00:04:39,000 --> 00:04:41,000
+You can see these different elements being taken.
+
+75
+00:04:41,000 --> 00:04:54,000
+You can see the g-value keep going up: 3, 4, and so on, all the way to 7 here.
+
+76
+00:04:54,000 --> 00:05:01,000
+And at the very end, when the g-value turns 11, it should expand node [3, 5],
+
+77
+00:05:01,000 --> 00:05:06,000
+which is this one over here, find its only non-checked neighbor,
+
+78
+00:05:06,000 --> 00:05:14,000
+which is [4, 5], this guy over here, and add to the list with the g-value of 11.
+
+79
+00:05:14,000 --> 00:05:19,000
+When it then looks at the remaining list and picks the one with the smallest g-value,
+
+80
+00:05:19,000 --> 00:05:23,000
+which is this one over here, it should identify that this is actually
+
+81
+00:05:23,000 --> 00:05:26,000
+the goal state and call the search a success.
+
+82
+00:05:26,000 --> 00:05:30,000
+Now, this is all intermediate debugging output.
+
+83
+00:05:30,000 --> 00:05:33,000
+What I want your code to output just for us to check
+
+84
+00:05:33,000 --> 00:05:40,000
+is just the final triplet of the g-value
+
+85
+00:05:40,000 --> 00:05:45,000
+and the coordinate of the very last item that is being retrieved.
+
+86
+00:05:45,000 --> 00:05:48,000
+This is the path length over here, and this is the coordinate of the goal,
+
+87
+00:05:48,000 --> 00:05:50,000
+which is the same as the one over here.
+
+88
+00:05:50,000 --> 00:05:55,000
+I want you to write the code to only output this one triplet over here.
+
+89
+00:05:55,000 --> 00:06:00,000
+So, your code should output to this grid over here: [11, 4, 5],
+
+90
+00:06:00,000 --> 00:06:04,000
+and [4, 5] is the goal coordinates. There's nothing interesting here, but the 11 is the key thing.
+
+91
+00:06:04,000 --> 00:06:07,000
+It takes 11 steps to go from here to here.
+
+92
+00:06:07,000 --> 00:06:12,000
+If I change this, for example, by opening up this grid cell over here.
+
+93
+00:06:12,000 --> 00:06:15,000
+It now takes 2 steps less.
+
+94
+00:06:15,000 --> 00:06:18,000
+And I want to see the 9 over here.
+
+95
+00:06:18,000 --> 00:06:24,000
+If instead I force a greater detour,
+
+96
+00:06:24,000 --> 00:06:27,000
+I see now a 15 over here for this maze where you have to go down,
+
+97
+00:06:27,000 --> 00:06:30,000
+left, up again, and down again.
+
+98
+00:06:30,000 --> 00:06:33,000
+And if there's no way to reach the goal point,
+
+99
+00:06:33,000 --> 00:06:38,000
+as is the case if I block out this entire area over here.
+
+100
+00:06:38,000 --> 00:06:43,000
+Then I want the program to output "fail", the single word "fail".
+
+101
+00:06:43,000 --> 00:06:47,000
+Please implement this using the algorithm idea that I've just given you.
+
+102
+00:06:47,000 --> 00:06:50,000
+And it's going to be difficult. It's going to take you a while.
+
+103
+00:06:50,000 --> 00:06:56,000
+But if you do this, you're almost where I want you to be to learn about A*.
+

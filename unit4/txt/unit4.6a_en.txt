@@ -1,0 +1,5 @@
+And the answer is 7.
+
+As you can see, the shortest path will lead along here. Then it becomes ambiguous. We could either go right or up. Let's say we randomly go up and hit the goal,
+
+so 1, 2, 3, 4, 5, 6, 7 steps to the goal.

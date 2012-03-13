@@ -1,0 +1,5 @@
+The answer I want to see is 7 and not 6.
+
+The reason why I want to see 7 is it takes 6 steps to go on the shortest path to the goal: But in this cell over here I have to turn to the left side. And that turn also costs me a unit of 1.
+
+So that's in total 6 straight motions and 1 turn, gives me 7.

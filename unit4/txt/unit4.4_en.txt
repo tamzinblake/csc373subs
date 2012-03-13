@@ -1,0 +1,9 @@
+Now, the reason why I change the actions this way is for my next quiz.
+
+Suppose we punish left turns. Why would we do this? Well, in real traffic, left turns are harder to do than the right turns. Often you have to wait for oncoming traffic.
+
+Let's say in our planning, left turns are more expensive. In fact, I should mention that parcel delivery services that plan for optimal routes of trucks like FedEx and UPS in the States, they actually plan routes that try to avoid left turns during rush hours, because it just takes much longer to do left turns. If they can go right turns, they prefer those.
+
+In this example here, let's now say that forward motion costs you 1. A left turn costs you 10, and a right turn costs you 1.
+
+Now, what is the optimal path, and specifically what's the cost of the optimal path?

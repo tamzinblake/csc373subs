@@ -1,0 +1,39 @@
+So here's my solution.  I defined a function "search", which is the only function I'm going to run in the end. It's like the main routine.
+
+To check cells once they're expanded so we don't expand them again, I define an array called "closed".  So it's the same size as my grid, and it has two values, 0 1: 0 being it's still open, 1 meaning it's been closed. You could also use Booleans.
+
+So this over here assigns an array of the same size as the field grid. I initialize the starting location as checked and assign the coordinates to x, y, and a g-value of 0. And my initial open list is going to be just 1 element of my initial coordinates and the g value of 0.
+
+So far what I've done is I've defined an array called closed of the same size. All the check marks are not there except for the ones in the left corner, and this is my starting location in my open list right over here with a g-value of 0.
+
+Inside my code I use two flags.  One is found, which will be true when the goal position is found, and one is resign, which will be true if I don't find a goal position and I've explored everything. The second one will be the case when my open list just turns empty without finding the goal. And that's really important for the case where I can't find a path to the goal.
+
+Those print commands were the ones I used for debugging. You can look at them. They print out the existing open list. Nothing else.
+
+But here is the code.
+
+I repeat the following while I haven't found a path to the goal and I haven't proved that the problem is unsolvable. So both found and resign are false. If my open list is empty, there's nothing to expand, then resign is true, and I print "fail". So this is one of the 2 terminating conditions.
+
+You can convince yourself there's no path from S to G. You'll expand every node on the left side of the barrier until we finally run out of nodes to expand, at which point the open list will be empty, and our search failed. If there is still elements in the open list, the else case comes into place.
+
+And here is how I remove the element with the smallest g-value. I use the list.sort function, which sorts elements in increasing order from the smallest g-value up.
+
+And now I want to pop the element with the smallest number. Unfortunately pop pops at the end, so I'll just reverse the list and then pop the element with the smallest g-value from that list. There's a little bit of a trick here. It's not very elegant. It's also not very efficient, but it does the job for now.
+
+That here gets me the element with the smallest g-value. And for that it's important that the g-value comes first in each of the triplets. That's why I put it first, before the x and the y.
+
+I then assign the 3 values to x, y, and g, which is my expansion. Again, g is the first, x and y are the second and third.
+
+And now I'm in the position to test whether I reach the goal. If x is the goal 0 and y is the goal 1, I'm done. I call found equals True. I print out this triplet, and that gives me the triplet over here. So this "print next" over here is this triplet and that's the one I was looking for, asking you about printing exactly this solution over here.
+
+Now, if I'm not done yet, then here's the interesting case. And that's the meat of what I'm programming.
+
+I'm going through all the possible actions. There's 4 of them. Delta is an array of 4 different actions. I apply the action to x and y with this addition over here by applying the corresponding delta vector to construct x2 and y2.
+
+If x2 falls into the grid and y2 falls into the grid and [x2, y2] is not yet checked, which is tested by this field called "closed," and the grid cell is navigable; there is no obstacle here. If all these things are correct, then I found an expansion that I now add to the open list.
+
+I increment the cost from g to g2 by adding 1 in this case; cost is 1. Then I append the new [g2, x2, y2] to my open list, and I check the coordinate [x2, y2] so I never expand it again. That is the recursion.
+
+Put differently, when I drew down this element over here, for example, I looked at possible ways the robot could move. In my software, this means the robot has to stay inside the grid, and the grid cell has to be unoccupied, which is this test over here. I also checked whether there was already a check mark by the cell, which is this test over here. And if this while was true, I added the new element to my open list with the new g-value incremented and the new coordinates. And that is exactly happening over here.
+
+I increment the g-value, and I add it with the new coordinates. This is the key of a search algorithm. The only remaining thing now is that I call the search routine that prints me out this thing over here.

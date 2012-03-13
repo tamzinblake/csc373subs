@@ -1,0 +1,5 @@
+Let me now change the action model into a different model.
+
+We have 3 actions. Here is the first. I can go just forward. The second one is I can turn left and then go forward. And the third one is I can turn right and then go forward. So in all of these actions, I take a step forward. In the left one, I don't turn at all. The center one over here I turn left and go forward. This one over here I turn right and go forward.
+
+Let's say for the time being the cost of each of those is 1. What is now the total cost of the optimal path to the goal?

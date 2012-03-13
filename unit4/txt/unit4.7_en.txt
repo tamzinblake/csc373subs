@@ -1,0 +1,13 @@
+So let's look at the path planning problem as a search problem.
+
+If you took my AI online class, you know what this is all about, but I want to make sure that everybody can understand what I'm talking about.
+
+So let's start with a little grid world of size 6 by 5 where our start location is in the top left corner, our goal in the bottom right corner. And I block off a few cells so there is still a safe path to the goal. So this could be a search through a city graph, through a parking lot, or through a maze of streets for a mobile robot.
+
+And just for simplicity, in this example let's assume the robot is given 4 actions. It can go up, down, left, or right.
+
+And also for simplicity, let's assume that every action succeeds with absolute certainty. We don't model uncertainty in this example.
+
+The path planning or search problem is to find the shortest sequence of actions that leads our robot from the start state to the goal state.
+
+And just to check, tell me how many you think these are. How many action are required to go from start to goal?
